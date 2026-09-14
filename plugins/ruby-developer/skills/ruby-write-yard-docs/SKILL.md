@@ -13,7 +13,7 @@ description: 'Use when writing YARD documentation for Ruby public APIs: every pu
 license: MIT
 metadata:
   source-id: igmarin/ruby-core-skills:write-yard-docs
-  source-commit: d4d75dddae574942ebf9a56bb8d56cb699d8c4a6
+  source-commit: b62b3fee879a1766756f7be61cfe54e94ddecd74
   kind: atomic
   dependencies: '[]'
 ---
@@ -55,7 +55,7 @@ Task lists MUST include explicit YARD sub-tasks after implementation.
 
 1. **Identify Public Surfaces:** Locate all new or modified public classes, modules, and methods.
 2. **Add Class-Level Docs:** Provide a one-line summary describing the responsibility of the class or module.
-3. **Add Method-Level Docs:** For every public method, add `@param` (and `@option` for hash arguments), `@return`, and `@raise` tags. For `.call` methods or complex returns, the `@return` tag MUST specify the exact structure.
+3. **Add Method-Level Docs:** For every public method, add `@param` (and `@option` for hash arguments) and `@return` tags. Add `@raise` only when an exception can escape to callers. For `.call` methods or complex returns, the `@return` tag MUST specify the exact structure.
 4. **Document Exceptions:** List each exception separately with its own `@raise` tag, only when it can escape to callers. Describe converted error results under `@return`.
 5. **Verify Completeness:** Run `yard stats --list-undoc` and `yard doc` to ensure no public surfaces are missing documentation.
 6. **Task-list handoff:** When producing or reviewing tasks, add explicit YARD sub-tasks after implementation for every new or changed public Ruby API. If the output is only a documentation artifact (not a task list), state that future task lists must include those YARD sub-tasks.

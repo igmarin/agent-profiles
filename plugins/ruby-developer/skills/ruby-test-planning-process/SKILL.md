@@ -12,7 +12,7 @@ description: 'Selects test boundaries, identifies test cases (happy path, edge c
 license: MIT
 metadata:
   source-id: igmarin/ruby-core-skills:test-planning-process
-  source-commit: d4d75dddae574942ebf9a56bb8d56cb699d8c4a6
+  source-commit: b62b3fee879a1766756f7be61cfe54e94ddecd74
   kind: atomic
   dependencies: '[]'
 ---

@@ -12,7 +12,7 @@ description: "Breaks a feature, PRD, or requirement into TDD implementation task
 license: MIT
 metadata:
   source-id: igmarin/ruby-core-skills:generate-tdd-tasks
-  source-commit: d4d75dddae574942ebf9a56bb8d56cb699d8c4a6
+  source-commit: b62b3fee879a1766756f7be61cfe54e94ddecd74
   kind: atomic
   dependencies: '[]'
 ---

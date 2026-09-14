@@ -7,7 +7,7 @@ description: 'Use when investigating a bug, error, or regression in a Ruby or Ra
 license: MIT
 metadata:
   source-id: igmarin/ruby-core-skills:triage-bug
-  source-commit: d4d75dddae574942ebf9a56bb8d56cb699d8c4a6
+  source-commit: b62b3fee879a1766756f7be61cfe54e94ddecd74
   kind: atomic
   dependencies: '[]'
 ---
