@@ -8,7 +8,7 @@ description: 'MANDATORY for ALL Elixir database work. Invoke before modifying sc
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:ecto-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -95,7 +95,7 @@ defmodule MyApp.Media.Image do
 end
 ```
 
-See [`../../resources/elixir/skills/database/ecto-essentials/assets/changeset_snippets.ex`](../../resources/elixir/skills/database/ecto-essentials/assets/changeset_snippets.ex) for copy-paste changeset templates (validations, associations, and error formatting).
+See [`../../resources/elixir/skills/ecto-essentials/assets/changeset_snippets.ex`](../../resources/elixir/skills/ecto-essentials/assets/changeset_snippets.ex) for copy-paste changeset templates (validations, associations, and error formatting).
 
 ## Query Composition
 
@@ -244,7 +244,7 @@ end
 2. Run `mix ecto.rollback` — confirm it reverses cleanly
 3. Run `mix ecto.migrate` again — confirm re-applying succeeds
 
-See [`../../resources/elixir/skills/database/ecto-essentials/assets/migration_checklist.md`](../../resources/elixir/skills/database/ecto-essentials/assets/migration_checklist.md) for the full safe-migration and expand-contract checklist.
+See [`../../resources/elixir/skills/ecto-essentials/assets/migration_checklist.md`](../../resources/elixir/skills/ecto-essentials/assets/migration_checklist.md) for the full safe-migration and expand-contract checklist.
 
 ### Unique Constraints
 

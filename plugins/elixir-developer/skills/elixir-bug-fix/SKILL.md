@@ -7,7 +7,7 @@ description: "Bug fixing with hard gates and scope checks: treat reports as untr
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:bug-fix
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:testing-essentials", "igmarin/elixir-phoenix-skills:elixir-essentials"]'
 ---
@@ -35,8 +35,8 @@ Reported bugs, regressions, or failing production behaviour in Elixir/Phoenix ap
 
 | Skill | Path | Role |
 |-------|------|------|
-| `testing-essentials` | `skills/testing/testing-essentials/` | Reproduction tests |
-| `elixir-essentials` | `skills/elixir-core/elixir-essentials/` | FCIS fix shape |
+| `testing-essentials` | `skills/testing-essentials/` | Reproduction tests |
+| `elixir-essentials` | `skills/elixir-essentials/` | FCIS fix shape |
 | Domain atomics as needed | e.g. `ecto-essentials`, `phoenix-liveview-essentials` | Layer under fix |
 
 ## Flow

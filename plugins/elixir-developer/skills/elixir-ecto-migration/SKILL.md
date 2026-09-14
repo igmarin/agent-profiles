@@ -7,7 +7,7 @@ description: "Safe migration playbook with hard gates and HITL for production ri
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:ecto-migration
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:ecto-essentials", "igmarin/elixir-phoenix-skills:apply-ecto-conventions"]'
 ---
@@ -33,8 +33,8 @@ Any schema change: tables, columns, indexes, constraints.
 
 | Skill | Path | Role |
 |-------|------|------|
-| `ecto-essentials` | `skills/database/ecto-essentials/` | Migrations/schemas |
-| `apply-ecto-conventions` | `skills/database/apply-ecto-conventions/` | Repo/query conventions |
+| `ecto-essentials` | `skills/ecto-essentials/` | Migrations/schemas |
+| `apply-ecto-conventions` | `skills/apply-ecto-conventions/` | Repo/query conventions |
 
 ## Flow
 

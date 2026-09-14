@@ -8,7 +8,7 @@ description: 'Use when making HTTP requests from Elixir applications. Invoke bef
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:req-http-client
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -33,7 +33,7 @@ Canonical FP bar: [`docs/fcis-engineering-rules.md`](../../resources/elixir/docs
 **6.** **Stub every external call in tests with `Req.Test`** — the suite must never hit a real API
 **7.** **Stream large responses with `into:`** — write to `File.stream!/1` or a callback instead of loading the full payload into memory
 
-See [`../../resources/elixir/skills/integrations/req-http-client/assets/req_client_snippets.ex`](../../resources/elixir/skills/integrations/req-http-client/assets/req_client_snippets.ex) for a copy-paste base client and wrapper module.
+See [`../../resources/elixir/skills/req-http-client/assets/req_client_snippets.ex`](../../resources/elixir/skills/req-http-client/assets/req_client_snippets.ex) for a copy-paste base client and wrapper module.
 
 
 ## FCIS at this boundary

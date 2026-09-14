@@ -8,7 +8,7 @@ description: "Sequenced PR/diff review workflow with hard gates and optional HIT
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:code-review-playbook
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:code-review", "igmarin/elixir-phoenix-skills:security-essentials",
     "igmarin/elixir-phoenix-skills:elixir-essentials"]'
@@ -18,7 +18,7 @@ Resolve skill names through `../../skill-map.json`; use the source pack to disam
 
 # Code Review Playbook
 
-> Catalog name: `code-review-playbook` (atomic review rules remain `code-review` under `skills/quality/code-review/`).
+> Catalog name: `code-review-playbook` (atomic review rules remain `code-review` under `skills/code-review/`).
 
 ## HARD-GATE
 
@@ -32,15 +32,15 @@ Resolve skill names through `../../skill-map.json`; use the source pack to disam
 
 Self-review before PR, peer PR review, or audit of an Elixir/Phoenix branch diff.
 
-**This playbook orchestrates.** Detailed severity rules and Risk pattern lists live in the atomic skill — do not re-teach Credo/LiveView textbooks here.
+**This playbook orchestrates.** Detailed severity rules and Always Critical lists live in the atomic skill — do not re-teach Credo/LiveView textbooks here.
 
 ## Atomic skills this playbook loads
 
 | Skill | Path | Role |
 |-------|------|------|
-| `code-review` (atomic) | `skills/quality/code-review/` | Rules, Review Order, checklist asset |
-| `security-essentials` | `skills/security/security-essentials/` | Security deep dive when needed |
-| `elixir-essentials` | `skills/elixir-core/elixir-essentials/` | FCIS violations |
+| `code-review` (atomic) | `skills/code-review/` | Rules, Review Order, checklist asset |
+| `security-essentials` | `skills/security-essentials/` | Security deep dive when needed |
+| `elixir-essentials` | `skills/elixir-essentials/` | FCIS violations |
 
 ## Flow
 
@@ -50,11 +50,13 @@ flowchart TD
   B --> C[Walk Review Order on real diff]
   C --> D[Emit findings with file:line]
   D --> E{Critical findings?}
-  E -->|Yes| F[HITL: fix or explicit defer]
-  F --> G[Re-review Critical areas]
-  E -->|No| H[Handoff task list]
-  G --> H
-  H --> I[Done]
+  E -->|Yes| F{Authorized fix?}
+  F -->|Yes| G[Implement fix and re-review]
+  F -->|No| H[HITL: fix or explicit defer]
+  G --> I[Handoff task list]
+  H --> I
+  E -->|No| I[Handoff task list]
+  I --> J[Done]
 ```
 
 ## Agent Phases
@@ -75,7 +77,7 @@ flowchart TD
 
 ### Phase 2 — Review walk
 
-1. Load `skills/quality/code-review/SKILL.md` and [atomic review checklist](../../resources/elixir/skills/quality/code-review/assets/checklist.md).
+1. Load `skills/code-review/SKILL.md` and `assets/checklist.md`.
 2. Walk Review Order (Config → Router → Controllers → LiveViews → HEEx → Contexts → Schemas → Queries → Migrations → OTP → Jobs → Tests → Security).
 3. Cover ≥4 areas; flag FCIS issues (fat LiveViews, Repo-in-calc).
 
@@ -118,14 +120,14 @@ Summarize Critical vs Suggestion counts.
 
 ### Phase 5 — Re-review (if Critical fixed)
 
-**Scope check:** a review-only request authorizes findings, not code changes. If fixes are already authorized, implement within that scope and re-review. Otherwise present concrete findings for a fix decision. Deferral requires an explicit decision.
+**HUMAN-IN-THE-LOOP:** if Critical items need code changes, get approval for the fix approach (or explicit “defer with ticket”).
 
 Re-run review on changed hunks; auth/query/migration/OTP changes always re-reviewed.
 
 **HARD GATE — Re-review after Critical changes:**
 
 - [ ] Critical fixes (and any auth/query/migration/OTP change) are re-reviewed.
-- [ ] Fixes are within authorized scope; any deferral has an explicit decision.
+- [ ] User approves the fix approach or explicit deferral.
 
 **If gate fails:** Re-review the changed hunks and confirm no new Criticals were introduced.
 
@@ -133,7 +135,7 @@ Re-run review on changed hunks; auth/query/migration/OTP changes always re-revie
 
 - [ ] Real diff reviewed
 - [ ] Findings grounded in `file:line`
-- [ ] Risk pattern patterns checked
+- [ ] Always Critical risk patterns checked
 - [ ] FCIS / security considered
 - [ ] Task-list handoff line present
 - [ ] Re-review after Critical fixes

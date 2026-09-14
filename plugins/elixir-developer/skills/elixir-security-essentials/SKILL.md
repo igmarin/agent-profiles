@@ -9,7 +9,7 @@ description: 'Provides security guidelines and patterns for Elixir/Phoenix appli
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:security-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -35,7 +35,7 @@ Canonical FP bar: [`docs/fcis-engineering-rules.md`](../../resources/elixir/docs
 **8.** **Always authorize before returning a record** — verify ownership to prevent parameter tampering and IDOR ([Common Vulnerable Patterns](#common-vulnerable-patterns))
 **9.** **Always run `mix deps.audit && mix hex.audit && mix sobelow` before merge** — fail CI on any HIGH or CRITICAL finding ([Dependency Auditing](#dependency-auditing))
 
-See [`../../resources/elixir/skills/security/security-essentials/assets/security_checklist.md`](../../resources/elixir/skills/security/security-essentials/assets/security_checklist.md) for a copy-paste pre-merge checklist covering input validation, auth, secrets, and production hardening.
+See [`../../resources/elixir/skills/security-essentials/assets/security_checklist.md`](../../resources/elixir/skills/security-essentials/assets/security_checklist.md) for a copy-paste pre-merge checklist covering input validation, auth, secrets, and production hardening.
 
 
 ## Security Review Process

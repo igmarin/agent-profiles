@@ -8,7 +8,7 @@ description: 'MANDATORY for ALL LiveView work. Invoke before writing LiveView mo
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:phoenix-liveview-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -321,7 +321,7 @@ Related skills: `liveview-streams`, `phoenix-pubsub-patterns`, `phoenix-liveview
 
 ## Testing LiveViews
 
-Drive the full lifecycle with `Phoenix.LiveViewTest` — mount, render, events, and navigation. See [`../../resources/elixir/skills/phoenix/phoenix-liveview-essentials/assets/liveview_test_template.md`](../../resources/elixir/skills/phoenix/phoenix-liveview-essentials/assets/liveview_test_template.md) for a LiveView test template and [`../../resources/elixir/skills/phoenix/phoenix-liveview-essentials/assets/component_test_template.md`](../../resources/elixir/skills/phoenix/phoenix-liveview-essentials/assets/component_test_template.md) for a function-component test template.
+Drive the full lifecycle with `Phoenix.LiveViewTest` — mount, render, events, and navigation. See [`../../resources/elixir/skills/phoenix-liveview-essentials/assets/liveview_test_template.md`](../../resources/elixir/skills/phoenix-liveview-essentials/assets/liveview_test_template.md) for a LiveView test template and [`../../resources/elixir/skills/phoenix-liveview-essentials/assets/component_test_template.md`](../../resources/elixir/skills/phoenix-liveview-essentials/assets/component_test_template.md) for a function-component test template.
 
 
 ## Common Pitfalls

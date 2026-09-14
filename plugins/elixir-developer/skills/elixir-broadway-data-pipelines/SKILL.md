@@ -11,7 +11,7 @@ description: 'MANDATORY when building data processing pipelines or consuming mes
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:broadway-data-pipelines
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -63,7 +63,7 @@ end
 
 ## Production-Ready Pipeline
 
-See [`../../resources/elixir/skills/infrastructure/broadway-data-pipelines/assets/broadway_pipeline_template.ex`](../../resources/elixir/skills/infrastructure/broadway-data-pipelines/assets/broadway_pipeline_template.ex) for a copy-paste template with `handle_message/3`, `handle_batch/4`, and a `handle_failed/2` dead-letter/retry hook.
+See [`../../resources/elixir/skills/broadway-data-pipelines/assets/broadway_pipeline_template.ex`](../../resources/elixir/skills/broadway-data-pipelines/assets/broadway_pipeline_template.ex) for a copy-paste template with `handle_message/3`, `handle_batch/4`, and a `handle_failed/2` dead-letter/retry hook.
 
 ```elixir
 defmodule MyApp.MessagePipeline do

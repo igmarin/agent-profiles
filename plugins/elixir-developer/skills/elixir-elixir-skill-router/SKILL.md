@@ -6,7 +6,7 @@ description: Use when an Elixir/Phoenix request spans multiple concerns or the n
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:elixir-skill-router
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: router
   dependencies: '["igmarin/elixir-phoenix-skills:tdd", "igmarin/elixir-phoenix-skills:bug-fix",
     "igmarin/elixir-phoenix-skills:quality", "igmarin/elixir-phoenix-skills:code-review-playbook",
@@ -50,7 +50,7 @@ Triages and decomposes any Elixir/Phoenix request into ordered sub-tasks, then d
 
 The eight most-used skills are listed here. Resolve full catalog names through the installed pack registry (`directory.json` in a source checkout). Read each selected skill before executing its workflow. A missing required skill or resource blocks its dependent step: report the qualified identity, expected path, and installation repair. Continue independent work; disclose missing optional guidance. Never substitute a generic skill for a required missing dependency.
 
-See [`../../resources/elixir/skills/orchestration/elixir-skill-router/assets/skill-map.json`](../../resources/elixir/skills/orchestration/elixir-skill-router/assets/skill-map.json) for the full machine-readable trigger→skill routing map used by this orchestrator.
+See [`../../resources/elixir/skills/elixir-skill-router/assets/skill-map.json`](../../resources/elixir/skills/elixir-skill-router/assets/skill-map.json) for the full machine-readable trigger→skill routing map used by this orchestrator.
 
 | Skill | Use when... | Notes |
 | ----- | ----------- | ----- |
@@ -81,7 +81,7 @@ State this rule immediately after the routing statement when more than one skill
 **Example 1 — "Add user notifications: email on job completion + live dashboard counter."**
 
 ```text
-Next skill: skills/playbooks/tdd
+Next skill: skills/tdd
 
 This spans jobs, email, data, and LiveView. Confirm the existing notification contract, then load testing-essentials for a failing job-completion test.
 
@@ -91,7 +91,7 @@ Priority: Context and scope → RED → elixir-essentials → oban-essentials �
 **Example 2 — "Refactor a crashing GenServer and review authentication for security issues."**
 
 ```text
-Next skill: skills/security/security-essentials
+Next skill: skills/security-essentials
 
 Authentication touches security boundaries; audit that first before addressing the GenServer crash.
 
@@ -115,7 +115,7 @@ The routing statement MUST be the first substantive line of every response, befo
 For a single skill:
 
 ```text
-Next skill: skills/testing/testing-essentials
+Next skill: skills/testing-essentials
 
 This is a feature request. I will start by writing a failing test.
 ```
@@ -123,7 +123,7 @@ This is a feature request. I will start by writing a failing test.
 When multiple skills apply, immediately follow the routing line with one concise priority/chain statement:
 
 ```text
-Next skill: skills/security/security-essentials
+Next skill: skills/security-essentials
 
 This pull request contains custom input validation, so we will perform a security review first.
 

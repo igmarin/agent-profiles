@@ -7,7 +7,7 @@ description: "Pre-PR quality loop with hard gates: mix format, credo, dialyzer, 
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:quality
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:code-quality", "igmarin/elixir-phoenix-skills:credo-config",
     "igmarin/elixir-phoenix-skills:refactor-code", "igmarin/elixir-phoenix-skills:typespec-dialyzer"]'
@@ -31,10 +31,10 @@ Before opening a PR or when asked for a full quality/production-readiness pass.
 
 | Skill | Path | Role |
 |-------|------|------|
-| `code-quality` | `skills/quality/code-quality/` | Complexity/duplication |
-| `credo-config` | `skills/quality/credo-config/` | Credo setup |
-| `refactor-code` | `skills/quality/refactor-code/` | Safe extractions |
-| `typespec-dialyzer` | `skills/elixir-core/typespec-dialyzer/` | Specs/docs types |
+| `code-quality` | `skills/code-quality/` | Complexity/duplication |
+| `credo-config` | `skills/credo-config/` | Credo setup |
+| `refactor-code` | `skills/refactor-code/` | Safe extractions |
+| `typespec-dialyzer` | `skills/typespec-dialyzer/` | Specs/docs types |
 
 ## Flow
 

@@ -8,7 +8,7 @@ description: "Orchestrates the full Elixir TDD cycle with hard gates and scope c
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:tdd
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:testing-essentials", "igmarin/elixir-phoenix-skills:elixir-essentials",
     "igmarin/elixir-phoenix-skills:typespec-dialyzer"]'
@@ -33,9 +33,9 @@ Building or changing Elixir behaviour where tests must gate implementation. Pref
 
 | Skill | Path | Role |
 |-------|------|------|
-| `testing-essentials` | `skills/testing/testing-essentials/` | ExUnit patterns, fixtures |
-| `elixir-essentials` | `skills/elixir-core/elixir-essentials/` | FCIS language rules |
-| `typespec-dialyzer` | `skills/elixir-core/typespec-dialyzer/` | `@spec` on public APIs |
+| `testing-essentials` | `skills/testing-essentials/` | ExUnit patterns, fixtures |
+| `elixir-essentials` | `skills/elixir-essentials/` | FCIS language rules |
+| `typespec-dialyzer` | `skills/typespec-dialyzer/` | `@spec` on public APIs |
 
 Do **not** re-teach LiveView/Ecto here — load domain atomics when the feature needs them.
 

@@ -7,7 +7,7 @@ description: "LiveView feature playbook with hard gates and scope checks: define
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:liveview
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:phoenix-liveview-essentials", "igmarin/elixir-phoenix-skills:testing-essentials",
     "igmarin/elixir-phoenix-skills:elixir-essentials", "igmarin/elixir-phoenix-skills:apply-phoenix-liveview-conventions"]'
@@ -32,11 +32,11 @@ New LiveView pages/features or substantial LiveView behaviour changes.
 
 | Skill | Path | Role |
 |-------|------|------|
-| `phoenix-liveview-essentials` | `skills/phoenix/phoenix-liveview-essentials/` | Lifecycle, assigns |
-| `apply-phoenix-liveview-conventions` | `skills/phoenix/apply-phoenix-liveview-conventions/` | Conventions |
-| `testing-essentials` | `skills/testing/testing-essentials/` | LV tests |
-| `elixir-essentials` | `skills/elixir-core/elixir-essentials/` | FCIS thin edges |
-| `liveview-streams` | `skills/phoenix/liveview-streams/` | Large collections |
+| `phoenix-liveview-essentials` | `skills/phoenix-liveview-essentials/` | Lifecycle, assigns |
+| `apply-phoenix-liveview-conventions` | `skills/apply-phoenix-liveview-conventions/` | Conventions |
+| `testing-essentials` | `skills/testing-essentials/` | LV tests |
+| `elixir-essentials` | `skills/elixir-essentials/` | FCIS thin edges |
+| `liveview-streams` | `skills/liveview-streams/` | Large collections |
 
 ## Flow
 
@@ -117,7 +117,7 @@ Write `live/2` or `live_isolated` test; run until fail is â€œmissing behaviourâ€
 
 - [ ] Contract written
 - [ ] Failing test first
-- [ ] Approval before impl
+- [ ] Implementation matches authorized scope
 - [ ] No Repo/business soup in LiveView
 - [ ] Tests green
 

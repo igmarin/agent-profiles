@@ -8,7 +8,7 @@ description: 'MANDATORY for ALL Oban work. Invoke before writing workers or enqu
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:oban-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -74,7 +74,7 @@ end
 
 ## Worker Definition
 
-See [`../../resources/elixir/skills/infrastructure/oban-essentials/assets/oban_job_template.ex`](../../resources/elixir/skills/infrastructure/oban-essentials/assets/oban_job_template.ex) for a copy-paste worker skeleton (`perform/1`, `max_attempts`, `unique:`, `backoff/1`, idempotency guard).
+See [`../../resources/elixir/skills/oban-essentials/assets/oban_job_template.ex`](../../resources/elixir/skills/oban-essentials/assets/oban_job_template.ex) for a copy-paste worker skeleton (`perform/1`, `max_attempts`, `unique:`, `backoff/1`, idempotency guard).
 
 ```elixir
 defmodule MyApp.Workers.SendWelcomeEmail do
@@ -252,7 +252,7 @@ config :my_app, Oban,
 
 ## Testing
 
-See [`../../resources/elixir/skills/infrastructure/oban-essentials/assets/oban_testing_checklist.md`](../../resources/elixir/skills/infrastructure/oban-essentials/assets/oban_testing_checklist.md) for a copy-paste checklist covering enqueue assertions, `perform_job/2`, and all return paths.
+See [`../../resources/elixir/skills/oban-essentials/assets/oban_testing_checklist.md`](../../resources/elixir/skills/oban-essentials/assets/oban_testing_checklist.md) for a copy-paste checklist covering enqueue assertions, `perform_job/2`, and all return paths.
 
 - **Use `perform_job/2`** — not `perform/1`. `perform_job` validates args and simulates the Oban runtime.
 - **Use `assert_enqueued/1`** — verify jobs were enqueued with correct args.

@@ -15,7 +15,7 @@ description: 'Reviews Elixir/Phoenix pull requests, diffs, and merge requests fo
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:code-review
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -59,7 +59,7 @@ Also flag **FCIS violations** (see `docs/fcis-engineering-rules.md`). Classify b
 
 ## Core Process
 
-When **reviewing** Elixir/Phoenix code, analyze against the following areas. Detailed criteria are in [../../resources/elixir/skills/quality/code-review/assets/checklist.md](../../resources/elixir/skills/quality/code-review/assets/checklist.md). Ground every finding in a real changed file/line from the branch diff. If the task does not provide a diff or file contents, say that no concrete findings can be made yet and list the exact diff/files needed.
+When **reviewing** Elixir/Phoenix code, analyze against the following areas. Detailed criteria are in [../../resources/elixir/skills/code-review/assets/checklist.md](../../resources/elixir/skills/code-review/assets/checklist.md). Ground every finding in a real changed file/line from the branch diff. If the task does not provide a diff or file contents, say that no concrete findings can be made yet and list the exact diff/files needed.
 
 ### Review Order
 
@@ -123,7 +123,7 @@ Re-diff the branch after:
 
 ## Extended Resources
 
-- [../../resources/elixir/skills/quality/code-review/assets/checklist.md](../../resources/elixir/skills/quality/code-review/assets/checklist.md) — detailed per-area review criteria
+- [../../resources/elixir/skills/code-review/assets/checklist.md](../../resources/elixir/skills/code-review/assets/checklist.md) — detailed per-area review criteria
 
 ## Output Style
 

@@ -7,7 +7,7 @@ description: "Oban worker playbook with hard gates and scope checks: design idem
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:background-job
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:oban-essentials", "igmarin/elixir-phoenix-skills:testing-essentials",
     "igmarin/elixir-phoenix-skills:elixir-essentials", "igmarin/elixir-phoenix-skills:telemetry-essentials"]'
@@ -33,10 +33,10 @@ Adding or hardening Oban (or similar) background workers.
 
 | Skill | Path | Role |
 |-------|------|------|
-| `oban-essentials` | `skills/infrastructure/oban-essentials/` | Worker patterns |
-| `testing-essentials` | `skills/testing/testing-essentials/` | Oban.Testing |
-| `elixir-essentials` | `skills/elixir-core/elixir-essentials/` | FCIS |
-| `telemetry-essentials` | `skills/performance/telemetry-essentials/` | Metrics |
+| `oban-essentials` | `skills/oban-essentials/` | Worker patterns |
+| `testing-essentials` | `skills/testing-essentials/` | Oban.Testing |
+| `elixir-essentials` | `skills/elixir-essentials/` | FCIS |
+| `telemetry-essentials` | `skills/telemetry-essentials/` | Metrics |
 
 ## Flow
 

@@ -7,7 +7,7 @@ description: 'Use when sending emails from Phoenix applications. Invoke before i
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:swoosh-emails
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -64,7 +64,7 @@ MyApp.Mailer.deliver(Swoosh.Email.new(to: "test@example.com", from: "noreply@mya
 
 ## Defining Emails
 
-See [`../../resources/elixir/skills/integrations/swoosh-emails/assets/mailer_template.ex`](../../resources/elixir/skills/integrations/swoosh-emails/assets/mailer_template.ex) for a copy-paste template with the Mailer module, an email-builder module, and an Oban delivery worker.
+See [`../../resources/elixir/skills/swoosh-emails/assets/mailer_template.ex`](../../resources/elixir/skills/swoosh-emails/assets/mailer_template.ex) for a copy-paste template with the Mailer module, an email-builder module, and an Oban delivery worker.
 
 ### With Phoenix Components
 

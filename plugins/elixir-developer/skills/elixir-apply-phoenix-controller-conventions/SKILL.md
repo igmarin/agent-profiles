@@ -10,7 +10,7 @@ description: 'Use when writing new controller code in Phoenix applications. Enfo
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:apply-phoenix-controller-conventions
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---

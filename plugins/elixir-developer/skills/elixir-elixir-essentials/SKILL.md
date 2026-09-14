@@ -9,7 +9,7 @@ description: 'MANDATORY for ALL Elixir code changes. Invoke before writing any .
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:elixir-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -22,7 +22,7 @@ Use this skill before writing **any** `.ex` or `.exs` file.
 
 Canonical standard: [`docs/fcis-engineering-rules.md`](../../resources/elixir/docs/fcis-engineering-rules.md).
 
-**Quick reference:** [FCIS checklist](../../resources/elixir/skills/elixir-core/elixir-essentials/assets/fcis_checklist.md) — run before shipping `.ex` / `.exs` files.
+**Quick reference:** [FCIS checklist](../../resources/elixir/skills/elixir-essentials/assets/fcis_checklist.md) — run before shipping `.ex` / `.exs` files.
 
 ## Quick Reference
 
@@ -34,7 +34,7 @@ Canonical standard: [`docs/fcis-engineering-rules.md`](../../resources/elixir/do
 | Transforms | Linear pipes; named steps |
 | External input | Parse to struct/changeset at the edge |
 | Callbacks | `@impl true`; keep thin |
-| Checklist | [../../resources/elixir/skills/elixir-core/elixir-essentials/assets/fcis_checklist.md](../../resources/elixir/skills/elixir-core/elixir-essentials/assets/fcis_checklist.md) |
+| Checklist | [../../resources/elixir/skills/elixir-essentials/assets/fcis_checklist.md](../../resources/elixir/skills/elixir-essentials/assets/fcis_checklist.md) |
 
 
 ## RULES — Follow these with no exceptions

@@ -7,7 +7,7 @@ description: 'MANDATORY for ALL test files. Invoke before writing any _test.exs 
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:testing-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -62,12 +62,12 @@ Follow these steps in order, with explicit validation at each checkpoint:
 6. **Implement the feature**
 7. **Verify the test passes** — re-run `mix test path/to/file_test.exs` and confirm green
 
-See [`../../resources/elixir/skills/testing/testing-essentials/assets/tdd_checklist.md`](../../resources/elixir/skills/testing/testing-essentials/assets/tdd_checklist.md) for a copy-paste RED/GREEN/REFACTOR checklist and pre-commit quality gate.
+See [`../../resources/elixir/skills/testing-essentials/assets/tdd_checklist.md`](../../resources/elixir/skills/testing-essentials/assets/tdd_checklist.md) for a copy-paste RED/GREEN/REFACTOR checklist and pre-commit quality gate.
 
 
 ## Test Module Setup
 
-See [`../../resources/elixir/skills/testing/testing-essentials/assets/spec_templates.md`](../../resources/elixir/skills/testing/testing-essentials/assets/spec_templates.md) for copy-paste DataCase, ConnCase, LiveView, isolated-LiveView, and ChannelCase test templates.
+See [`../../resources/elixir/skills/testing-essentials/assets/spec_templates.md`](../../resources/elixir/skills/testing-essentials/assets/spec_templates.md) for copy-paste DataCase, ConnCase, LiveView, isolated-LiveView, and ChannelCase test templates.
 
 ### DataCase — for context and schema tests
 
@@ -247,7 +247,7 @@ assert Blog.list_published_posts() == [old_post]
 
 ## When Not to Use
 
-Do not invoke this skill for: pure-function unit tests with no DB/external side effects (use plain ExUnit), property-based testing (`property-based-testing` skill), benchmarking (`benchee-profiling` skill), Mox patterns for external services, or LiveView streams (`phoenix/liveview-streams` skill).
+Do not invoke this skill for: pure-function unit tests with no DB/external side effects (use plain ExUnit), property-based testing (`property-based-testing` skill), benchmarking (`benchee-profiling` skill), Mox patterns for external services, or LiveView streams (`liveview-streams` skill).
 
 
 ## Common Pitfalls

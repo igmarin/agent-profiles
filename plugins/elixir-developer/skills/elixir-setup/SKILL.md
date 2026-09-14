@@ -7,7 +7,7 @@ description: "Project setup loop with hard gates: verify Elixir/Erlang versions,
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:setup
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: workflow
   dependencies: '["igmarin/elixir-phoenix-skills:mix-tasks-generators", "igmarin/elixir-phoenix-skills:deployment-gotchas",
     "igmarin/elixir-phoenix-skills:testing-essentials"]'
@@ -32,9 +32,9 @@ New machine, new Phoenix app bootstrap, or repairing a broken local/CI environme
 
 | Skill | Path | Role |
 |-------|------|------|
-| `mix-tasks-generators` | `skills/tooling/mix-tasks-generators/` | Mix/generators |
-| `deployment-gotchas` | `skills/infrastructure/deployment-gotchas/` | Runtime config |
-| `testing-essentials` | `skills/testing/testing-essentials/` | Suite expectations |
+| `mix-tasks-generators` | `skills/mix-tasks-generators/` | Mix/generators |
+| `deployment-gotchas` | `skills/deployment-gotchas/` | Runtime config |
+| `testing-essentials` | `skills/testing-essentials/` | Suite expectations |
 
 ## Flow
 

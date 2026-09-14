@@ -8,7 +8,7 @@ description: 'Handles all Phoenix Channels work. Use when building socket authen
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:phoenix-channels-essentials
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -198,7 +198,7 @@ end
 
 ## Channel Testing
 
-Use `Phoenix.ChannelTest` to test socket connections, joins, and message handling. See [`../../resources/elixir/skills/phoenix/phoenix-channels-essentials/assets/channel_test_template.md`](../../resources/elixir/skills/phoenix/phoenix-channels-essentials/assets/channel_test_template.md) for a copy-paste template; the core cases are:
+Use `Phoenix.ChannelTest` to test socket connections, joins, and message handling. See [`../../resources/elixir/skills/phoenix-channels-essentials/assets/channel_test_template.md`](../../resources/elixir/skills/phoenix-channels-essentials/assets/channel_test_template.md) for a copy-paste template; the core cases are:
 
 ```elixir
 defmodule MyAppWeb.RoomChannelTest do

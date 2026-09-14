@@ -11,7 +11,7 @@ description: 'Use when responding to code review feedback on Elixir/Phoenix pull
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:respond-to-review
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---

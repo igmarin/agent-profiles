@@ -8,7 +8,7 @@ description: 'MANDATORY for ALL LiveView authentication work. Invoke before writ
 license: MIT
 metadata:
   source-id: igmarin/elixir-phoenix-skills:phoenix-liveview-auth
-  source-commit: c927acfc4b5d8042d0676a1be0d8e294e2fc8189
+  source-commit: d523d66ac8bb4fc35f9789c16f66f80e22f46943
   kind: atomic
   dependencies: '[]'
 ---
@@ -96,7 +96,7 @@ defmodule MyAppWeb.UserAuth do
 end
 ```
 
-See [`../../resources/elixir/skills/auth/phoenix-liveview-auth/assets/on_mount_template.ex`](../../resources/elixir/skills/auth/phoenix-liveview-auth/assets/on_mount_template.ex) for copy-paste `on_mount` templates (Phoenix 1.7 `current_user`, Phoenix 1.8+ `Scope`, and role-based variants).
+See [`../../resources/elixir/skills/phoenix-liveview-auth/assets/on_mount_template.ex`](../../resources/elixir/skills/phoenix-liveview-auth/assets/on_mount_template.ex) for copy-paste `on_mount` templates (Phoenix 1.7 `current_user`, Phoenix 1.8+ `Scope`, and role-based variants).
 
 
 ## Router Integration
