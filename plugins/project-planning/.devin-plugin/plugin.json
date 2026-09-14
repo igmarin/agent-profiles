@@ -1,0 +1,7 @@
+{
+  "name": "project-planning",
+  "version": "0.1.0",
+  "description": "Plan scope, prioritize work, assess delivery, and hand off accepted tasks.",
+  "license": "MIT",
+  "skills": "./skills"
+}

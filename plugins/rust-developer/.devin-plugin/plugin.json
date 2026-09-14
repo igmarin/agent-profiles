@@ -1,0 +1,7 @@
+{
+  "name": "rust-developer",
+  "version": "0.1.0",
+  "description": "Implement Rust changes with ownership, error handling, and verified behavior.",
+  "license": "MIT",
+  "skills": "./skills"
+}

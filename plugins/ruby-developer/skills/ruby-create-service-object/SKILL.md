@@ -1,0 +1,132 @@
+---
+name: ruby-create-service-object
+description: "Use when creating or refactoring Ruby service classes following the\
+  \ `def self.call(...)` \u2192 `new(...).call` entry point pattern with a strict\
+  \ `{ success: true/false, response: { ... } }` response contract. Handles error\
+  \ shape (`{ success: false, response: { error: { message: string } } }`), expected-error\
+  \ recovery with project logger integration, `UPPER_SNAKE_CASE` error constants,\
+  \ and mandatory module READMEs. Enforces test-first workflow: spec written and confirmed\
+  \ failing before implementation. Covers 4 core patterns (Standard, Batch, Static/Class-only,\
+  \ Orchestrator), `.call` \u2264 20 lines, and YARD documentation on `self.call`\
+  \ and `#call`. File layout: spec at `spec/services/[module]/[name]_spec.rb`, impl\
+  \ at `services/[module]/[name].rb`. Trigger words: service object, .call pattern,\
+  \ services, service module, response hash, success/response shape, YARD on self.call,\
+  \ service skeleton, module README, orchestrator."
+license: MIT
+metadata:
+  source-id: igmarin/ruby-core-skills:create-service-object
+  source-commit: d4d75dddae574942ebf9a56bb8d56cb699d8c4a6
+  kind: atomic
+  dependencies: '[]'
+---
+
+Resolve skill names through `../../skill-map.json`; use the source pack to disambiguate. Load only the workflow and resources needed for the authorized task.
+
+# Create Service Object
+
+Apply the [execution contract](../../resources/ruby/docs/agent-contract.md) before this procedure.
+
+## HARD-GATE
+
+```text
+TESTS GATE IMPLEMENTATION:
+EVERY service object MUST have its test written and validated BEFORE implementation.
+  1. Write the spec/test for .call (with contexts for success, error, edge cases)
+  2. Run the spec/test — verify it fails because the service does not exist yet
+  3. ONLY THEN write the service implementation
+The final artifact must include the test command and the failure message
+before implementation. If execution is unavailable, report the gate as blocked;
+expected output cannot substitute for an observed failure.
+See tdd-process for the full gate cycle.
+```
+
+## Core Process
+
+1. **Write Spec (Test-First):** Create the spec/test file at `spec/services/<module_name>/<service_name>_spec.rb` (or `test/services/`). Cover success and error paths for `.call`. Run it to confirm it fails (see HARD-GATE). Tests must assert `success:` and `response:` top-level keys and the meaningful payload shape.
+2. **Define Service Skeleton:** Create `services/<module_name>/<service_name>.rb` with the correct module namespace.
+3. **Select Pattern:** Choose Standard, Batch, Class-only (Pattern 3), or Orchestrator based on requirements. State whether instance state is required — if not, use Pattern 3 (no `initialize`, no instance variables).
+4. **Implement Contract:** Implement `self.call` and `#call`. Preserve the existing public result contract; for a new service without a convention, use `{ success: true, response: { ... } }` or `{ success: false, response: { error: { message: '...' } } }`. Keep `call` ≤ 20 lines; extract sub-services if longer. Validate inputs at top of `call`; return error hash if invalid. Return serialized data only — no raw persistence model objects (e.g. ActiveRecord, ROM) in `response`.
+5. **Handle Errors and Logging:** Rescue only expected domain or transport errors that this service can recover from. Convert them to the established error result, log once with the configured logger, and propagate unexpected defects so monitoring, transaction rollback, and job retries work. Keep sensitive exception details out of public messages.
+6. **Add YARD Documentation:** Add applicable `@param`, correctly typed `@return`, and escaping-exception `@raise` tags to `self.call` and every other public method. Document `self.call` separately from `#call`. For class-only services (Pattern 3), if the class returns a non-standard shape (e.g. `nil` / error string), document that explicitly in YARD and the README.
+7. **Write Module README:** Generate `services/<module_name>/README.md` explaining domain context. Required even for single-service modules.
+
+### Additional Constraints
+
+| Aspect | Rule |
+|--------|------|
+| Transactions | Only wrap multi-step database operations that must be atomic |
+| Scope | Return data only (no HTTP/UI concerns); single responsibility per service |
+| SQL | Use query sanitization for any dynamic queries |
+| Shared logic | Extract validators to class-only services (Pattern 3) |
+
+## Core Patterns
+
+### 1. The `.call` Pattern
+```ruby
+# DomainError is the project-defined recoverable business error.
+def self.call(params)
+  new(params).call
+end
+
+def call
+  # ... processing ...
+  { success: true, response: { data: result } }
+rescue DomainError => e
+  logger.error("Processing Error: #{e.message}")
+  logger.error(e.backtrace.join("\n"))
+  { success: false, response: { error: { message: ERROR_MESSAGE } } }
+end
+```
+
+### 2. Batch Processing + Per-Item Rescue (Partial Success)
+```ruby
+def call
+  results = @items.each_with_object({ successful: [], failed: [] }) do |item, acc|
+    # process...
+  rescue DomainError => e
+    logger.error("Unexpected item error: #{e.message}")
+    acc[:failed] << { sku: item[:sku], error: e.message }
+  end
+  { success: true, response: results }
+end
+```
+
+### 3. Class-only Services (Static Methods)
+When no instance state is needed, use ONLY class methods — no `initialize`, no instance variables. Suitable for validators, formatters, and argument-only helpers.
+
+```ruby
+class Orders::QuantityValidator
+  def self.call(quantity:)
+    return { success: false, response: { error: { message: INVALID_QUANTITY } } } unless quantity.positive?
+
+    { success: true, response: { valid: true } }
+  end
+end
+```
+
+### 4. Orchestrator Delegation (≤20-line `call`)
+```ruby
+def call
+  user_result = UserCreationService.call(@params)
+  return user_result unless user_result[:success]
+  # ... continue ...
+end
+```
+
+## Extended Resources (Progressive Disclosure)
+
+Load these files only when their specific content is needed:
+
+- **[../../resources/ruby/skills/create-service-object/assets/examples.md](../../resources/ruby/skills/create-service-object/assets/examples.md)** — Detailed examples of the 4 core patterns (Standard, Batch, Static, Orchestrator).
+- **[../../resources/ruby/skills/create-service-object/assets/service_skeleton.md](../../resources/ruby/skills/create-service-object/assets/service_skeleton.md)** — Basic starting skeleton.
+- **[assets/module_readme_template.md](../../resources/ruby/skills/create-service-object/assets/module_readme_template.md)** — Template for the mandatory module README.
+
+## Integration
+
+| Skill | When to chain |
+|-------|---------------|
+| **write-yard-docs** | Writing/reviewing inline docs |
+| **integrate-api-client** | External API integrations |
+| **implement-calculator-pattern** | Variant-based calculators |
+| **write-tests** | General testing structure |
+| **refactor-process** | Refactoring service objects |

@@ -1,0 +1,3279 @@
+[
+  {
+    "id": "igmarin/agnostic-planning-skills:create-prd",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/prd/create-prd/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/prd/create-prd/PRD_TEMPLATE.md",
+        "sha256": "716345cac991198589445d1f8919329486510655acd67704dc5a6f5eb6a60bb5"
+      },
+      {
+        "path": "skills/prd/create-prd/SKILL.md",
+        "sha256": "d93710b21987c4b9abe7e9d849a03ce004cc2aba3f102c1ad21b49e436bea6fe"
+      },
+      {
+        "path": "skills/prd/create-prd/assets/examples.md",
+        "sha256": "e8777753aa911fa714adec31b0dbf4e9772e128f83ca18ca6e85f27547af19a0"
+      },
+      {
+        "path": "skills/prd/create-prd/assets/prd_questions.md",
+        "sha256": "95c117cdfdf7833777f1d588d2cf73fe4dd435d0f98788cb93f0a617043c247e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:review-prd",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/prd/review-prd/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/prd/review-prd/SKILL.md",
+        "sha256": "65a82f7b36e68518a9c45aaa8246bbd84aa4123204e4defca3889d096b5b481f"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:generate-tasks",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/task-management/generate-tasks/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/task-management/generate-tasks/SKILL.md",
+        "sha256": "20dc0b6da8c219921551e33ddefad40a0efe2ce0b8d3f5b550416c8e6654ba4d"
+      },
+      {
+        "path": "skills/task-management/generate-tasks/TASK_TEMPLATES.md",
+        "sha256": "d42a7154b7d7b24609df1f3ff0ba09121684cf87dfbbc8870d6581a27f59a9f4"
+      },
+      {
+        "path": "skills/task-management/generate-tasks/TEST_COMMANDS.md",
+        "sha256": "a5abac83fda664a3f0b0a5175883f892524e3dba3fc544a2862bf42ba439c5ac"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:plan-tickets",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/task-management/plan-tickets/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/task-management/plan-tickets/EXAMPLES.md",
+        "sha256": "59a29c6e0c5f5754a51d46ccd721ca9115fcca8203322216a905f53588691025"
+      },
+      {
+        "path": "skills/task-management/plan-tickets/SKILL.md",
+        "sha256": "ec8a0b4e3140e25c7101e9c0d1b6b0540e4a406e5c203bb125d182c1c9bb0386"
+      },
+      {
+        "path": "skills/task-management/plan-tickets/assets/ticket-samples/sample_issue.md",
+        "sha256": "3eb6a72d8002941e057e16d5b086402b8782f2f671ca9335cb231c85d9a42f6f"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:estimate-tasks",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/task-management/estimate-tasks/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/task-management/estimate-tasks/SKILL.md",
+        "sha256": "fbf9c1a88bf350157dacf85c06274236464afb78c36d4d4437741c605de91c6e"
+      },
+      {
+        "path": "skills/task-management/estimate-tasks/assets/example-session.md",
+        "sha256": "ad94ea39b1400a25cd85abb4a3b1028d802b8ae2bca5f844bf6db126af71b87e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:prioritize-backlog",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/backlog/prioritize-backlog/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/backlog/prioritize-backlog/SKILL.md",
+        "sha256": "72f1c6b186842c6859bdf6bd2470885d8f52473e34ca129ea40997c66efcd9fa"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:plan-sprint",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/ceremony/plan-sprint/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/ceremony/plan-sprint/SKILL.md",
+        "sha256": "b9b270e8868d328a0f5fa0c03905684889faea810a71389166dc00b2fa789014"
+      },
+      {
+        "path": "skills/ceremony/plan-sprint/assets/example-sprint-plan.md",
+        "sha256": "a0d7b0411a2b182bcee776bad33c990f9eb0f448f81129896fa0429e4c8d2343"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:create-retrospective",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/ceremony/create-retrospective/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/ceremony/create-retrospective/RETROSPECTIVE_TEMPLATE.md",
+        "sha256": "e1188237e67b76c226fd231346481a58b0f3490b6eec2ed2d370a0c67918508b"
+      },
+      {
+        "path": "skills/ceremony/create-retrospective/SKILL.md",
+        "sha256": "9a9e1ed79b12effcb53aa7c775b2d7910ff5199386eb08fe529fdb9fc6882066"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:generate-status-report",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/execution/generate-status-report/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/execution/generate-status-report/SKILL.md",
+        "sha256": "cde3b3b65eb8075e52c42203c6875a57420faa499849dbfb1867532dab45e328"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:identify-risks",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/execution/identify-risks/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/execution/identify-risks/SKILL.md",
+        "sha256": "e4233d846e0d28abfbf11a113522128588a4824c0dfb2b2b6cefe1784ce4417e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:requirements-clarifier",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/analysis/requirements-clarifier/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/analysis/requirements-clarifier/SKILL.md",
+        "sha256": "172e209f578dd17acb3d3a2856a19fd8ebc0f2f9154ae10ea3804c3014ab42a1"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:github-issue",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/github-issues/github-issue/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/github-issues/github-issue/SKILL.md",
+        "sha256": "4f8395f122e918ecb4d10d052c6cbbbaaf6881ca9abfe735e5da6eccf6219849"
+      },
+      {
+        "path": "skills/github-issues/github-issue/references/gh-commands.md",
+        "sha256": "755a3d770af39faeec8388af2623a57bebc89b125db36962aa4f46beb0365d93"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:product-owner",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/personas/product-owner/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/personas/product-owner/SKILL.md",
+        "sha256": "ab0515e9e9eed453a2d1d77776d8f76842832bfc8ec9b3bf1f0baf94ce5063bd"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "role",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets"
+    ],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:project-manager",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/personas/project-manager/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/personas/project-manager/SKILL.md",
+        "sha256": "d82a487d8be1917a09f17f863665e9e2c3a33c461406c4f83cff6491426e9833"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "role",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report"
+    ],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:tech-lead",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/personas/tech-lead/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/personas/tech-lead/SKILL.md",
+        "sha256": "99da077bdb4af4637d45125b42ea5366564b4690f0b1431a11b4e4105438c5fd"
+      },
+      {
+        "path": "skills/personas/tech-lead/assets/example-risk-report.md",
+        "sha256": "9b8f348bd2bb1c4e1e924ff0b00297a9e7fc54060fe20ff5b1f8193d699f3f42"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "role",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:estimate-tasks"
+    ],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/agnostic-planning-skills:delivery-lead",
+    "owner": "igmarin/agnostic-planning-skills",
+    "source_path": "skills/personas/delivery-lead/SKILL.md",
+    "baseline_commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "resources": [
+      {
+        "path": "skills/personas/delivery-lead/SKILL.md",
+        "sha256": "5917856e5279963850707080c4c3f7c70307f2d9743df29b5e05aff1350c7442"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "role",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets",
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report",
+      "igmarin/agnostic-planning-skills:prioritize-backlog",
+      "igmarin/agnostic-planning-skills:plan-sprint",
+      "igmarin/agnostic-planning-skills:create-retrospective"
+    ],
+    "current_commit": "ae074f9c8718013a6b2c618b3856e6914986b775"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:elixir-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/elixir-core/elixir-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/elixir-core/elixir-essentials/SKILL.md",
+        "sha256": "228b416422f83b410280416fe51a65bfd4dea575f7b28539e8318bed0973ae20"
+      },
+      {
+        "path": "skills/elixir-core/elixir-essentials/assets/fcis_checklist.md",
+        "sha256": "00fc9086e59c1b41ad4526e4a4455e44f38408629f394344e9940545584db4af"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:otp-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/elixir-core/otp-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/elixir-core/otp-essentials/SKILL.md",
+        "sha256": "7dfcf8b5fa0842f3cad4c0d673dba42bc209f963850a2976b92caa75aadd602a"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:typespec-dialyzer",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/elixir-core/typespec-dialyzer/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/elixir-core/typespec-dialyzer/SKILL.md",
+        "sha256": "517746908ee6e54faf79e2e128b33ed8909820de0ff19e05976eeca73ea8f0bd"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-liveview-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/phoenix-liveview-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/phoenix-liveview-essentials/SKILL.md",
+        "sha256": "de96c06a877ef3f719c082e2b918b33e5d2a2619872d274e58dd603ac0fcd300"
+      },
+      {
+        "path": "skills/phoenix/phoenix-liveview-essentials/assets/component_test_template.md",
+        "sha256": "c048149946fc450b0a5b260bd385116427d0cc3aac7be490f0ea6a5d6aa84370"
+      },
+      {
+        "path": "skills/phoenix/phoenix-liveview-essentials/assets/liveview_test_template.md",
+        "sha256": "27fc9430d2a72bd7b44d40d52d1fbf40d4252422f999933b36c32248b60eae89"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-scopes",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/auth/phoenix-scopes/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/auth/phoenix-scopes/SKILL.md",
+        "sha256": "7c2d6feb8a45e5308aeddb1f7ffb0ffd957f4e59045a6625c1a9a03938769195"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:liveview-streams",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/liveview-streams/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/liveview-streams/SKILL.md",
+        "sha256": "ece361adcd0407bb6757076708ae66efec9b38bc5fed899949056218f033538e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-channels-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/phoenix-channels-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/phoenix-channels-essentials/SKILL.md",
+        "sha256": "e262ae7621ab333070499b328abbb47c04f29e85941a8c2946c2bc4d85818671"
+      },
+      {
+        "path": "skills/phoenix/phoenix-channels-essentials/assets/channel_test_template.md",
+        "sha256": "0580da888a511b64f2f6ca59819c3dc9c161aac70b61d730ae3a9aefb3dd4656"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-json-api",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/phoenix-json-api/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/phoenix-json-api/SKILL.md",
+        "sha256": "9bcd3b83238a2165dd5f54b85e17b8d9890962e2c878d2808caeee780ed8ec71"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-pubsub-patterns",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/phoenix-pubsub-patterns/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/phoenix-pubsub-patterns/SKILL.md",
+        "sha256": "d9dfdd60a8650726eefc08ca36ad17049716c21420bac1e7c273b6e414fae0a3"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-uploads",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/phoenix-uploads/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/phoenix-uploads/SKILL.md",
+        "sha256": "d852dca5da68211bae43abf761fe677aecf3b537ab54122f82a97a8590acbfbf"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:ecto-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/database/ecto-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/database/ecto-essentials/SKILL.md",
+        "sha256": "2e7941fbc6f2c077b994290a99f33d1449e644797863f8792b3a1156c4a19c2c"
+      },
+      {
+        "path": "skills/database/ecto-essentials/assets/changeset_snippets.ex",
+        "sha256": "38b006150e14104a7785353439dc81e4fa3b2b483fcd1d7a2f5c74119acd01f1"
+      },
+      {
+        "path": "skills/database/ecto-essentials/assets/migration_checklist.md",
+        "sha256": "070b00ca52ee318f2434058203049fae64d574421d8e4cac161cc5f1d673e9f9"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:ecto-changeset-patterns",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/database/ecto-changeset-patterns/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/database/ecto-changeset-patterns/SKILL.md",
+        "sha256": "ad590221579804fb40bda39ad6bff9a60d4402bcb104e8f66cfbf5711808eece"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:ecto-nested-associations",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/database/ecto-nested-associations/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/database/ecto-nested-associations/SKILL.md",
+        "sha256": "f8ab1ba1e3768baabf7a0dc7d4ac4a7d1b0ee36fce678d0b57729f05cac13c21"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:testing-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/testing/testing-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/testing/testing-essentials/SKILL.md",
+        "sha256": "8ce5467cd473703706bc45b39bbc34c6c6ae389f7ed9dad27cf9e43fd0d0bb26"
+      },
+      {
+        "path": "skills/testing/testing-essentials/assets/spec_templates.md",
+        "sha256": "c766c013e3cf3427c28c7e7f70a2f65b900172bd2c05e666058a7aae9eb0cffd"
+      },
+      {
+        "path": "skills/testing/testing-essentials/assets/tdd_checklist.md",
+        "sha256": "b0a04af32debfc2010b17badc4a5b6c5db3c44b9584d434b2bb412f05bace054"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:property-based-testing",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/testing/property-based-testing/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/testing/property-based-testing/SKILL.md",
+        "sha256": "860b3cd1a8ee6d6226b6539e036a76d3f507075308fa0487ceab80e509457d21"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:benchee-profiling",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/performance/benchee-profiling/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/performance/benchee-profiling/SKILL.md",
+        "sha256": "c257e1cc823f0d12d8c812f9d8ababb1a6f71da5f5b6dfd1bd521f7458366c4e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-liveview-auth",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/auth/phoenix-liveview-auth/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/auth/phoenix-liveview-auth/SKILL.md",
+        "sha256": "019adc1a68089855c29eee6c290eba20a82ab71e6874bbb2f179227ec9338102"
+      },
+      {
+        "path": "skills/auth/phoenix-liveview-auth/assets/on_mount_template.ex",
+        "sha256": "50b85b75b64686354c88a4d60e014117ec7daaa1775877ddb83ba6b0d9a44cb5"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-auth-customization",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/auth/phoenix-auth-customization/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/auth/phoenix-auth-customization/SKILL.md",
+        "sha256": "f0f73df50d30f35aefd557ca5e31e11f43d29a89dd4310b87e92f2d09bbe5634"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:phoenix-authorization-patterns",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/auth/phoenix-authorization-patterns/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/auth/phoenix-authorization-patterns/SKILL.md",
+        "sha256": "8750f5a4ab1440ba117d17eba7f2ace7cd9a5fbfea179f88bf2f156530043525"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:oban-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/infrastructure/oban-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/infrastructure/oban-essentials/SKILL.md",
+        "sha256": "08a94c987953c61b93dc2779da3467a2f00c64edf0ff0b40fb5aea3839c1f599"
+      },
+      {
+        "path": "skills/infrastructure/oban-essentials/assets/oban_job_template.ex",
+        "sha256": "f78353563713b92ea19d9e3616f2bca0a424436c5ba48c3a178d60d8b1266166"
+      },
+      {
+        "path": "skills/infrastructure/oban-essentials/assets/oban_testing_checklist.md",
+        "sha256": "402c6d49433a5cbce49d5fbe7bfd50f971762d5a77e77f3796b5989792d1819e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:broadway-data-pipelines",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/infrastructure/broadway-data-pipelines/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/infrastructure/broadway-data-pipelines/SKILL.md",
+        "sha256": "3be270c9f98eea311ef97da73e0182d548334c0adc235ed25624264cc3b4e907"
+      },
+      {
+        "path": "skills/infrastructure/broadway-data-pipelines/assets/broadway_pipeline_template.ex",
+        "sha256": "e09d1ce9fd115facf9373968c9a2d63587c93741675a2bfd727b935380b4c331"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:deployment-gotchas",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/infrastructure/deployment-gotchas/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/infrastructure/deployment-gotchas/SKILL.md",
+        "sha256": "9ddce077e1dd8ea33399c461c219fb2e28803c6a571143aaffd2c1bee9810666"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:telemetry-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/performance/telemetry-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/performance/telemetry-essentials/SKILL.md",
+        "sha256": "36c02acc2163c77b8573338fb3ca49eba724a560c9520522dbead53de07cd2b9"
+      },
+      {
+        "path": "skills/performance/telemetry-essentials/assets/telemetry_handler_snippets.ex",
+        "sha256": "20e4eac77b15dde767ec0891e9383c7a231085906366cb15ae6477ddf53f0ec4"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:cachex-caching",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/infrastructure/cachex-caching/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/infrastructure/cachex-caching/SKILL.md",
+        "sha256": "193e36928de0d2291fae999a19eef8dbaffef475913c9c6a0c1f443dedcab76e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:code-quality",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/quality/code-quality/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/quality/code-quality/SKILL.md",
+        "sha256": "ce1cbf079023b79e534053cc5d0a79efa6fc411383786d6af804e7535fc477a1"
+      },
+      {
+        "path": "skills/quality/code-quality/assets/refactoring_checklist.md",
+        "sha256": "e808c7684ab03c2ddd9a6623751c60eebe3e4bbe7d34be2dc972e33bd071912c"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:credo-config",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/quality/credo-config/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/quality/credo-config/SKILL.md",
+        "sha256": "3bbbc8d54c4ff4affb6daa0e5bc6ee234cd61fbaf12323880d5f1242bf7a7ac3"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:apply-phoenix-liveview-conventions",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/apply-phoenix-liveview-conventions/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/apply-phoenix-liveview-conventions/SKILL.md",
+        "sha256": "fc69f22c992df980f5d6308fde7ad62d6cae4dbd06ee49b81be9265736aa89f5"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:apply-phoenix-controller-conventions",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/phoenix/apply-phoenix-controller-conventions/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/phoenix/apply-phoenix-controller-conventions/SKILL.md",
+        "sha256": "d59c9ee83b8159aadf61ab7cdf24f77eab76f6fd5717d3526308cd0ed944acd4"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:code-review",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/quality/code-review/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/quality/code-review/SKILL.md",
+        "sha256": "fbcb01c7bc5d197c1469b959c736a16e0d5491055469d8c1eb47ae5f24bcf3fd"
+      },
+      {
+        "path": "skills/quality/code-review/assets/checklist.md",
+        "sha256": "b9c60ab052f25b090b51651013429f1b2688fdde87909057b170105d52e17753"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:refactor-code",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/quality/refactor-code/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/quality/refactor-code/SKILL.md",
+        "sha256": "247d6b7bc6dd801b4cccec32e8f5e63d89dcfe2aeb690b3e04f9ddd4571780ab"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:respond-to-review",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/quality/respond-to-review/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/quality/respond-to-review/SKILL.md",
+        "sha256": "a5df3b5665d7b4f979c3c27895db04ee9eedc59e85fd8bfa7c41c3d304950838"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:apply-ecto-conventions",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/database/apply-ecto-conventions/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/database/apply-ecto-conventions/SKILL.md",
+        "sha256": "49afba0cae1ca73331574e3878c9a0f3e724c4999356516c55537e848c2fbfc7"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:security-essentials",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/security/security-essentials/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/security/security-essentials/SKILL.md",
+        "sha256": "044f1c8590e4fafd64bbd880fdc914ae37b1f728678aa3ac8c81ccda8b048f7f"
+      },
+      {
+        "path": "skills/security/security-essentials/assets/security_checklist.md",
+        "sha256": "bf6cc73580fd1276f9370323a3b775daa364ecedf86b0965ec0c8eed29cf524c"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:req-http-client",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/integrations/req-http-client/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/integrations/req-http-client/SKILL.md",
+        "sha256": "a032d69a539a6864c2d9b35d8ab181bb45a2cb5a1a7b148d6fbdef664801db76"
+      },
+      {
+        "path": "skills/integrations/req-http-client/assets/req_client_snippets.ex",
+        "sha256": "4cabe4aab2d4aa8b941361a1c440529c5bf540cd105fc2474d84cc0b70697cf4"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:swoosh-emails",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/integrations/swoosh-emails/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/integrations/swoosh-emails/SKILL.md",
+        "sha256": "ff251e0e6f8e549ed7c97ccc584a70f694a0dd0f33a9a68adf77642fc4264c02"
+      },
+      {
+        "path": "skills/integrations/swoosh-emails/assets/mailer_template.ex",
+        "sha256": "cc4921f87826f28fe730f1e776b886e0c81e603a9f842413fa1aee5eac4d657d"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:gettext-i18n",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/integrations/gettext-i18n/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/integrations/gettext-i18n/SKILL.md",
+        "sha256": "97cc9544c4c3649487feaff65ebe3ab0d37347e7b45de6ce3b079c071d87a8d7"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:mix-tasks-generators",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/tooling/mix-tasks-generators/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/tooling/mix-tasks-generators/SKILL.md",
+        "sha256": "ce05cbf3e71eb2511893ce6d87b6085e264e27b6d3a48d6ac99aef1021bfe480"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:ash-framework",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/frameworks/ash-framework/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/frameworks/ash-framework/SKILL.md",
+        "sha256": "09a2c200b7280fa59e6c5495a0f84bdd4667b1c50edd3fac8ac79ccb9a48b017"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:elixir-skill-router",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/orchestration/elixir-skill-router/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/orchestration/elixir-skill-router/SKILL.md",
+        "sha256": "5efba898c9802334b75dbbe3f791e6dc414986e5beb0d2c06ef1a0b8edcc2c22"
+      },
+      {
+        "path": "skills/orchestration/elixir-skill-router/assets/skill-map.json",
+        "sha256": "30594be0ceee56e37b393d214b94c6aa5ac277cef4c4a1abf89761b45698e8cf"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "router",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:tdd",
+      "igmarin/elixir-phoenix-skills:bug-fix",
+      "igmarin/elixir-phoenix-skills:quality",
+      "igmarin/elixir-phoenix-skills:code-review-playbook",
+      "igmarin/elixir-phoenix-skills:setup",
+      "igmarin/elixir-phoenix-skills:liveview",
+      "igmarin/elixir-phoenix-skills:background-job",
+      "igmarin/elixir-phoenix-skills:ecto-migration",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:phoenix-liveview-essentials",
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:ecto-essentials",
+      "igmarin/elixir-phoenix-skills:code-review",
+      "igmarin/elixir-phoenix-skills:code-quality",
+      "igmarin/elixir-phoenix-skills:credo-config",
+      "igmarin/elixir-phoenix-skills:oban-essentials"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:tdd",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/tdd/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/tdd/SKILL.md",
+        "sha256": "70467890d1c76df0ed12bd38b313dff6d1eeb4744fd0574c93fb1fc9bca4898d"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:typespec-dialyzer"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:quality",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/quality/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/quality/SKILL.md",
+        "sha256": "7339da6c6c2b21be8326102bc15604d45955af7ce796e8dda1614c5308100c9a"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:code-quality",
+      "igmarin/elixir-phoenix-skills:credo-config",
+      "igmarin/elixir-phoenix-skills:refactor-code",
+      "igmarin/elixir-phoenix-skills:typespec-dialyzer"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:setup",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/setup/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/setup/SKILL.md",
+        "sha256": "bc64572cfa035b16e606688cee517329d85a9edd2be018d9a3ccbfd6566af0bc"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:mix-tasks-generators",
+      "igmarin/elixir-phoenix-skills:deployment-gotchas",
+      "igmarin/elixir-phoenix-skills:testing-essentials"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:bug-fix",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/bug-fix/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/bug-fix/SKILL.md",
+        "sha256": "d108ea29c3e038418fe62fb568eccefaa1600f1581b57ad9cdbedcdba959a6bd"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:background-job",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/background-job/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/background-job/SKILL.md",
+        "sha256": "527305b34501fc6a1de3dae81e94a3b638b2637e4e6743cdf387f30a05a97044"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:oban-essentials",
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:telemetry-essentials"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:liveview",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/liveview/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/liveview/SKILL.md",
+        "sha256": "86528980d023f02d4086521ff5412ca2c00895971902614aa8f1346d2597cdee"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:phoenix-liveview-essentials",
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:apply-phoenix-liveview-conventions"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:ecto-migration",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/ecto-migration/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/ecto-migration/SKILL.md",
+        "sha256": "78082c0c87d5676ef484c4199eef60fba35eef9bea33b901947378afe3a2d872"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:ecto-essentials",
+      "igmarin/elixir-phoenix-skills:apply-ecto-conventions"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/elixir-phoenix-skills:code-review-playbook",
+    "owner": "igmarin/elixir-phoenix-skills",
+    "source_path": "skills/playbooks/code-review/SKILL.md",
+    "baseline_commit": "347227d702109f76782e52165da39e71421360f6",
+    "resources": [
+      {
+        "path": "skills/playbooks/code-review/SKILL.md",
+        "sha256": "b3a260cbb4fbe38fe741d64a5000695f133fa69f6cb1dabde292f1277f763180"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:code-review",
+      "igmarin/elixir-phoenix-skills:security-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials"
+    ],
+    "current_commit": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:write-yard-docs",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/write-yard-docs/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/write-yard-docs/ADVANCED_TAGS.md",
+        "sha256": "7297f9a41aebbb4d0c5cdf8cfd61561687c19f1997f46216533d8c3854b1ae23"
+      },
+      {
+        "path": "skills/write-yard-docs/EXAMPLES.md",
+        "sha256": "4f017701230d5f3416de0713dca13b296810be6baae7effa74c612dcb6771936"
+      },
+      {
+        "path": "skills/write-yard-docs/SKILL.md",
+        "sha256": "69a9c6d09b4fb0d8d2a8e768e563281508713b60cee51a2fe512ddffd891dc23"
+      },
+      {
+        "path": "skills/write-yard-docs/references/tagged-notes.md",
+        "sha256": "756065f9cfd294a03a1f5d71ceeccea98a90df76284d6b6fd440b6e4b7ce175a"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:create-service-object",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/create-service-object/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/create-service-object/SKILL.md",
+        "sha256": "c76ae5e3e27e4788cb96ea826032f8d2c025fd144c21d85a3c52c7ad41f2c312"
+      },
+      {
+        "path": "skills/create-service-object/assets/examples.md",
+        "sha256": "977cf1456e77120ef20272bb9f32b073a9934af78a5223d5f1880fc714fb2490"
+      },
+      {
+        "path": "skills/create-service-object/assets/module_readme_template.md",
+        "sha256": "4b99fe8e2eeef831ad8629b29767ec9b9c343b310e91f5b536746d41179acb0a"
+      },
+      {
+        "path": "skills/create-service-object/assets/service_skeleton.md",
+        "sha256": "fc6167f9e8f8f69bcae552c94e69a6c6df06dc77818d0394c6417087167e5f80"
+      },
+      {
+        "path": "skills/create-service-object/assets/template.rb",
+        "sha256": "e2323441723c4a15f1103eb7f6dffbfb041852e1e787293e47042f6225d42402"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:implement-calculator-pattern",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/implement-calculator-pattern/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/implement-calculator-pattern/IMPLEMENTATION.md",
+        "sha256": "4aaeea9677bd37fd30778e5473e44f4c56e81cc49c008048f0996a1456fa4da9"
+      },
+      {
+        "path": "skills/implement-calculator-pattern/SKILL.md",
+        "sha256": "0fa5f1bacbdc51634d17ce3bf1c3e9934fc4ef96cc0db8574c81a15cf0ba7f49"
+      },
+      {
+        "path": "skills/implement-calculator-pattern/TESTING.md",
+        "sha256": "18e27eceeb05264ed6a691d70745299783b1cb0ada047fdcee10f730382f8334"
+      },
+      {
+        "path": "skills/implement-calculator-pattern/assets/examples.md",
+        "sha256": "85e1560ff7c4f294e10467ecfe420a3ca68b5eb139d2a41299af6e7b506302a8"
+      },
+      {
+        "path": "skills/implement-calculator-pattern/assets/service-map.json",
+        "sha256": "610f127d9a92c9b334b421d9d8e1cce9a9659630a7f99a599e2a616d1c92b280"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:integrate-api-client",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/integrate-api-client/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/integrate-api-client/LAYERS.md",
+        "sha256": "a20c1e121e17288225c9a9acc112b6946d3e849b4ba1a7897ba3d5866b72387f"
+      },
+      {
+        "path": "skills/integrate-api-client/SKILL.md",
+        "sha256": "74f84a172bcad2302d7ce8c779d1334a89d334f6620406ca553bd35ad8779f2b"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:define-domain-language",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/define-domain-language/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/define-domain-language/EXAMPLES.md",
+        "sha256": "2ebba5bc5116358a5b9a0e8363b8ff918f00803fc175264428b7baae13c2e051"
+      },
+      {
+        "path": "skills/define-domain-language/SKILL.md",
+        "sha256": "4ea03d3d4b8dd46cb6b6937b7db25fd27bd8bb83c52d9cef5d65ede2e63b3943"
+      },
+      {
+        "path": "skills/define-domain-language/assets/examples.md",
+        "sha256": "87f8d5df6349d6dec6596e0378704ca016cf39830621c3226df336006d32e55e"
+      },
+      {
+        "path": "skills/define-domain-language/assets/glossary_schema.json",
+        "sha256": "bb75362cc30b8cba94f41fe7eae7c2a80ff65e64b48f4480bd6f22d4d430f95e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:review-domain-boundaries",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/review-domain-boundaries/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/review-domain-boundaries/EXAMPLES.md",
+        "sha256": "4ae97e502c81a967706e50dca8840c13879f93510b281de0589e5bd7c5317872"
+      },
+      {
+        "path": "skills/review-domain-boundaries/SKILL.md",
+        "sha256": "03df43bedbc3539655103f133b8666a656853304c5dde4d650148654e97e47b3"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:model-domain",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/model-domain/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/model-domain/SKILL.md",
+        "sha256": "6db3edd79a884d82975c34d587f32f4b64b709af3e2d6209cb1ac05036eb8b96"
+      },
+      {
+        "path": "skills/model-domain/assets/examples.md",
+        "sha256": "e7603fd1606de9a2c0cba73f240835f5943dd498ccb9f482a7ddde9bd4d7f19b"
+      },
+      {
+        "path": "skills/model-domain/assets/mapping_schema.json",
+        "sha256": "abf98e4caa699c60be8c806beaffd2e652cdf5e38cb301247a2af0caa24726a5"
+      },
+      {
+        "path": "skills/model-domain/assets/modeling_template.md",
+        "sha256": "f977d5e1f039caedae0ffd433a99f1847f561c1208a6b049d2a01f359c331315"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:triage-bug",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/triage-bug/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/triage-bug/BOUNDARY_GUIDE.md",
+        "sha256": "b6af88c6d0f674f62a0f2c9ee569f7aa56061da0b240bc0d5e8b0cbb9b7ac316"
+      },
+      {
+        "path": "skills/triage-bug/SKILL.md",
+        "sha256": "be038468b15952d0e20458dc6afa0244a35023acfd50efcf446ca61abd5985cf"
+      },
+      {
+        "path": "skills/triage-bug/assets/examples.md",
+        "sha256": "9b7f41062a7a6790be2d945f049c1c1331e10dd3c9418069216991d21511a2b2"
+      },
+      {
+        "path": "skills/triage-bug/assets/spec-skeletons/reproduction_spec.rb",
+        "sha256": "d799ef72aa2f8101199716c5977150209a2fc23962097e6bb9364559f645e9da"
+      },
+      {
+        "path": "skills/triage-bug/assets/triage_schema.json",
+        "sha256": "7a12285b2633cc5e6544c765d99efa8612e80992c32580c6a18e5320fbb35979"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:respond-to-review",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/respond-to-review/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/respond-to-review/SKILL.md",
+        "sha256": "e17ed42d8fd4234a1f08fda0d992520278cb15b16a96fddf0ff709afd83e873e"
+      },
+      {
+        "path": "skills/respond-to-review/assets/response_templates.md",
+        "sha256": "30307a954978f1baee702a97e509b2ffe11b7b050000111072d1077c88bc96f3"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:skill-router",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/skill-router/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/skill-router/SKILL.md",
+        "sha256": "988cb35a130d12ae6594bb0cfc67dea8e13a542de743fcb806992ad89d0ccdd1"
+      },
+      {
+        "path": "skills/skill-router/assets/examples.md",
+        "sha256": "17fd483c4fcd052371c1f6fa102ca6c8166016024cdf6a80cad8c49ba6df3673"
+      },
+      {
+        "path": "skills/skill-router/assets/skill-map.json",
+        "sha256": "031013e4886299c36a0c43f66b8c62913fce2a76386ec1d574877b2e1e866640"
+      },
+      {
+        "path": "skills/skill-router/assets/workflows.md",
+        "sha256": "68d4348baf3522d09cccfffd965b163905d8c141e75acc7813944b7f2af9fa54"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:tdd-process",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/tdd-process/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/tdd-process/SKILL.md",
+        "sha256": "2e5625ec44c71fad73a9e6689be42a640f391d917993e3a9d40b9e857ab69b94"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:refactor-process",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/refactor-process/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/refactor-process/SKILL.md",
+        "sha256": "a28eb9867bd06f39a8604643b3b0e7b1b48378c20321466e9e4035552e162ee1"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:review-process",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/review-process/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/review-process/SKILL.md",
+        "sha256": "de3f0fe78f39f6f0dd58e87b3db0371717002df5001a9bf9a7080950106f60e5"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:security-review-process",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/security-review-process/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/security-review-process/SKILL.md",
+        "sha256": "921dd4547cef8870210370e80c2a797dfec6e4aef3939d017fe648bfedc73471"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:test-planning-process",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/test-planning-process/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/test-planning-process/SKILL.md",
+        "sha256": "fdb551b069de3e87ddec511f1122b7b5c9342cbe51b50e3e428c66c2b48a5862"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/ruby-core-skills:generate-tdd-tasks",
+    "owner": "igmarin/ruby-core-skills",
+    "source_path": "skills/generate-tdd-tasks/SKILL.md",
+    "baseline_commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "resources": [
+      {
+        "path": "skills/generate-tdd-tasks/SKILL.md",
+        "sha256": "ea4103a91919859de6384dd92807910a3c6dc83b42efa259a9a784fbba705007"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:generate-api-collection",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/api/generate-api-collection/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/api/generate-api-collection/EXAMPLES.md",
+        "sha256": "d2d9aa675381b7deff7543e1dc190c822fb9eff6a02b2529e62e2df47d38806b"
+      },
+      {
+        "path": "skills/api/generate-api-collection/SKILL.md",
+        "sha256": "d6fdde1901052dd6feed72e8403e5e5cb0fc96224b3cb0e56b7547466b75c510"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:implement-graphql",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/api/implement-graphql/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/api/implement-graphql/EXAMPLES.md",
+        "sha256": "cf888d37b03cabee0e24a20fb0be1a55f3654319868c962ffdc54e66877b9d33"
+      },
+      {
+        "path": "skills/api/implement-graphql/SKILL.md",
+        "sha256": "12a6ce3e9a84c3b5182cac408b011f89de0b284d2de42f1dcd82182e8ee73774"
+      },
+      {
+        "path": "skills/api/implement-graphql/TESTING.md",
+        "sha256": "a6ac099b644100ac2602be15bc93ca63d2d67a75c75192ef0a9587351de7e628"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:apply-code-conventions",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/apply-code-conventions/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/apply-code-conventions/SKILL.md",
+        "sha256": "d24b5d23bab6fcebb5fd148b2d3cc94f6ae7fd52dee4808b601505fe4b41fa73"
+      },
+      {
+        "path": "skills/code-quality/apply-code-conventions/assets/checklist.md",
+        "sha256": "cb84b86c224c88e26bc2e5e7384c29d3445dd31c6b0dc8371d057eaffed1eabf"
+      },
+      {
+        "path": "skills/code-quality/apply-code-conventions/assets/snippets.md",
+        "sha256": "d18bcdf8426c3c9063cb67f83ce796dcf081edda71c2b69c7d464e004f326bf0"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:apply-stack-conventions",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/apply-stack-conventions/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/apply-stack-conventions/SKILL.md",
+        "sha256": "99552a07cdca2c94f87694f935b20ea0107d57271cffa00e7f7890d80b213a16"
+      },
+      {
+        "path": "skills/code-quality/apply-stack-conventions/assets/snippets/eager_loading.rb",
+        "sha256": "e00172b5a27ed5dd849eb2f5f4fa20f2a13e2e1fe19742e3179bc662bd48b41c"
+      },
+      {
+        "path": "skills/code-quality/apply-stack-conventions/assets/snippets/n_plus_one_fix_example.rb",
+        "sha256": "e9c7de4d838b087d8c907ac3efcc8d09094e4cd7d65ee0ad9264f1cf9effad5a"
+      },
+      {
+        "path": "skills/code-quality/apply-stack-conventions/assets/snippets/service_object.rb",
+        "sha256": "63604aa68e1c462f10ea1a7041c34b40985d1d6d87267cc99fb05a1d7be5b071"
+      },
+      {
+        "path": "skills/code-quality/apply-stack-conventions/assets/snippets/stimulus_controller.js",
+        "sha256": "1851bb33bf433824625b87cb5587de9e49c3ddd90a2c8ea1810dc44b5487834e"
+      },
+      {
+        "path": "skills/code-quality/apply-stack-conventions/assets/snippets/tailwind_component.html.erb",
+        "sha256": "5c8e5fb036859849178b38642c70f7c2147c0cbb7a01f6f415b0364eb16d92f5"
+      },
+      {
+        "path": "skills/code-quality/apply-stack-conventions/assets/snippets/turbo_frame.html.erb",
+        "sha256": "5f7cbbc810266f8fc30575f33b7c78530969d79778ce8cd55c469f35df21a3b2"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:code-review",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/code-review/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/code-review/REVIEW_CHECKLIST.md",
+        "sha256": "6c10b541c8095d9cc7d68af0b6ae57e3435f4d21f811ce6b7a0bf7a32d3bc364"
+      },
+      {
+        "path": "skills/code-quality/code-review/SKILL.md",
+        "sha256": "1f1a09d6a158c76c83e67f9442c795b94452285e4ecc8c13025d812f80c6b41d"
+      },
+      {
+        "path": "skills/code-quality/code-review/assets/checklist.md",
+        "sha256": "195195a708b042517856cfa8b762f2361b81de2718467ab067a3db59484c302f"
+      },
+      {
+        "path": "skills/code-quality/code-review/assets/examples.md",
+        "sha256": "6a2e809a386c5e7e7bd88d0d33c5da60e56f2cfba9672390e5acb507e1f1bd6a"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:implement-authorization",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/implement-authorization/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/implement-authorization/EXAMPLES.md",
+        "sha256": "78b76101c11831c2d7a287ca009472015e51b4a94906ca79058b4d0381c4a447"
+      },
+      {
+        "path": "skills/code-quality/implement-authorization/SKILL.md",
+        "sha256": "7349890dfbc912749c6a8c26213aafe36675152eab9b153be2a29b275260e0d7"
+      },
+      {
+        "path": "skills/code-quality/implement-authorization/references/workflow.md",
+        "sha256": "b80a8a4bc29f1ff41ab6e4e2e4c8f65c84c4e4b43a1d6e048ed687c3eb141c54"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:refactor-code",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/refactor-code/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/refactor-code/EXAMPLES.md",
+        "sha256": "cafa791eaec2e89ebf364976b8afd49421634ccc194e1afec6eeb38c0f57ec2b"
+      },
+      {
+        "path": "skills/code-quality/refactor-code/HEURISTICS.md",
+        "sha256": "59dc3798d2eeea6b20d4eea59a717882b8a688f9f3b557a6776d80d481636f33"
+      },
+      {
+        "path": "skills/code-quality/refactor-code/INTEGRATION.md",
+        "sha256": "cee4ddf9aa0a56275448f804cd5b5f9ef435ca8db8500eada90ada065eae14c9"
+      },
+      {
+        "path": "skills/code-quality/refactor-code/SKILL.md",
+        "sha256": "e99ee06bb6057d4229c99b71365130c4f1a16db685b3aa0438c23e4929baa030"
+      },
+      {
+        "path": "skills/code-quality/refactor-code/assets/characterization_tests.md",
+        "sha256": "b81b42428a9d793660c20a21ec375836ac0384f8089b621ffdb4208ed3d49881"
+      },
+      {
+        "path": "skills/code-quality/refactor-code/assets/complete_example.md",
+        "sha256": "f4009d91a7f7a61b995db3aa1b45bd3088fb2aaab6b6706f6ef9922a10df5176"
+      },
+      {
+        "path": "skills/code-quality/refactor-code/assets/examples.md",
+        "sha256": "c42d6cd9109a59e14c8544a20a1ce17fdfaffd624c409bb7ddf0c2662c2ccb24"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:review-architecture",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/review-architecture/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/review-architecture/SKILL.md",
+        "sha256": "2256f5eaa5a5e8458176444bf81adbe1e179bdeb785885265a69061a0b0620cf"
+      },
+      {
+        "path": "skills/code-quality/review-architecture/assets/examples.md",
+        "sha256": "7b87d5f60455eaab6fbe00f03987023c5f5323f19722cee9554e5509cd407d08"
+      },
+      {
+        "path": "skills/code-quality/review-architecture/assets/findings_schema.json",
+        "sha256": "81455426eb340e5590d3c2500a485239f6e1d94abf17c31986db1dbfeb588d37"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:security-check",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/code-quality/security-check/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/code-quality/security-check/PITFALLS.md",
+        "sha256": "9748890fa1c5f6d052d31fe0a6697738a3612c0632c56487b0ad7bdeff67c7b7"
+      },
+      {
+        "path": "skills/code-quality/security-check/SKILL.md",
+        "sha256": "7031795da8758b4e059f86de6d6070ba75684d529c71e394960a6dfa1eda127a"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:load-context",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/context/load-context/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/context/load-context/EXAMPLES.md",
+        "sha256": "e2071a1d501979d24eb7d3c641991d1366b9913b08a2f756849b1a23a7eeb3fa"
+      },
+      {
+        "path": "skills/context/load-context/SKILL.md",
+        "sha256": "c295d2a511cc4bba4761e17d12dddeeaeeae96761932d2b063bca3a46ba4278b"
+      },
+      {
+        "path": "skills/context/load-context/references/confusion-management.md",
+        "sha256": "cbff059f7a5955c3057a237649620f98c57611311e3132cbf15ed303c3dca6f5"
+      },
+      {
+        "path": "skills/context/load-context/references/context-sources.md",
+        "sha256": "f27598a960b0bb12079cee3bffd69e22a3b75d7b93fbcf9d8875346e41e53e49"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:setup-environment",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/context/setup-environment/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/context/setup-environment/EXAMPLES.md",
+        "sha256": "8825e351422b05402f6d154f18e13f2b5c02f55234c1f7369a044c2de679b696"
+      },
+      {
+        "path": "skills/context/setup-environment/SKILL.md",
+        "sha256": "08ee4f499b38c1694327c3642ea07d7739ab5ef69445dd5c07edff1c787cefbc"
+      },
+      {
+        "path": "skills/context/setup-environment/references/steps.md",
+        "sha256": "3f672088f6120c08278a2ef621e009645bc3593bcd5b09d7bf7723f09874a068"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:create-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/create-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/create-engine/EXAMPLES.md",
+        "sha256": "22c61c8bd523d821d6b9fda7f22f45d727ed8c2910a5745b9ec42f693faedafc"
+      },
+      {
+        "path": "skills/engines/create-engine/SKILL.md",
+        "sha256": "ecc17aa91f1854984a07f8ddddc69fa9992a6dbbad28e826197a283bd1e2ff6c"
+      },
+      {
+        "path": "skills/engines/create-engine/TESTING.md",
+        "sha256": "4ff7e06dbc8db28438517cf4fd7a410970e1525d3fc704dc4941a6b8778ec495"
+      },
+      {
+        "path": "skills/engines/create-engine/assets/README_NOTE.txt",
+        "sha256": "fc4a8aa763bc4aa3091b3bbd4c013480266bc7f929efd2e18d3ecd3640f76152"
+      },
+      {
+        "path": "skills/engines/create-engine/assets/examples.md",
+        "sha256": "fa593843ef8b1853dc1845216f5c3c420e43cfd84e7bab8e976b300c32e2b8a8"
+      },
+      {
+        "path": "skills/engines/create-engine/assets/release-checklist.md",
+        "sha256": "2f5d0cf240b640c3c83856c6bdac1dfb9144863d56790073114bc6c08ea99b7d"
+      },
+      {
+        "path": "skills/engines/create-engine/reference.md",
+        "sha256": "11cc6cf8de2c622d778a9e0d5a2b2816d0e642b9bacf084da155cd4cec8ae866"
+      },
+      {
+        "path": "skills/engines/create-engine/scripts/generate_engine_scaffold.sh",
+        "sha256": "c0617866069094aae25ff69f6fff5d4be603071e6decd8bf4090f1f5c9bdc090"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:upgrade-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/upgrade-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/upgrade-engine/EXAMPLES.md",
+        "sha256": "5a7373300ae73f96118e2114a1c36b7c99d2c478bef4055600077fd904d036d4"
+      },
+      {
+        "path": "skills/engines/upgrade-engine/SKILL.md",
+        "sha256": "c6d0585699d3b44d03c6be65014cece14402387c14effc4fb7c45f2274ed07c1"
+      },
+      {
+        "path": "skills/engines/upgrade-engine/assets/ci_matrix.yml",
+        "sha256": "1d58b82b29a4bd8fc424de1d5d456350959a6bd1332e8aa03f9ea4d640df4c77"
+      },
+      {
+        "path": "skills/engines/upgrade-engine/assets/compatibility_matrix.md",
+        "sha256": "ec1f947fc1a6c1f4f5c4f0fa23ade31a9336c21b9891617079c4dc1526279841"
+      },
+      {
+        "path": "skills/engines/upgrade-engine/assets/zeitwerk_notes.md",
+        "sha256": "2040e59a9c82a413ac2e77e9e443fb83c8d6c5a4b991e4e6468fbae4fb08a60e"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:document-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/document-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/document-engine/CHECKLIST.md",
+        "sha256": "33acadc96994803ac6a2ac52c1d906667a5df37cea6dfa076394a0bbe9cc2feb"
+      },
+      {
+        "path": "skills/engines/document-engine/SKILL.md",
+        "sha256": "5682544d369c892b11e91fed740596b5df9c0e49d0883b9944f9f1d9ad24ae16"
+      },
+      {
+        "path": "skills/engines/document-engine/assets/configuration.md",
+        "sha256": "d2f01bf04e9324f8d9ac39b4389f1f595b0b593ce7b00c23db6abc479d69a873"
+      },
+      {
+        "path": "skills/engines/document-engine/assets/examples.md",
+        "sha256": "1987d4c87344212afa0b567afbabb327860670a6d0640de181812f86e015fda5"
+      },
+      {
+        "path": "skills/engines/document-engine/assets/installation.md",
+        "sha256": "9b0fc97833dce7c0a1a32d5dbffa75877dd61fa0cb661084b6f3dd4cb088a419"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:extract-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/extract-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/extract-engine/SKILL.md",
+        "sha256": "8d635301ebfe876d41d785324e4e9a7397e2f13a1331d08493c562c1f8e30c46"
+      },
+      {
+        "path": "skills/engines/extract-engine/assets/checklist.json",
+        "sha256": "0062d98b350b6d1b515e75903c797cfaa68b6db8254b58995c77d9411bb61ced"
+      },
+      {
+        "path": "skills/engines/extract-engine/assets/examples.md",
+        "sha256": "a164c141e768d25c682fc007e7854c37875d1e5f741b65eb549aab45fadcc376"
+      },
+      {
+        "path": "skills/engines/extract-engine/references/adapter_examples.md",
+        "sha256": "ef5b603b0ddbfd8673b8fdcb05418a4ac47e7233c8804ec6ae65678c4ac89bad"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:create-engine-installer",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/create-engine-installer/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/create-engine-installer/EXAMPLES.md",
+        "sha256": "1e3109c3dcee658110afeeb13a963e6954dc3fa0201ba2e94b0f66e40771e45a"
+      },
+      {
+        "path": "skills/engines/create-engine-installer/SKILL.md",
+        "sha256": "a12838c703f0a31363f1d90fda73aed2c6c4aa7672a22e8e20b5be1aa438d23e"
+      },
+      {
+        "path": "skills/engines/create-engine-installer/assets/README.md",
+        "sha256": "e2b3b7cdec9c884d8ba9b016323ba0662d61a647fed7ffead93835bda4f81be7"
+      },
+      {
+        "path": "skills/engines/create-engine-installer/assets/installer-template.rb",
+        "sha256": "f6b4ec1f511b17e2d457d446ae2331340d1fa1ef8d1aa75ae88d0480994bb4f8"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:release-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/release-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/release-engine/EXAMPLES.md",
+        "sha256": "d7465f9f1cd921afca93654a91d038b09c297156214b320c6c1891e6c6eb5d83"
+      },
+      {
+        "path": "skills/engines/release-engine/SKILL.md",
+        "sha256": "19d86e944c67208480410706ed5854c89c31cc29e777ff2b7fc09f1233a013f0"
+      },
+      {
+        "path": "skills/engines/release-engine/assets/examples.md",
+        "sha256": "5d9c8f3eff6ed59da9baa3d6480d3a0e108de7c71635d0cf7eb36778b32d8347"
+      },
+      {
+        "path": "skills/engines/release-engine/assets/release_checklist.md",
+        "sha256": "c54e16a73fa7dba6b73901e8fc2d4cc57fc522c322902c0abc699e98ff28f7fc"
+      },
+      {
+        "path": "skills/engines/release-engine/assets/release_notes_template.md",
+        "sha256": "8d676709f41d437b8ca4f6a42f8e80a5d7daf4615276966693f54cb4f4be22e7"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:review-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/review-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/review-engine/FINDINGS.md",
+        "sha256": "aca9bd0641524db90502898d2aef965ededa684f5fb5166d1459918e4e892b09"
+      },
+      {
+        "path": "skills/engines/review-engine/SKILL.md",
+        "sha256": "d54bb651161ef0a73bc3af95d9172f638cf99c89bef5373f3e5e4ce78ad0c9ef"
+      },
+      {
+        "path": "skills/engines/review-engine/assets/examples.md",
+        "sha256": "5127b3a6c81ced37c24589f066e7db066d69d3d95120fbfa23974085cebdcfe4"
+      },
+      {
+        "path": "skills/engines/review-engine/assets/finding-schema.json",
+        "sha256": "d038ecd6b62f5cd9c55d244bb2e11ee62e41cc88881cdddae6de1130b68a5748"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:test-engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/engines/test-engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/engines/test-engine/SKILL.md",
+        "sha256": "e52a1d447df5e102f2109e968507ef1f820fa63d37944a932f709c4cc84f9df5"
+      },
+      {
+        "path": "skills/engines/test-engine/assets/dummy_app_instructions.md",
+        "sha256": "197b8f43a193b3372b12d3e7004880405c1925be2f8b9bbdabe68fbf6f6537d6"
+      },
+      {
+        "path": "skills/engines/test-engine/assets/examples.md",
+        "sha256": "936487b90b7b5f17a10707583af69f9fbba0ed0de5115d4161d331502b007069"
+      },
+      {
+        "path": "skills/engines/test-engine/assets/spec_template.md",
+        "sha256": "07cf3cc5bade9bd3814638b482f09bd6f5c284041d406549d24b07f2d829c1fc"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:implement-hotwire",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/infrastructure/implement-hotwire/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/infrastructure/implement-hotwire/EXAMPLES.md",
+        "sha256": "f3a091f56fe7e64b15bd77aabec94e5bd17d409457228edf8f37431c35feec0b"
+      },
+      {
+        "path": "skills/infrastructure/implement-hotwire/SKILL.md",
+        "sha256": "5db472d3817c504316e8e0e6c1b781b2fd4cf4e8cce83b81c80ff469500a456c"
+      },
+      {
+        "path": "skills/infrastructure/implement-hotwire/references/workflow.md",
+        "sha256": "f7df9486a1d9f5d5c481b230827354c2013ee4962fb441bcd870a67f3412e7de"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:implement-background-job",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/infrastructure/implement-background-job/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/infrastructure/implement-background-job/BACKENDS.md",
+        "sha256": "7632bf108d71dd31b18a29a9104e743db7bba8dc5e6a11388a1d20755c5d3312"
+      },
+      {
+        "path": "skills/infrastructure/implement-background-job/SKILL.md",
+        "sha256": "acb65a0c1253690c8408e7dbb9bc9157cbccb84cc4fad877f6945f48793f74b9"
+      },
+      {
+        "path": "skills/infrastructure/implement-background-job/assets/job_patterns.md",
+        "sha256": "3bd920d1a52b244c9e72f54f2fbcf7a2f9287117c2ab9cdbffbfd26486fc6bf5"
+      },
+      {
+        "path": "skills/infrastructure/implement-background-job/assets/retry_examples.md",
+        "sha256": "0199c57c7c7cdf0616cebe3ba97e1e26f42f087d802777ef756cc386fcb4bb61"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:optimize-performance",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/infrastructure/optimize-performance/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/infrastructure/optimize-performance/EXAMPLES.md",
+        "sha256": "789b60090ae4af4d5af97740c536f7f5121f17c6d6dce2a7a613a546147557f1"
+      },
+      {
+        "path": "skills/infrastructure/optimize-performance/SKILL.md",
+        "sha256": "87557aa1434137e721daa97387bb9e398aaf027f7cfd42794e4cdb1f01b8f138"
+      },
+      {
+        "path": "skills/infrastructure/optimize-performance/references/tools.md",
+        "sha256": "78547a896e7a2e25d5fd6b68a12d1fb6266ea28acb4414818cd3869bdbf793a1"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:review-migration",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/infrastructure/review-migration/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/infrastructure/review-migration/PATTERNS.md",
+        "sha256": "fe9506eb29a1a92b6b3527e69d104520c388c69cdb422f59b827863e48075e81"
+      },
+      {
+        "path": "skills/infrastructure/review-migration/SKILL.md",
+        "sha256": "a7bbed189a64f281ac0002834dd605f43f21dfb596e20ef96dc2036a090cb8fd"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:seed-database",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/infrastructure/seed-database/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/infrastructure/seed-database/EXAMPLES.md",
+        "sha256": "fec13acda71399b6ee3063f3593de34fbfbffed0284cb1177cec55cc127ebc70"
+      },
+      {
+        "path": "skills/infrastructure/seed-database/SKILL.md",
+        "sha256": "094db8c910ba6163c02f608c9ecae448525d8e6df06a75ca338de22d39fe4b50"
+      },
+      {
+        "path": "skills/infrastructure/seed-database/references/workflow.md",
+        "sha256": "2fa46e09d0ea934ec38dd9080f5ed76b6a88475f81574dc19ff46aed0b44afa2"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:version-api",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/infrastructure/version-api/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/infrastructure/version-api/EXAMPLES.md",
+        "sha256": "a219a68e0e8df2dc473c388f0a8819d21a402cc0992f925ea0c39ba7fcaadf14"
+      },
+      {
+        "path": "skills/infrastructure/version-api/SKILL.md",
+        "sha256": "5ead7b4b753beb2dfb8ae74b25b1ee85802eaa687970c46af5dbc46eb62a71db"
+      },
+      {
+        "path": "skills/infrastructure/version-api/references/strategies.md",
+        "sha256": "c1e9b16a90a22551cba4b437a5d8439214f03627ed979a2f119768921b3db087"
+      },
+      {
+        "path": "skills/infrastructure/version-api/references/workflow.md",
+        "sha256": "80414cfdca385005743a27e8eebd56145e7184ac6423d221df85dd468467ca48"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:plan-tests",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/testing/plan-tests/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/testing/plan-tests/SKILL.md",
+        "sha256": "c48dd5f905cc8797ba0077aee1c657ee528dbd2e4887ae0f7afd73ed50ef7edd"
+      },
+      {
+        "path": "skills/testing/plan-tests/assets/first_slice_template.md",
+        "sha256": "4656024fd69ed08d0cff8eae5e1ce49dc886c70f2ac21a968a4f612c82add741"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:write-tests",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/testing/write-tests/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/testing/write-tests/SKILL.md",
+        "sha256": "8367e47287ed6f2f16940ee84f64f18c35ee125c6e6aa49e1ad3b73b28cd60a4"
+      },
+      {
+        "path": "skills/testing/write-tests/assets/complete_example.md",
+        "sha256": "d60221a568bfcad7b73eacecf059343e75a282f165f6b8340ea34a9433db22ca"
+      },
+      {
+        "path": "skills/testing/write-tests/assets/examples.md",
+        "sha256": "972235912a7bc76c10230511fda77a8151bceb623ecfb1f9d106318aa8529a2e"
+      },
+      {
+        "path": "skills/testing/write-tests/assets/output_checklist.md",
+        "sha256": "4889fe1c6a5fd63538bea7b0c3f34d5bbed5ecc2bfaeb00e16f2bf709bad5fab"
+      },
+      {
+        "path": "skills/testing/write-tests/assets/spec_templates.md",
+        "sha256": "155278dfd16034548684cbb80577a535dbcf6fc9769d5f4329c0642f24133beb"
+      },
+      {
+        "path": "skills/testing/write-tests/assets/tdd_proof_checklist.md",
+        "sha256": "f4432aa737ffb2c8fbd9d2c4f1a75f2fc67d9dc30c91082d32bdb9117ce4af4c"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:test-service",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/testing/test-service/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/testing/test-service/PATTERNS.md",
+        "sha256": "013baeb33461d61313a90ba0c740e6f0655df40b4d31699346184170aa164421"
+      },
+      {
+        "path": "skills/testing/test-service/SKILL.md",
+        "sha256": "ceceb8d734a65bc1deae32837b02cc5146547402d5d537c913f7c69dd9e14fea"
+      },
+      {
+        "path": "skills/testing/test-service/assets/spec_examples.md",
+        "sha256": "4dc7471b4361686e16bccfed686841697f65ced65dfb7d64fd8786325f3ba05e"
+      },
+      {
+        "path": "skills/testing/test-service/assets/testing_checklist.md",
+        "sha256": "15aa92e8c6c10e7bfb42d232a426f4cf6aba70b9885ce28a43cd88edd26c7f34"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:tdd",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/tdd/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/tdd/SKILL.md",
+        "sha256": "26ef22122d2ff2ac7f5cf43f1c818727d111164cf95499253628e536d0c3d5ad"
+      },
+      {
+        "path": "skills/personas/tdd/assets/example.md",
+        "sha256": "b881d3bd3e6e6581bb40c81706be2afdd5a93185535b2f6b725409a511c026d7"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/rails-agent-skills:plan-tests",
+      "igmarin/rails-agent-skills:write-tests",
+      "igmarin/rails-agent-skills:code-review",
+      "igmarin/ruby-core-skills:tdd-process",
+      "igmarin/ruby-core-skills:write-yard-docs"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:review",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/review/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/review/SKILL.md",
+        "sha256": "d626acbf97247da47420463d685f9cfc4734c9097ce3b5646e03b68661b6fb66"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:code-review",
+      "igmarin/ruby-core-skills:review-process",
+      "igmarin/ruby-core-skills:respond-to-review"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:setup",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/setup/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/setup/SKILL.md",
+        "sha256": "5bc03eb82720b673a8646a8a1e07ea35004a3fe8b1342f0e1cbfeb21bad10350"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/rails-agent-skills:setup-environment"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:quality",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/quality/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/quality/SKILL.md",
+        "sha256": "f53071a824cc730efbc8d5a7a7469947d47b406db24f59e974215e902f822ef6"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:apply-code-conventions",
+      "igmarin/rails-agent-skills:apply-stack-conventions",
+      "igmarin/rails-agent-skills:refactor-code",
+      "igmarin/rails-agent-skills:code-review",
+      "igmarin/ruby-core-skills:write-yard-docs",
+      "igmarin/ruby-core-skills:refactor-process",
+      "igmarin/ruby-core-skills:review-process"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:engine",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/engine/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/engine/SKILL.md",
+        "sha256": "de6c307d054f7bbcc05f3d018f8089575aef651df22473270caa02d35eb35be1"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:create-engine",
+      "igmarin/rails-agent-skills:test-engine",
+      "igmarin/rails-agent-skills:review-engine",
+      "igmarin/rails-agent-skills:document-engine",
+      "igmarin/rails-agent-skills:release-engine",
+      "igmarin/rails-agent-skills:upgrade-engine",
+      "igmarin/ruby-core-skills:write-yard-docs",
+      "igmarin/ruby-core-skills:tdd-process"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:bug-fix",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/bug-fix/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/bug-fix/SKILL.md",
+        "sha256": "2a9b6788911ce40bd88c5fe0c0e0abb5e9ee116f51291107aad1b9bac0caa013"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/rails-agent-skills:plan-tests",
+      "igmarin/rails-agent-skills:write-tests",
+      "igmarin/ruby-core-skills:triage-bug",
+      "igmarin/ruby-core-skills:tdd-process"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:graphql",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/graphql/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/graphql/SKILL.md",
+        "sha256": "3f2f7d31a46c4df6d282ed7cdc28f376ec28b2f3da0fa05c255d6c97d1dd5c89"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:implement-graphql",
+      "igmarin/rails-agent-skills:security-check",
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/ruby-core-skills:define-domain-language",
+      "igmarin/ruby-core-skills:tdd-process",
+      "igmarin/ruby-core-skills:write-yard-docs"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:migration",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/migration/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/migration/SKILL.md",
+        "sha256": "a98c32b0cdab616780ee4619e345f53d7f7e96e230fe480155e251f410cbbb17"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:review-migration",
+      "igmarin/rails-agent-skills:load-context"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rails-agent-skills:background-job",
+    "owner": "igmarin/rails-agent-skills",
+    "source_path": "skills/personas/background-job/SKILL.md",
+    "baseline_commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "resources": [
+      {
+        "path": "skills/personas/background-job/SKILL.md",
+        "sha256": "d536950aa93f7933fded27eb480b52965a571d24ba9f94aea1740805a522658a"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rails-agent-skills:implement-background-job",
+      "igmarin/rails-agent-skills:write-tests",
+      "igmarin/ruby-core-skills:tdd-process"
+    ],
+    "current_commit": "08661ee9b537444253732d9d353f05fac0ac2f27"
+  },
+  {
+    "id": "igmarin/rust-core-skills:rust-essentials",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/rust-essentials/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/rust-essentials/SKILL.md",
+        "sha256": "7fbc7b55dbe12363988d86992dcf46807787b7ea1b21b986347771d17bf055e9"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  },
+  {
+    "id": "igmarin/rust-core-skills:ownership-borrowing",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/ownership-borrowing/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/ownership-borrowing/SKILL.md",
+        "sha256": "0b29abf65163441eaf6d4e4ff8e16c681e879b4de4e5ed94bce2616b560e100b"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  },
+  {
+    "id": "igmarin/rust-core-skills:type-driven-design",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/type-driven-design/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/type-driven-design/SKILL.md",
+        "sha256": "c95bc88af22b8f1d784f6411c65b22a235b6224d778688ab861673d82746f822"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  },
+  {
+    "id": "igmarin/rust-core-skills:error-handling",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/error-handling/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/error-handling/SKILL.md",
+        "sha256": "237ab667f50c05a90c2752a4cc5f9fc01514de573e7b54d440058a3faa11daac"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  },
+  {
+    "id": "igmarin/rust-core-skills:load-context",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/load-context/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/load-context/SKILL.md",
+        "sha256": "6e8b71c9a061dc80c43d6a747c0ad95189f40738fc6b8fc4c87051eb1f11c631"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "atomic",
+    "dependencies": [],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  },
+  {
+    "id": "igmarin/rust-core-skills:tdd",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/tdd/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/tdd/SKILL.md",
+        "sha256": "5f093b456657a0df351aab60cfc9ca203fdc3aae01c749e49990517eb9e06be5"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "workflow",
+    "dependencies": [
+      "igmarin/rust-core-skills:load-context",
+      "igmarin/rust-core-skills:rust-essentials"
+    ],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  },
+  {
+    "id": "igmarin/rust-core-skills:rust-skill-router",
+    "owner": "igmarin/rust-core-skills",
+    "source_path": "skills/rust-skill-router/SKILL.md",
+    "baseline_commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "resources": [
+      {
+        "path": "skills/rust-skill-router/SKILL.md",
+        "sha256": "e3b52989a1d0603c20f4799251e0c4eade85f6e8f2f36a8822bc584470a3a97d"
+      }
+    ],
+    "disposition": "retained",
+    "validation": {
+      "structural": "passed",
+      "routing": "not-run",
+      "execution": "not-run"
+    },
+    "kind": "router",
+    "dependencies": [],
+    "current_commit": "d27b83055ce5a78253adb550b49380ab67190d9b"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "igmarin/agnostic-planning-skills:create-prd": {
+    "name": "planning-create-prd",
+    "path": "skills/planning-create-prd/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:review-prd": {
+    "name": "planning-review-prd",
+    "path": "skills/planning-review-prd/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:generate-tasks": {
+    "name": "planning-generate-tasks",
+    "path": "skills/planning-generate-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:plan-tickets": {
+    "name": "planning-plan-tickets",
+    "path": "skills/planning-plan-tickets/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:estimate-tasks": {
+    "name": "planning-estimate-tasks",
+    "path": "skills/planning-estimate-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:prioritize-backlog": {
+    "name": "planning-prioritize-backlog",
+    "path": "skills/planning-prioritize-backlog/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:plan-sprint": {
+    "name": "planning-plan-sprint",
+    "path": "skills/planning-plan-sprint/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:create-retrospective": {
+    "name": "planning-create-retrospective",
+    "path": "skills/planning-create-retrospective/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:generate-status-report": {
+    "name": "planning-generate-status-report",
+    "path": "skills/planning-generate-status-report/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:identify-risks": {
+    "name": "planning-identify-risks",
+    "path": "skills/planning-identify-risks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:requirements-clarifier": {
+    "name": "planning-requirements-clarifier",
+    "path": "skills/planning-requirements-clarifier/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:github-issue": {
+    "name": "planning-github-issue",
+    "path": "skills/planning-github-issue/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:product-owner": {
+    "name": "planning-product-owner",
+    "path": "skills/planning-product-owner/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:project-manager": {
+    "name": "planning-project-manager",
+    "path": "skills/planning-project-manager/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:tech-lead": {
+    "name": "planning-tech-lead",
+    "path": "skills/planning-tech-lead/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:estimate-tasks"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:delivery-lead": {
+    "name": "planning-delivery-lead",
+    "path": "skills/planning-delivery-lead/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets",
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report",
+      "igmarin/agnostic-planning-skills:prioritize-backlog",
+      "igmarin/agnostic-planning-skills:plan-sprint",
+      "igmarin/agnostic-planning-skills:create-retrospective"
+    ]
+  }
+}

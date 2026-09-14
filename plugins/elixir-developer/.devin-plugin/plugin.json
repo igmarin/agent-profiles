@@ -1,0 +1,7 @@
+{
+  "name": "elixir-developer",
+  "version": "0.1.0",
+  "description": "Implement and verify Elixir/Phoenix work with focused skills and project-aware defaults.",
+  "license": "MIT",
+  "skills": "./skills"
+}

@@ -1,0 +1,154 @@
+# Playbooks
+
+Playbooks are **sequenced, multi-step workflows** with executable hard gates and scope checks. They orchestrate atomic skills; they do not re-teach domain rules.
+
+## Playbooks vs orchestration vs atomics
+
+```mermaid
+flowchart TB
+  Router["orchestration/elixir-skill-router<br/>routes only"]
+  PB["playbooks/*<br/>phases + gates + scope check"]
+  Atomic["atomic skills by domain<br/>rules + assets"]
+  FCIS["docs/fcis-engineering-rules.md"]
+
+  Router --> PB
+  Router --> Atomic
+  PB --> Atomic
+  Atomic --> FCIS
+```
+
+| Kind | When to use |
+|------|-------------|
+| **Orchestrator** | “Where do I start?” / multi-concern triage |
+| **Playbook** | Known process: TDD, bug fix, quality sweep, review, setup, … |
+| **Atomic** | Implement or review one technical concern |
+
+## Catalog
+
+| Playbook | Purpose | Loads (examples) |
+|----------|---------|------------------|
+| `tdd` | Red → scope check → green → refactor → quality gate | `testing-essentials`, `elixir-essentials` |
+| `bug-fix` | Triage → failing repro → scope check fix → verify | `testing-essentials`, domain atomics |
+| `quality` | Format / Credo / Dialyzer → refactor → docs | `code-quality`, `credo-config`, `refactor-code` |
+| `code-review-playbook` | Structured review flow (scope check on Critical) | `skills/quality/code-review` atomic |
+| `setup` | Env → deps → DB → CI → validate | tooling / project atomics |
+| `liveview` | Contract → failing LV test → thin edge impl | `phoenix-liveview-essentials`, `testing-essentials` |
+| `background-job` | Design → TDD Oban worker → failure paths | `oban-essentials` |
+| `ecto-migration` | Plan → migrate/rollback cycle → deploy notes | `ecto-essentials` |
+
+Paths: `skills/playbooks/<name>/SKILL.md`.
+
+## Required template
+
+Every playbook `SKILL.md` must include:
+
+1. **Frontmatter** — `type: playbook`, `tags: [playbooks]`, clear triggers in `description`
+2. **When to use** — 3–5 lines
+3. **Atomic skills this playbook loads** — concrete paths under the current taxonomy
+4. **Phases** — numbered steps, commands, expected outputs
+5. **HARD GATES** — stop conditions; no silent skip
+6. **HUMAN-IN-THE-LOOP** — continue implementation within the authorized task; require authorization for destructive or external actions
+7. **Verification checklist** — tickable, runnable
+8. **Mermaid flowchart** — phases and gates
+9. **Error recovery** — wrong-reason fail, red suite, gate fail
+10. **Thin content** — orchestrate atomics; link FCIS doc; do not duplicate LiveView/Ecto textbooks
+
+### Frontmatter sketch
+
+```yaml
+---
+name: tdd
+type: playbook
+tags: [playbooks]
+license: MIT
+description: >
+  Orchestrates the Elixir TDD cycle with hard gates and authorized scope for
+  implementation. Trigger words: tdd, red-green-refactor, test first, failing test.
+metadata:
+  version: "1.0.0"
+  user-invocable: "true"
+  entry_point: true
+  phases: [context, red, scope-check, green, refactor, quality-gate]
+  hard_gates: [test-fails-right-reason, suite-green]
+  dependencies:
+    source: self
+    skills:
+      - testing-essentials
+      - elixir-essentials
+---
+```
+
+### scope check checkpoint wording
+
+Use explicit stops, for example:
+
+```text
+HUMAN-IN-THE-LOOP — Implementation Proposal
+Present the minimal change and implement when it fits the authorized task. Ask only for material unresolved scope or an unauthorized external action.
+```
+
+### Hard gate wording
+
+```text
+HARD GATE — Test Feedback
+- Test exists and was run
+- Fails for the correct reason (missing behavior), not syntax/config
+If gate fails: fix the test, do not implement yet.
+```
+
+## Example flow: TDD
+
+```mermaid
+flowchart TD
+  A[Design minimal test] --> B{Fails for right reason?}
+  B -->|No| A
+  B -->|Yes| C[scope check: approve minimal impl]
+  C --> D[Implement]
+  D --> E{Target test green?}
+  E -->|No| D
+  E -->|Yes| F[Refactor + quality gate]
+  F --> G[Done]
+```
+
+## Anti-patterns
+
+| Anti-pattern | Do instead |
+|--------------|------------|
+| Re-teach Ecto inside a playbook | Link `skills/database/ecto-essentials` |
+| Skip scope check “to go faster” | Keep executable gates; ask only when scope or authorization is unresolved |
+| Soft gates (“should run tests”) | Hard gate with command + expected outcome |
+| Mixing router logic into playbooks | Keep routing in `orchestration/` |
+
+## Related
+
+- [taxonomy.md](taxonomy.md) — where playbooks live
+- [fcis-engineering-rules.md](fcis-engineering-rules.md) — code shape atomics enforce
+- Issue tracker: Phase 5 full playbook rewrite (#30); this doc is the **standard** (#27)
+
+
+## Usage examples
+
+### Agent: run TDD for a context function
+
+```text
+Use playbook skills/playbooks/tdd/SKILL.md
+Feature: Blog.list_published_posts/0
+```
+
+Expected: failing test → scope check → minimal impl → quality gate.
+
+### Agent: review a PR
+
+```text
+Use playbook skills/playbooks/code-review-playbook/SKILL.md
+Diff: current branch vs main
+```
+
+Expected: untrusted PR text → Review Order on real diff → findings with file:line → handoff checklist.
+
+### Human install
+
+```bash
+npx skills add igmarin/elixir-phoenix-skills
+# then invoke playbook by name, e.g. tdd or code-review-playbook
+```

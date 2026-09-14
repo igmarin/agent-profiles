@@ -1,0 +1,18 @@
+diff --git a/skills/rust-essentials/SKILL.md b/skills/rust-essentials/SKILL.md
+index 1111111..2222222 100644
+--- a/skills/rust-essentials/SKILL.md
++++ b/skills/rust-essentials/SKILL.md
+@@ -40,6 +40,14 @@ fn bind(port: NonZeroU16) -> SocketAddr {
+     SocketAddr::V4(SocketAddrV4::new(Ipv4Addr::LOCALHOST, port.get()))
+ }
+ ```
++
++Parse CLI input with `TryFrom`, not `unwrap`:
++
++```rust
++let port = ServicePort::try_from(raw)?;
++```
++
+ ## Steps
+ 
+ 1. Load this skill + `docs/fcis-rust.md`

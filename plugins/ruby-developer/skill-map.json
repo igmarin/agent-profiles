@@ -1,0 +1,420 @@
+{
+  "igmarin/agnostic-planning-skills:create-prd": {
+    "name": "planning-create-prd",
+    "path": "skills/planning-create-prd/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:review-prd": {
+    "name": "planning-review-prd",
+    "path": "skills/planning-review-prd/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:generate-tasks": {
+    "name": "planning-generate-tasks",
+    "path": "skills/planning-generate-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:plan-tickets": {
+    "name": "planning-plan-tickets",
+    "path": "skills/planning-plan-tickets/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:estimate-tasks": {
+    "name": "planning-estimate-tasks",
+    "path": "skills/planning-estimate-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:prioritize-backlog": {
+    "name": "planning-prioritize-backlog",
+    "path": "skills/planning-prioritize-backlog/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:plan-sprint": {
+    "name": "planning-plan-sprint",
+    "path": "skills/planning-plan-sprint/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:create-retrospective": {
+    "name": "planning-create-retrospective",
+    "path": "skills/planning-create-retrospective/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:generate-status-report": {
+    "name": "planning-generate-status-report",
+    "path": "skills/planning-generate-status-report/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:identify-risks": {
+    "name": "planning-identify-risks",
+    "path": "skills/planning-identify-risks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:requirements-clarifier": {
+    "name": "planning-requirements-clarifier",
+    "path": "skills/planning-requirements-clarifier/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:github-issue": {
+    "name": "planning-github-issue",
+    "path": "skills/planning-github-issue/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:product-owner": {
+    "name": "planning-product-owner",
+    "path": "skills/planning-product-owner/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:project-manager": {
+    "name": "planning-project-manager",
+    "path": "skills/planning-project-manager/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:tech-lead": {
+    "name": "planning-tech-lead",
+    "path": "skills/planning-tech-lead/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:estimate-tasks"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:delivery-lead": {
+    "name": "planning-delivery-lead",
+    "path": "skills/planning-delivery-lead/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets",
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report",
+      "igmarin/agnostic-planning-skills:prioritize-backlog",
+      "igmarin/agnostic-planning-skills:plan-sprint",
+      "igmarin/agnostic-planning-skills:create-retrospective"
+    ]
+  },
+  "igmarin/ruby-core-skills:write-yard-docs": {
+    "name": "ruby-write-yard-docs",
+    "path": "skills/ruby-write-yard-docs/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:create-service-object": {
+    "name": "ruby-create-service-object",
+    "path": "skills/ruby-create-service-object/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:implement-calculator-pattern": {
+    "name": "ruby-implement-calculator-pattern",
+    "path": "skills/ruby-implement-calculator-pattern/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:integrate-api-client": {
+    "name": "ruby-integrate-api-client",
+    "path": "skills/ruby-integrate-api-client/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:define-domain-language": {
+    "name": "ruby-define-domain-language",
+    "path": "skills/ruby-define-domain-language/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:review-domain-boundaries": {
+    "name": "ruby-review-domain-boundaries",
+    "path": "skills/ruby-review-domain-boundaries/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:model-domain": {
+    "name": "ruby-model-domain",
+    "path": "skills/ruby-model-domain/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:triage-bug": {
+    "name": "ruby-triage-bug",
+    "path": "skills/ruby-triage-bug/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:respond-to-review": {
+    "name": "ruby-respond-to-review",
+    "path": "skills/ruby-respond-to-review/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:skill-router": {
+    "name": "ruby-skill-router",
+    "path": "skills/ruby-skill-router/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:tdd-process": {
+    "name": "ruby-tdd-process",
+    "path": "skills/ruby-tdd-process/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:refactor-process": {
+    "name": "ruby-refactor-process",
+    "path": "skills/ruby-refactor-process/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:review-process": {
+    "name": "ruby-review-process",
+    "path": "skills/ruby-review-process/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:security-review-process": {
+    "name": "ruby-security-review-process",
+    "path": "skills/ruby-security-review-process/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:test-planning-process": {
+    "name": "ruby-test-planning-process",
+    "path": "skills/ruby-test-planning-process/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/ruby-core-skills:generate-tdd-tasks": {
+    "name": "ruby-generate-tdd-tasks",
+    "path": "skills/ruby-generate-tdd-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:generate-api-collection": {
+    "name": "rails-generate-api-collection",
+    "path": "skills/rails-generate-api-collection/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:implement-graphql": {
+    "name": "rails-implement-graphql",
+    "path": "skills/rails-implement-graphql/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:apply-code-conventions": {
+    "name": "rails-apply-code-conventions",
+    "path": "skills/rails-apply-code-conventions/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:apply-stack-conventions": {
+    "name": "rails-apply-stack-conventions",
+    "path": "skills/rails-apply-stack-conventions/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:code-review": {
+    "name": "rails-code-review",
+    "path": "skills/rails-code-review/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:implement-authorization": {
+    "name": "rails-implement-authorization",
+    "path": "skills/rails-implement-authorization/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:refactor-code": {
+    "name": "rails-refactor-code",
+    "path": "skills/rails-refactor-code/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:review-architecture": {
+    "name": "rails-review-architecture",
+    "path": "skills/rails-review-architecture/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:security-check": {
+    "name": "rails-security-check",
+    "path": "skills/rails-security-check/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:load-context": {
+    "name": "rails-load-context",
+    "path": "skills/rails-load-context/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:setup-environment": {
+    "name": "rails-setup-environment",
+    "path": "skills/rails-setup-environment/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:create-engine": {
+    "name": "rails-create-engine",
+    "path": "skills/rails-create-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:upgrade-engine": {
+    "name": "rails-upgrade-engine",
+    "path": "skills/rails-upgrade-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:document-engine": {
+    "name": "rails-document-engine",
+    "path": "skills/rails-document-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:extract-engine": {
+    "name": "rails-extract-engine",
+    "path": "skills/rails-extract-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:create-engine-installer": {
+    "name": "rails-create-engine-installer",
+    "path": "skills/rails-create-engine-installer/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:release-engine": {
+    "name": "rails-release-engine",
+    "path": "skills/rails-release-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:review-engine": {
+    "name": "rails-review-engine",
+    "path": "skills/rails-review-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:test-engine": {
+    "name": "rails-test-engine",
+    "path": "skills/rails-test-engine/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:implement-hotwire": {
+    "name": "rails-implement-hotwire",
+    "path": "skills/rails-implement-hotwire/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:implement-background-job": {
+    "name": "rails-implement-background-job",
+    "path": "skills/rails-implement-background-job/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:optimize-performance": {
+    "name": "rails-optimize-performance",
+    "path": "skills/rails-optimize-performance/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:review-migration": {
+    "name": "rails-review-migration",
+    "path": "skills/rails-review-migration/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:seed-database": {
+    "name": "rails-seed-database",
+    "path": "skills/rails-seed-database/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:version-api": {
+    "name": "rails-version-api",
+    "path": "skills/rails-version-api/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:plan-tests": {
+    "name": "rails-plan-tests",
+    "path": "skills/rails-plan-tests/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:write-tests": {
+    "name": "rails-write-tests",
+    "path": "skills/rails-write-tests/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:test-service": {
+    "name": "rails-test-service",
+    "path": "skills/rails-test-service/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/rails-agent-skills:tdd": {
+    "name": "rails-tdd",
+    "path": "skills/rails-tdd/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/rails-agent-skills:plan-tests",
+      "igmarin/rails-agent-skills:write-tests",
+      "igmarin/rails-agent-skills:code-review",
+      "igmarin/ruby-core-skills:tdd-process",
+      "igmarin/ruby-core-skills:write-yard-docs"
+    ]
+  },
+  "igmarin/rails-agent-skills:review": {
+    "name": "rails-review",
+    "path": "skills/rails-review/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:code-review",
+      "igmarin/ruby-core-skills:review-process",
+      "igmarin/ruby-core-skills:respond-to-review"
+    ]
+  },
+  "igmarin/rails-agent-skills:setup": {
+    "name": "rails-setup",
+    "path": "skills/rails-setup/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/rails-agent-skills:setup-environment"
+    ]
+  },
+  "igmarin/rails-agent-skills:quality": {
+    "name": "rails-quality",
+    "path": "skills/rails-quality/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:apply-code-conventions",
+      "igmarin/rails-agent-skills:apply-stack-conventions",
+      "igmarin/rails-agent-skills:refactor-code",
+      "igmarin/rails-agent-skills:code-review",
+      "igmarin/ruby-core-skills:write-yard-docs",
+      "igmarin/ruby-core-skills:refactor-process",
+      "igmarin/ruby-core-skills:review-process"
+    ]
+  },
+  "igmarin/rails-agent-skills:engine": {
+    "name": "rails-engine",
+    "path": "skills/rails-engine/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:create-engine",
+      "igmarin/rails-agent-skills:test-engine",
+      "igmarin/rails-agent-skills:review-engine",
+      "igmarin/rails-agent-skills:document-engine",
+      "igmarin/rails-agent-skills:release-engine",
+      "igmarin/rails-agent-skills:upgrade-engine",
+      "igmarin/ruby-core-skills:write-yard-docs",
+      "igmarin/ruby-core-skills:tdd-process"
+    ]
+  },
+  "igmarin/rails-agent-skills:bug-fix": {
+    "name": "rails-bug-fix",
+    "path": "skills/rails-bug-fix/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/rails-agent-skills:plan-tests",
+      "igmarin/rails-agent-skills:write-tests",
+      "igmarin/ruby-core-skills:triage-bug",
+      "igmarin/ruby-core-skills:tdd-process"
+    ]
+  },
+  "igmarin/rails-agent-skills:graphql": {
+    "name": "rails-graphql",
+    "path": "skills/rails-graphql/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:implement-graphql",
+      "igmarin/rails-agent-skills:security-check",
+      "igmarin/rails-agent-skills:load-context",
+      "igmarin/ruby-core-skills:define-domain-language",
+      "igmarin/ruby-core-skills:tdd-process",
+      "igmarin/ruby-core-skills:write-yard-docs"
+    ]
+  },
+  "igmarin/rails-agent-skills:migration": {
+    "name": "rails-migration",
+    "path": "skills/rails-migration/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:review-migration",
+      "igmarin/rails-agent-skills:load-context"
+    ]
+  },
+  "igmarin/rails-agent-skills:background-job": {
+    "name": "rails-background-job",
+    "path": "skills/rails-background-job/SKILL.md",
+    "dependencies": [
+      "igmarin/rails-agent-skills:implement-background-job",
+      "igmarin/rails-agent-skills:write-tests",
+      "igmarin/ruby-core-skills:tdd-process"
+    ]
+  }
+}

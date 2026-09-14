@@ -1,0 +1,81 @@
+{
+  "version": "0.1.0",
+  "packs": {
+    "planning": {
+      "repo": "agnostic-planning-skills",
+      "id": "igmarin/agnostic-planning-skills",
+      "url": "https://github.com/igmarin/agnostic-planning-skills.git",
+      "sha": "ae074f9c8718013a6b2c618b3856e6914986b775"
+    },
+    "elixir": {
+      "repo": "elixir-phoenix-skills",
+      "id": "igmarin/elixir-phoenix-skills",
+      "url": "https://github.com/igmarin/elixir-phoenix-skills.git",
+      "sha": "c927acfc4b5d8042d0676a1be0d8e294e2fc8189"
+    },
+    "ruby": {
+      "repo": "ruby-core-skills",
+      "id": "igmarin/ruby-core-skills",
+      "url": "https://github.com/igmarin/ruby-core-skills.git",
+      "sha": "d4d75dddae574942ebf9a56bb8d56cb699d8c4a6"
+    },
+    "rails": {
+      "repo": "rails-agent-skills",
+      "id": "igmarin/rails-agent-skills",
+      "url": "https://github.com/igmarin/rails-agent-skills.git",
+      "sha": "08661ee9b537444253732d9d353f05fac0ac2f27"
+    },
+    "rust": {
+      "repo": "rust-core-skills",
+      "id": "igmarin/rust-core-skills",
+      "url": "https://github.com/igmarin/rust-core-skills.git",
+      "sha": "d27b83055ce5a78253adb550b49380ab67190d9b"
+    }
+  },
+  "bundles": {
+    "project-planning": {
+      "packs": [
+        "planning"
+      ],
+      "roles": [
+        "product-owner",
+        "project-manager",
+        "tech-lead",
+        "delivery-lead"
+      ],
+      "description": "Plan scope, prioritize work, assess delivery, and hand off accepted tasks."
+    },
+    "elixir-developer": {
+      "packs": [
+        "planning",
+        "elixir"
+      ],
+      "roles": [
+        "elixir-developer"
+      ],
+      "description": "Implement and verify Elixir/Phoenix work with focused skills and project-aware defaults."
+    },
+    "ruby-developer": {
+      "packs": [
+        "planning",
+        "ruby",
+        "rails"
+      ],
+      "roles": [
+        "ruby-developer",
+        "rails-developer"
+      ],
+      "description": "Implement Ruby work; select Rails workflows when the project uses Rails."
+    },
+    "rust-developer": {
+      "packs": [
+        "planning",
+        "rust"
+      ],
+      "roles": [
+        "rust-developer"
+      ],
+      "description": "Implement Rust changes with ownership, error handling, and verified behavior."
+    }
+  }
+}

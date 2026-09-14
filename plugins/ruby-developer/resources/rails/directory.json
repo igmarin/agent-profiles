@@ -1,0 +1,174 @@
+{
+  "name": "igmarin/rails-agent-skills",
+  "version": "7.0.0",
+  "license": "MIT",
+  "summary": "Curated library of 28 atomic skills and 9 personas for Ruby on Rails development. Organized by category: testing, code-quality, engines, infrastructure, api, context, and personas. Covers code review, architecture, security, testing (RSpec), engines, Hotwire, and TDD automation. Shared Ruby skills (YARD docs, DDD, service objects) have moved to ruby-core-skills.",
+  "depends_on": [
+    "igmarin/ruby-core-skills"
+  ],
+  "skills": {
+    "generate-api-collection": {
+      "path": "skills/api/generate-api-collection/SKILL.md"
+    },
+    "implement-graphql": {
+      "path": "skills/api/implement-graphql/SKILL.md"
+    },
+    "apply-code-conventions": {
+      "path": "skills/code-quality/apply-code-conventions/SKILL.md"
+    },
+    "apply-stack-conventions": {
+      "path": "skills/code-quality/apply-stack-conventions/SKILL.md"
+    },
+    "code-review": {
+      "path": "skills/code-quality/code-review/SKILL.md"
+    },
+    "implement-authorization": {
+      "path": "skills/code-quality/implement-authorization/SKILL.md"
+    },
+    "refactor-code": {
+      "path": "skills/code-quality/refactor-code/SKILL.md"
+    },
+    "review-architecture": {
+      "path": "skills/code-quality/review-architecture/SKILL.md"
+    },
+    "security-check": {
+      "path": "skills/code-quality/security-check/SKILL.md"
+    },
+    "load-context": {
+      "path": "skills/context/load-context/SKILL.md"
+    },
+    "setup-environment": {
+      "path": "skills/context/setup-environment/SKILL.md"
+    },
+    "create-engine": {
+      "path": "skills/engines/create-engine/SKILL.md"
+    },
+    "upgrade-engine": {
+      "path": "skills/engines/upgrade-engine/SKILL.md"
+    },
+    "document-engine": {
+      "path": "skills/engines/document-engine/SKILL.md"
+    },
+    "extract-engine": {
+      "path": "skills/engines/extract-engine/SKILL.md"
+    },
+    "create-engine-installer": {
+      "path": "skills/engines/create-engine-installer/SKILL.md"
+    },
+    "release-engine": {
+      "path": "skills/engines/release-engine/SKILL.md"
+    },
+    "review-engine": {
+      "path": "skills/engines/review-engine/SKILL.md"
+    },
+    "test-engine": {
+      "path": "skills/engines/test-engine/SKILL.md"
+    },
+    "implement-hotwire": {
+      "path": "skills/infrastructure/implement-hotwire/SKILL.md"
+    },
+    "implement-background-job": {
+      "path": "skills/infrastructure/implement-background-job/SKILL.md"
+    },
+    "optimize-performance": {
+      "path": "skills/infrastructure/optimize-performance/SKILL.md"
+    },
+    "review-migration": {
+      "path": "skills/infrastructure/review-migration/SKILL.md"
+    },
+    "seed-database": {
+      "path": "skills/infrastructure/seed-database/SKILL.md"
+    },
+    "version-api": {
+      "path": "skills/infrastructure/version-api/SKILL.md"
+    },
+    "plan-tests": {
+      "path": "skills/testing/plan-tests/SKILL.md"
+    },
+    "write-tests": {
+      "path": "skills/testing/write-tests/SKILL.md"
+    },
+    "test-service": {
+      "path": "skills/testing/test-service/SKILL.md"
+    },
+    "tdd": {
+      "path": "skills/personas/tdd/SKILL.md"
+    },
+    "review": {
+      "path": "skills/personas/review/SKILL.md"
+    },
+    "setup": {
+      "path": "skills/personas/setup/SKILL.md"
+    },
+    "quality": {
+      "path": "skills/personas/quality/SKILL.md"
+    },
+    "engine": {
+      "path": "skills/personas/engine/SKILL.md"
+    },
+    "bug-fix": {
+      "path": "skills/personas/bug-fix/SKILL.md"
+    },
+    "graphql": {
+      "path": "skills/personas/graphql/SKILL.md"
+    },
+    "migration": {
+      "path": "skills/personas/migration/SKILL.md"
+    },
+    "background-job": {
+      "path": "skills/personas/background-job/SKILL.md"
+    }
+  },
+  "deprecated_skills": {
+    "write-yard-docs": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills. It will be resolved automatically via pack resolution.",
+      "removed_in": "7.0.0"
+    },
+    "create-service-object": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "implement-calculator-pattern": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "integrate-api-client": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "define-domain-language": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "review-domain-boundaries": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "model-domain": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "triage-bug": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "respond-to-review": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    },
+    "skill-router": {
+      "moved_to": "igmarin/ruby-core-skills",
+      "message": "This skill has moved to ruby-core-skills.",
+      "removed_in": "7.0.0"
+    }
+  }
+}

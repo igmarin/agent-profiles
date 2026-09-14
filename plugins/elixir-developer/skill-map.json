@@ -1,0 +1,389 @@
+{
+  "igmarin/agnostic-planning-skills:create-prd": {
+    "name": "planning-create-prd",
+    "path": "skills/planning-create-prd/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:review-prd": {
+    "name": "planning-review-prd",
+    "path": "skills/planning-review-prd/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:generate-tasks": {
+    "name": "planning-generate-tasks",
+    "path": "skills/planning-generate-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:plan-tickets": {
+    "name": "planning-plan-tickets",
+    "path": "skills/planning-plan-tickets/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:estimate-tasks": {
+    "name": "planning-estimate-tasks",
+    "path": "skills/planning-estimate-tasks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:prioritize-backlog": {
+    "name": "planning-prioritize-backlog",
+    "path": "skills/planning-prioritize-backlog/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:plan-sprint": {
+    "name": "planning-plan-sprint",
+    "path": "skills/planning-plan-sprint/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:create-retrospective": {
+    "name": "planning-create-retrospective",
+    "path": "skills/planning-create-retrospective/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:generate-status-report": {
+    "name": "planning-generate-status-report",
+    "path": "skills/planning-generate-status-report/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:identify-risks": {
+    "name": "planning-identify-risks",
+    "path": "skills/planning-identify-risks/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:requirements-clarifier": {
+    "name": "planning-requirements-clarifier",
+    "path": "skills/planning-requirements-clarifier/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:github-issue": {
+    "name": "planning-github-issue",
+    "path": "skills/planning-github-issue/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/agnostic-planning-skills:product-owner": {
+    "name": "planning-product-owner",
+    "path": "skills/planning-product-owner/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:project-manager": {
+    "name": "planning-project-manager",
+    "path": "skills/planning-project-manager/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:tech-lead": {
+    "name": "planning-tech-lead",
+    "path": "skills/planning-tech-lead/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:estimate-tasks"
+    ]
+  },
+  "igmarin/agnostic-planning-skills:delivery-lead": {
+    "name": "planning-delivery-lead",
+    "path": "skills/planning-delivery-lead/SKILL.md",
+    "dependencies": [
+      "igmarin/agnostic-planning-skills:create-prd",
+      "igmarin/agnostic-planning-skills:review-prd",
+      "igmarin/agnostic-planning-skills:generate-tasks",
+      "igmarin/agnostic-planning-skills:plan-tickets",
+      "igmarin/agnostic-planning-skills:estimate-tasks",
+      "igmarin/agnostic-planning-skills:identify-risks",
+      "igmarin/agnostic-planning-skills:generate-status-report",
+      "igmarin/agnostic-planning-skills:prioritize-backlog",
+      "igmarin/agnostic-planning-skills:plan-sprint",
+      "igmarin/agnostic-planning-skills:create-retrospective"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:elixir-essentials": {
+    "name": "elixir-elixir-essentials",
+    "path": "skills/elixir-elixir-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:otp-essentials": {
+    "name": "elixir-otp-essentials",
+    "path": "skills/elixir-otp-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:typespec-dialyzer": {
+    "name": "elixir-typespec-dialyzer",
+    "path": "skills/elixir-typespec-dialyzer/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-liveview-essentials": {
+    "name": "elixir-phoenix-liveview-essentials",
+    "path": "skills/elixir-phoenix-liveview-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-scopes": {
+    "name": "elixir-phoenix-scopes",
+    "path": "skills/elixir-phoenix-scopes/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:liveview-streams": {
+    "name": "elixir-liveview-streams",
+    "path": "skills/elixir-liveview-streams/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-channels-essentials": {
+    "name": "elixir-phoenix-channels-essentials",
+    "path": "skills/elixir-phoenix-channels-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-json-api": {
+    "name": "elixir-phoenix-json-api",
+    "path": "skills/elixir-phoenix-json-api/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-pubsub-patterns": {
+    "name": "elixir-phoenix-pubsub-patterns",
+    "path": "skills/elixir-phoenix-pubsub-patterns/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-uploads": {
+    "name": "elixir-phoenix-uploads",
+    "path": "skills/elixir-phoenix-uploads/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:ecto-essentials": {
+    "name": "elixir-ecto-essentials",
+    "path": "skills/elixir-ecto-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:ecto-changeset-patterns": {
+    "name": "elixir-ecto-changeset-patterns",
+    "path": "skills/elixir-ecto-changeset-patterns/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:ecto-nested-associations": {
+    "name": "elixir-ecto-nested-associations",
+    "path": "skills/elixir-ecto-nested-associations/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:testing-essentials": {
+    "name": "elixir-testing-essentials",
+    "path": "skills/elixir-testing-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:property-based-testing": {
+    "name": "elixir-property-based-testing",
+    "path": "skills/elixir-property-based-testing/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:benchee-profiling": {
+    "name": "elixir-benchee-profiling",
+    "path": "skills/elixir-benchee-profiling/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-liveview-auth": {
+    "name": "elixir-phoenix-liveview-auth",
+    "path": "skills/elixir-phoenix-liveview-auth/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-auth-customization": {
+    "name": "elixir-phoenix-auth-customization",
+    "path": "skills/elixir-phoenix-auth-customization/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:phoenix-authorization-patterns": {
+    "name": "elixir-phoenix-authorization-patterns",
+    "path": "skills/elixir-phoenix-authorization-patterns/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:oban-essentials": {
+    "name": "elixir-oban-essentials",
+    "path": "skills/elixir-oban-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:broadway-data-pipelines": {
+    "name": "elixir-broadway-data-pipelines",
+    "path": "skills/elixir-broadway-data-pipelines/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:deployment-gotchas": {
+    "name": "elixir-deployment-gotchas",
+    "path": "skills/elixir-deployment-gotchas/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:telemetry-essentials": {
+    "name": "elixir-telemetry-essentials",
+    "path": "skills/elixir-telemetry-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:cachex-caching": {
+    "name": "elixir-cachex-caching",
+    "path": "skills/elixir-cachex-caching/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:code-quality": {
+    "name": "elixir-code-quality",
+    "path": "skills/elixir-code-quality/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:credo-config": {
+    "name": "elixir-credo-config",
+    "path": "skills/elixir-credo-config/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:apply-phoenix-liveview-conventions": {
+    "name": "elixir-apply-phoenix-liveview-conventions",
+    "path": "skills/elixir-apply-phoenix-liveview-conventions/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:apply-phoenix-controller-conventions": {
+    "name": "elixir-apply-phoenix-controller-conventions",
+    "path": "skills/elixir-apply-phoenix-controller-conventions/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:code-review": {
+    "name": "elixir-code-review",
+    "path": "skills/elixir-code-review/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:refactor-code": {
+    "name": "elixir-refactor-code",
+    "path": "skills/elixir-refactor-code/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:respond-to-review": {
+    "name": "elixir-respond-to-review",
+    "path": "skills/elixir-respond-to-review/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:apply-ecto-conventions": {
+    "name": "elixir-apply-ecto-conventions",
+    "path": "skills/elixir-apply-ecto-conventions/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:security-essentials": {
+    "name": "elixir-security-essentials",
+    "path": "skills/elixir-security-essentials/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:req-http-client": {
+    "name": "elixir-req-http-client",
+    "path": "skills/elixir-req-http-client/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:swoosh-emails": {
+    "name": "elixir-swoosh-emails",
+    "path": "skills/elixir-swoosh-emails/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:gettext-i18n": {
+    "name": "elixir-gettext-i18n",
+    "path": "skills/elixir-gettext-i18n/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:mix-tasks-generators": {
+    "name": "elixir-mix-tasks-generators",
+    "path": "skills/elixir-mix-tasks-generators/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:ash-framework": {
+    "name": "elixir-ash-framework",
+    "path": "skills/elixir-ash-framework/SKILL.md",
+    "dependencies": []
+  },
+  "igmarin/elixir-phoenix-skills:elixir-skill-router": {
+    "name": "elixir-elixir-skill-router",
+    "path": "skills/elixir-elixir-skill-router/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:tdd",
+      "igmarin/elixir-phoenix-skills:bug-fix",
+      "igmarin/elixir-phoenix-skills:quality",
+      "igmarin/elixir-phoenix-skills:code-review-playbook",
+      "igmarin/elixir-phoenix-skills:setup",
+      "igmarin/elixir-phoenix-skills:liveview",
+      "igmarin/elixir-phoenix-skills:background-job",
+      "igmarin/elixir-phoenix-skills:ecto-migration",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:phoenix-liveview-essentials",
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:ecto-essentials",
+      "igmarin/elixir-phoenix-skills:code-review",
+      "igmarin/elixir-phoenix-skills:code-quality",
+      "igmarin/elixir-phoenix-skills:credo-config",
+      "igmarin/elixir-phoenix-skills:oban-essentials"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:tdd": {
+    "name": "elixir-tdd",
+    "path": "skills/elixir-tdd/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:typespec-dialyzer"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:quality": {
+    "name": "elixir-quality",
+    "path": "skills/elixir-quality/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:code-quality",
+      "igmarin/elixir-phoenix-skills:credo-config",
+      "igmarin/elixir-phoenix-skills:refactor-code",
+      "igmarin/elixir-phoenix-skills:typespec-dialyzer"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:setup": {
+    "name": "elixir-setup",
+    "path": "skills/elixir-setup/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:mix-tasks-generators",
+      "igmarin/elixir-phoenix-skills:deployment-gotchas",
+      "igmarin/elixir-phoenix-skills:testing-essentials"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:bug-fix": {
+    "name": "elixir-bug-fix",
+    "path": "skills/elixir-bug-fix/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:background-job": {
+    "name": "elixir-background-job",
+    "path": "skills/elixir-background-job/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:oban-essentials",
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:telemetry-essentials"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:liveview": {
+    "name": "elixir-liveview",
+    "path": "skills/elixir-liveview/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:phoenix-liveview-essentials",
+      "igmarin/elixir-phoenix-skills:testing-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials",
+      "igmarin/elixir-phoenix-skills:apply-phoenix-liveview-conventions"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:ecto-migration": {
+    "name": "elixir-ecto-migration",
+    "path": "skills/elixir-ecto-migration/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:ecto-essentials",
+      "igmarin/elixir-phoenix-skills:apply-ecto-conventions"
+    ]
+  },
+  "igmarin/elixir-phoenix-skills:code-review-playbook": {
+    "name": "elixir-code-review-playbook",
+    "path": "skills/elixir-code-review-playbook/SKILL.md",
+    "dependencies": [
+      "igmarin/elixir-phoenix-skills:code-review",
+      "igmarin/elixir-phoenix-skills:security-essentials",
+      "igmarin/elixir-phoenix-skills:elixir-essentials"
+    ]
+  }
+}

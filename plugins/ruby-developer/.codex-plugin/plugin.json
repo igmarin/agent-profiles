@@ -1,0 +1,7 @@
+{
+  "name": "ruby-developer",
+  "version": "0.1.0",
+  "description": "Implement Ruby work; select Rails workflows when the project uses Rails.",
+  "license": "MIT",
+  "skills": "./skills"
+}

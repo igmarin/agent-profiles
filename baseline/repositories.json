@@ -1,0 +1,42 @@
+{
+  "agnostic-planning-skills": {
+    "commit": "fce18f2554772a83e4a3550fad350a553ed84cca",
+    "status": "D  .cline_mcp_servers.json\nD  .clinerules\nD  .devin/mcp_config.json\nD  .grok/config.toml\nD  .mcp.json\nD  .zed/settings.json",
+    "remote": "git@github.com:igmarin/agnostic-planning-skills.git"
+  },
+  "elixir-phoenix-skills": {
+    "commit": "347227d702109f76782e52165da39e71421360f6",
+    "status": "D  .cline_mcp_servers.json\nD  .clinerules\nD  .devin/mcp_config.json\nD  .grok/config.toml\nD  .mcp.json\nD  .zed/settings.json",
+    "remote": "git@github.com:igmarin/elixir-phoenix-skills.git"
+  },
+  "ruby-core-skills": {
+    "commit": "9b2e1f7fd56d2919d78476336a3abe74045361a0",
+    "status": "",
+    "remote": "git@github.com:igmarin/ruby-core-skills.git"
+  },
+  "rails-agent-skills": {
+    "commit": "206c5e0bf7aff3c91f2ed73b6b8247dc729faf4d",
+    "status": "D  .cline_mcp_servers.json\nD  .clinerules\nD  .devin/mcp_config.json\nD  .grok/config.toml\nD  .mcp.json\nD  .zed/settings.json",
+    "remote": "git@github.com:igmarin/rails-agent-skills.git"
+  },
+  "rust-core-skills": {
+    "commit": "7b359cd72eeb1d9c03ff7e9354f06b1cb18df80a",
+    "status": "",
+    "remote": "https://github.com/igmarin/rust-core-skills.git"
+  },
+  "ruby-skill-bench": {
+    "commit": "e3d0763e6a7580debca5fc98e159687ee6a2e350",
+    "status": "M CONTRIBUTING.md\n M README.md\n M docs/architecture.md\n M docs/first-eval-guide.md\n M examples/README.md\n M lib/skill_bench/cli/README.md\n M lib/skill_bench/cli/help_printer.rb\n M lib/skill_bench/clients/README.md\n M test/cli/help_printer_test.rb",
+    "remote": "git@github.com:igmarin/ruby-skill-bench.git"
+  },
+  "dotskills": {
+    "commit": "342bd2d272933c84eff78b27d2c7d522fea6ccc5",
+    "status": "",
+    "remote": "git@github.com:igmarin/dotskills.git"
+  },
+  "my-pi-agent": {
+    "commit": "9c66100021121e3ff82bd4dea3f1986a2d175e7a",
+    "status": "",
+    "remote": "git@github.com:igmarin/my-pi-agent.git"
+  }
+}

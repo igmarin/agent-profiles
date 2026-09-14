@@ -1,0 +1,23 @@
+{
+  "name": "igmarin/rust-core-skills",
+  "version": "0.1.0",
+  "license": "MIT",
+  "depends_on": ["igmarin/agnostic-planning-skills"],
+  "inventory": {
+    "atomic": 5,
+    "playbooks": 1,
+    "orchestrators": 1,
+    "total": 7,
+    "playbook_ids": ["tdd"]
+  },
+  "summary": "7 written skills for idiomatic Rust: FCIS, ownership, type-driven design, cargo TDD. Complements agnostic-planning-skills, ruby-core-skills, rails-agent-skills, and elixir-phoenix-skills. Planned IDs live in docs/topic-inventory.md until they have a SKILL.md.",
+  "skills": {
+    "rust-essentials": { "path": "skills/rust-essentials/SKILL.md" },
+    "ownership-borrowing": { "path": "skills/ownership-borrowing/SKILL.md" },
+    "type-driven-design": { "path": "skills/type-driven-design/SKILL.md" },
+    "error-handling": { "path": "skills/error-handling/SKILL.md" },
+    "load-context": { "path": "skills/load-context/SKILL.md" },
+    "tdd": { "path": "skills/tdd/SKILL.md" },
+    "rust-skill-router": { "path": "skills/rust-skill-router/SKILL.md" }
+  }
+}

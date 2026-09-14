@@ -1,0 +1,29 @@
+{
+  "remove_aliases_in": "2.0.0",
+  "aliases": {
+    "create-prd": "igmarin/agnostic-planning-skills:create-prd",
+    "review-prd": "igmarin/agnostic-planning-skills:review-prd",
+    "generate-tasks": "igmarin/agnostic-planning-skills:generate-tasks",
+    "plan-tickets": "igmarin/agnostic-planning-skills:plan-tickets",
+    "estimate-tasks": "igmarin/agnostic-planning-skills:estimate-tasks",
+    "prioritize-backlog": "igmarin/agnostic-planning-skills:prioritize-backlog",
+    "plan-sprint": "igmarin/agnostic-planning-skills:plan-sprint",
+    "create-retrospective": "igmarin/agnostic-planning-skills:create-retrospective",
+    "generate-status-report": "igmarin/agnostic-planning-skills:generate-status-report",
+    "identify-risks": "igmarin/agnostic-planning-skills:identify-risks",
+    "requirements-clarifier": "igmarin/agnostic-planning-skills:requirements-clarifier",
+    "github-issue": "igmarin/agnostic-planning-skills:github-issue",
+    "product-owner": "igmarin/agnostic-planning-skills:product-owner",
+    "project-manager": "igmarin/agnostic-planning-skills:project-manager",
+    "tech-lead": "igmarin/agnostic-planning-skills:tech-lead",
+    "delivery-lead": "igmarin/agnostic-planning-skills:delivery-lead",
+    "rust-essentials": "igmarin/rust-core-skills:rust-essentials",
+    "ownership-borrowing": "igmarin/rust-core-skills:ownership-borrowing",
+    "type-driven-design": "igmarin/rust-core-skills:type-driven-design",
+    "error-handling": "igmarin/rust-core-skills:error-handling",
+    "load-context": "igmarin/rust-core-skills:load-context",
+    "tdd": "igmarin/rust-core-skills:tdd",
+    "rust-skill-router": "igmarin/rust-core-skills:rust-skill-router"
+  },
+  "ambiguous": {}
+}
