@@ -1,0 +1,38 @@
+{
+  "role": "elixir-developer",
+  "cases": [
+    {
+      "id": "small-bug",
+      "task": "Correct a failing Elixir behavior with a focused regression test.",
+      "requires": ["igmarin/elixir-phoenix-skills:bug-fix"],
+      "requires_text": ["A small fix needs a bounded goal and acceptance test, not a formal PRD"]
+    },
+    {
+      "id": "phoenix-feature-auth",
+      "task": "Add a Phoenix LiveView feature with authorization.",
+      "requires": [
+        "igmarin/elixir-phoenix-skills:liveview",
+        "igmarin/elixir-phoenix-skills:phoenix-authorization-patterns"
+      ]
+    },
+    {
+      "id": "oban-retry",
+      "task": "Implement an idempotent Oban job with retry handling.",
+      "requires": [
+        "igmarin/elixir-phoenix-skills:background-job",
+        "igmarin/elixir-phoenix-skills:oban-essentials"
+      ]
+    },
+    {
+      "id": "planning-handoff",
+      "task": "Turn an unresolved product request into an implementation-ready plan.",
+      "requires": ["igmarin/agnostic-planning-skills:requirements-clarifier"],
+      "requires_text": ["persist a checkpoint", "A handoff contains these same fields"]
+    },
+    {
+      "id": "missing-required-skill",
+      "task": "A required selected skill is unavailable.",
+      "requires_text": ["Report a missing required skill and stop the dependent step"]
+    }
+  ]
+}

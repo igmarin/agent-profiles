@@ -300,9 +300,24 @@ def validate_exports(output):
     return {'entrypoints': count, 'status': 'passed'}
 
 
+def validate_routing():
+    checked = 0
+    for fixture in sorted((ROOT / 'evals' / 'routing').glob('*.json')):
+        data = read_json(fixture)
+        role = ROOT / 'roles' / (data['role'] + '.md')
+        text = (ROOT / 'roles' / 'common.md').read_text() + '\n' + role.read_text()
+        for case in data['cases']:
+            missing = set(case.get('requires', [])) - set(re.findall(r'igmarin/[a-z-]+:[a-z-]+', text))
+            forbidden = set(case.get('forbids', [])) & set(re.findall(r'igmarin/[a-z-]+:[a-z-]+', text))
+            if missing or forbidden or any(phrase not in text for phrase in case.get('requires_text', [])):
+                raise ValueError(f"{fixture}:{case['id']}: routing contract mismatch")
+            checked += 1
+    return {'routing_cases': checked, 'status': 'passed'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['validate', 'build', 'check-exports', 'pin', 'ledger'])
+    parser.add_argument('command', choices=['validate', 'build', 'check-exports', 'routing', 'pin', 'ledger'])
     parser.add_argument('--sources', type=Path, default=ROOT.parent)
     parser.add_argument('--output', type=Path, default=ROOT / 'plugins')
     parser.add_argument('--working-tree', action='store_true', help='Development build only; release builds require pinned clean source content')
@@ -316,6 +331,8 @@ def main():
             result = {'status': 'pinned'}
         elif args.command == 'check-exports':
             result = validate_exports(args.output)
+        elif args.command == 'routing':
+            result = validate_routing()
         elif args.command == 'build':
             result = build(config, args.sources, args.output, not args.working_tree)
         else:

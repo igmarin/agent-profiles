@@ -84,6 +84,9 @@ class ProfilesTest(unittest.TestCase):
         path.write_text('Example:\n```md\n[output](generated.md)\n```\n')
         p.check_links(path, self.pack)
 
+    def test_elixir_routing_fixture_matches_the_role_contract(self):
+        self.assertEqual({'routing_cases': 5, 'status': 'passed'}, p.validate_routing())
+
 
 if __name__ == '__main__':
     unittest.main()
