@@ -6,7 +6,7 @@ description: 'Use when onboarding onto a Rails app: Ruby version, Docker, env, d
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:setup-environment
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -25,7 +25,7 @@ Apply the [execution contract](../../resources/rails/docs/agent-contract.md) bef
 
 ## Core Process
 
-Emits a generic Rails onboarding runbook for the user to run locally. [`../../resources/rails/skills/context/setup-environment/references/steps.md`](../../resources/rails/skills/context/setup-environment/references/steps.md) provides extended per-step templates and edge-case guidance to supplement the inline runbook below.
+Emits a generic Rails onboarding runbook for the user to run locally. [`../../resources/rails/skills/setup-environment/references/steps.md`](../../resources/rails/skills/setup-environment/references/steps.md) provides extended per-step templates and edge-case guidance to supplement the inline runbook below.
 
 ### Runbook
 
@@ -83,8 +83,8 @@ rails server                 # then visit http://localhost:3000
 
 ## Extended Resources
 
-- [../../resources/rails/skills/context/setup-environment/EXAMPLES.md](../../resources/rails/skills/context/setup-environment/EXAMPLES.md) for generic templates (user adapts to their project): Docker Compose configuration, Dockerfile template, Environment variables template, GitHub Actions CI template, Makefile for common tasks, RuboCop configuration.
-- [references/steps.md](../../resources/rails/skills/context/setup-environment/references/steps.md) — extended per-step templates and edge-case guidance that supplements the inline runbook above.
+- [../../resources/rails/skills/setup-environment/EXAMPLES.md](../../resources/rails/skills/setup-environment/EXAMPLES.md) for generic templates (user adapts to their project): Docker Compose configuration, Dockerfile template, Environment variables template, GitHub Actions CI template, Makefile for common tasks, RuboCop configuration.
+- [references/steps.md](../../resources/rails/skills/setup-environment/references/steps.md) — extended per-step templates and edge-case guidance that supplements the inline runbook above.
 
 ## Output Style
 

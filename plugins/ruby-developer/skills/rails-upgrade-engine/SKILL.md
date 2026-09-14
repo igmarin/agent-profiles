@@ -5,7 +5,7 @@ description: 'Use when checking a Rails engine across Rails versions (Zeitwerk, 
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:upgrade-engine
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -59,9 +59,9 @@ strategy:
 
 ## Extended Resources
 
-- [../../resources/rails/skills/engines/upgrade-engine/assets/compatibility_matrix.md](../../resources/rails/skills/engines/upgrade-engine/assets/compatibility_matrix.md)
-- [../../resources/rails/skills/engines/upgrade-engine/assets/zeitwerk_notes.md](../../resources/rails/skills/engines/upgrade-engine/assets/zeitwerk_notes.md)
-- [../../resources/rails/skills/engines/upgrade-engine/EXAMPLES.md](../../resources/rails/skills/engines/upgrade-engine/EXAMPLES.md)
+- [../../resources/rails/skills/upgrade-engine/assets/compatibility_matrix.md](../../resources/rails/skills/upgrade-engine/assets/compatibility_matrix.md)
+- [../../resources/rails/skills/upgrade-engine/assets/zeitwerk_notes.md](../../resources/rails/skills/upgrade-engine/assets/zeitwerk_notes.md)
+- [../../resources/rails/skills/upgrade-engine/EXAMPLES.md](../../resources/rails/skills/upgrade-engine/EXAMPLES.md)
 
 ## Output Style
 

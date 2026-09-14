@@ -6,7 +6,7 @@ description: 'Use when running the full background-job loop: design, TDD, retry,
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:background-job
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:implement-background-job", "igmarin/rails-agent-skills:write-tests",
     "igmarin/ruby-core-skills:tdd-process"]'

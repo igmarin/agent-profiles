@@ -5,7 +5,7 @@ description: 'Use when building a GraphQL feature end to end: domain, schema, TD
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:graphql
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:implement-graphql", "igmarin/rails-agent-skills:security-check",
     "igmarin/rails-agent-skills:load-context", "igmarin/ruby-core-skills:define-domain-language",

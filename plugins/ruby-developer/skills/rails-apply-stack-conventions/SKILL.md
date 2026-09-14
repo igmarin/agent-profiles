@@ -6,7 +6,7 @@ description: 'Use when writing new Rails code for the PostgreSQL + Hotwire + Tai
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:apply-stack-conventions
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -132,12 +132,12 @@ Every response **must** include these sections in order:
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/eager_loading.rb](../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/eager_loading.rb)** — Use when applying eager loading patterns to fix N+1 queries
-- **[../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/n_plus_one_fix_example.rb](../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/n_plus_one_fix_example.rb)** — Use when you need a complete N+1 fix example with before/after
-- **[../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/service_object.rb](../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/service_object.rb)** — Use when extracting controller logic into a service object
-- **[../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/turbo_frame.html.erb](../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/turbo_frame.html.erb)** — Use when implementing Turbo Frame patterns
-- **[../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/stimulus_controller.js](../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/stimulus_controller.js)** — Use when adding Stimulus controllers
-- **[../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/tailwind_component.html.erb](../../resources/rails/skills/code-quality/apply-stack-conventions/assets/snippets/tailwind_component.html.erb)** — Use when building Tailwind-styled view components
+- **[../../resources/rails/skills/apply-stack-conventions/assets/snippets/eager_loading.rb](../../resources/rails/skills/apply-stack-conventions/assets/snippets/eager_loading.rb)** — Use when applying eager loading patterns to fix N+1 queries
+- **[../../resources/rails/skills/apply-stack-conventions/assets/snippets/n_plus_one_fix_example.rb](../../resources/rails/skills/apply-stack-conventions/assets/snippets/n_plus_one_fix_example.rb)** — Use when you need a complete N+1 fix example with before/after
+- **[../../resources/rails/skills/apply-stack-conventions/assets/snippets/service_object.rb](../../resources/rails/skills/apply-stack-conventions/assets/snippets/service_object.rb)** — Use when extracting controller logic into a service object
+- **[../../resources/rails/skills/apply-stack-conventions/assets/snippets/turbo_frame.html.erb](../../resources/rails/skills/apply-stack-conventions/assets/snippets/turbo_frame.html.erb)** — Use when implementing Turbo Frame patterns
+- **[../../resources/rails/skills/apply-stack-conventions/assets/snippets/stimulus_controller.js](../../resources/rails/skills/apply-stack-conventions/assets/snippets/stimulus_controller.js)** — Use when adding Stimulus controllers
+- **[../../resources/rails/skills/apply-stack-conventions/assets/snippets/tailwind_component.html.erb](../../resources/rails/skills/apply-stack-conventions/assets/snippets/tailwind_component.html.erb)** — Use when building Tailwind-styled view components
 
 ## Integration
 

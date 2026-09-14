@@ -6,7 +6,7 @@ description: 'Use when choosing seeds, fixtures, or factories for Rails dev/test
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:seed-database
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -71,14 +71,14 @@ if Rails.env.development?
 end
 ```
 
-For FactoryBot factory definitions and more complex relationship patterns, see **[../../resources/rails/skills/infrastructure/seed-database/EXAMPLES.md](../../resources/rails/skills/infrastructure/seed-database/EXAMPLES.md)**.
+For FactoryBot factory definitions and more complex relationship patterns, see **[../../resources/rails/skills/seed-database/EXAMPLES.md](../../resources/rails/skills/seed-database/EXAMPLES.md)**.
 
 ## Extended Resources (Progressive Disclosure)
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/infrastructure/seed-database/EXAMPLES.md](../../resources/rails/skills/infrastructure/seed-database/EXAMPLES.md)** — Use when you need complete seeding examples with environment-specific patterns and FactoryBot factory definitions
-- **[../../resources/rails/skills/infrastructure/seed-database/references/workflow.md](../../resources/rails/skills/infrastructure/seed-database/references/workflow.md)** — Use when implementing complex seeding workflows or migration-dependent seed data
+- **[../../resources/rails/skills/seed-database/EXAMPLES.md](../../resources/rails/skills/seed-database/EXAMPLES.md)** — Use when you need complete seeding examples with environment-specific patterns and FactoryBot factory definitions
+- **[../../resources/rails/skills/seed-database/references/workflow.md](../../resources/rails/skills/seed-database/references/workflow.md)** — Use when implementing complex seeding workflows or migration-dependent seed data
 
 ## Output Style
 

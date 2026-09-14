@@ -6,7 +6,7 @@ description: 'Use when changing Rails structure without changing behavior. Chara
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:refactor-code
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -100,8 +100,8 @@ end
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/code-quality/refactor-code/assets/complete_example.md](../../resources/rails/skills/code-quality/refactor-code/assets/complete_example.md)** — A complete, step-by-step example of a high-scoring `answer.md` showing plan, stable behavior, characterization tests, step-by-step verification runs, and final suite verification command outputs.
-- **[../../resources/rails/skills/code-quality/refactor-code/EXAMPLES.md](../../resources/rails/skills/code-quality/refactor-code/EXAMPLES.md)** — For more examples of extracting services and renaming in small batches.
+- **[../../resources/rails/skills/refactor-code/assets/complete_example.md](../../resources/rails/skills/refactor-code/assets/complete_example.md)** — A complete, step-by-step example of a high-scoring `answer.md` showing plan, stable behavior, characterization tests, step-by-step verification runs, and final suite verification command outputs.
+- **[../../resources/rails/skills/refactor-code/EXAMPLES.md](../../resources/rails/skills/refactor-code/EXAMPLES.md)** — For more examples of extracting services and renaming in small batches.
 
 ### 5. Verification Protocol
 

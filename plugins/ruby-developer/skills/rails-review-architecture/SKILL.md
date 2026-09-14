@@ -6,7 +6,7 @@ description: 'Use when reviewing Rails structure, fat models or controllers, or 
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:review-architecture
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -104,5 +104,5 @@ Use this skill when the task is to review or improve the structure of a Rails ap
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/code-quality/review-architecture/assets/examples.md](../../resources/rails/skills/code-quality/review-architecture/assets/examples.md)** — Use when you need complete architecture review examples with findings and recommendations
-- **[../../resources/rails/skills/code-quality/review-architecture/assets/findings_schema.json](../../resources/rails/skills/code-quality/review-architecture/assets/findings_schema.json)** — Use when you need the structured JSON schema for architecture review findings output
+- **[../../resources/rails/skills/review-architecture/assets/examples.md](../../resources/rails/skills/review-architecture/assets/examples.md)** — Use when you need complete architecture review examples with findings and recommendations
+- **[../../resources/rails/skills/review-architecture/assets/findings_schema.json](../../resources/rails/skills/review-architecture/assets/findings_schema.json)** — Use when you need the structured JSON schema for architecture review findings output

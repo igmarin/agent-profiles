@@ -421,5 +421,10 @@
       "igmarin/rails-agent-skills:write-tests",
       "igmarin/ruby-core-skills:tdd-process"
     ]
+  },
+  "igmarin/rails-agent-skills:rails-agent-skills": {
+    "name": "rails-rails-agent-skills",
+    "path": "skills/rails-rails-agent-skills/SKILL.md",
+    "dependencies": []
   }
 }

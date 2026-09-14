@@ -6,7 +6,7 @@ description: 'Use when adding or reviewing Rails authorization with Pundit, CanC
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:implement-authorization
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -29,7 +29,7 @@ Apply the [execution contract](../../resources/rails/docs/agent-contract.md) bef
 ### Implementation Workflow
 
 1. **Inspect existing authorization** — reuse the installed policy framework; add `pundit` or `cancancan` only if the task requires a new framework and project conventions permit it
-2. **Generate base** — run the gem's installer (`rails g pundit:install` or `rails g cancan:ability`)
+2. **Generate base only when needed** — run the gem's installer (`rails g pundit:install` or `rails g cancan:ability`) only when no supported framework is present and the project permits the generator; otherwise proceed with the detected framework without invoking generators
 3. **Define policies/abilities** — create policy classes (Pundit) or populate the Ability class (CanCanCan); always use policy objects, never inline authorization logic in controllers
 4. **Authorize in controllers** — call `authorize @record` (Pundit) or `authorize! :action, @record` (CanCanCan) in each action
 5. **Verify authorization** — attempt an unauthorized action in the browser or console and confirm it raises `Pundit::NotAuthorizedError` or `CanCan::AccessDenied` as expected; use persisted records (e.g., `User.create!`) not unsaved ones
@@ -107,7 +107,7 @@ When implementing or reviewing authorization, the output `answer.md` must includ
 2. **HTTP and Policy Verification** — concrete `curl` requests or controller test commands with expected HTTP response codes (e.g. `403 Forbidden` or `302 Found`) when access is denied.
 3. **Language** — English unless explicitly requested otherwise.
 
-See **[../../resources/rails/skills/code-quality/implement-authorization/references/output-style.md](../../resources/rails/skills/code-quality/implement-authorization/references/output-style.md)** for full formatting examples including Pundit and CanCanCan console output templates.
+See **[../../resources/rails/skills/implement-authorization/references/output-style.md](../../resources/rails/skills/implement-authorization/references/output-style.md)** for full formatting examples including Pundit and CanCanCan console output templates.
 
 ## Integration
 
@@ -119,6 +119,6 @@ See **[../../resources/rails/skills/code-quality/implement-authorization/referen
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/code-quality/implement-authorization/EXAMPLES.md](../../resources/rails/skills/code-quality/implement-authorization/EXAMPLES.md)** — Use when you need complete Pundit or CanCanCan implementation examples beyond the inline samples
-- **[../../resources/rails/skills/code-quality/implement-authorization/references/workflow.md](../../resources/rails/skills/code-quality/implement-authorization/references/workflow.md)** — Use when you need the step-by-step authorization implementation workflow diagram
-- **[../../resources/rails/skills/code-quality/implement-authorization/references/output-style.md](../../resources/rails/skills/code-quality/implement-authorization/references/output-style.md)** — Use when you need full formatting templates for console verification output
+- **[../../resources/rails/skills/implement-authorization/EXAMPLES.md](../../resources/rails/skills/implement-authorization/EXAMPLES.md)** — Use when you need complete Pundit or CanCanCan implementation examples beyond the inline samples
+- **[../../resources/rails/skills/implement-authorization/references/workflow.md](../../resources/rails/skills/implement-authorization/references/workflow.md)** — Use when you need the step-by-step authorization implementation workflow diagram
+- **[../../resources/rails/skills/implement-authorization/references/output-style.md](../../resources/rails/skills/implement-authorization/references/output-style.md)** — Use when you need full formatting templates for console verification output

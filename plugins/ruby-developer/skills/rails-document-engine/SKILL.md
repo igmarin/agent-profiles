@@ -5,7 +5,7 @@ description: 'Use when writing engine README, install, and configuration docs. T
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:document-engine
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -65,11 +65,11 @@ In `config/initializers/my_engine.rb`:
 
 ## Extended Resources
 
-See [CHECKLIST.md](../../resources/rails/skills/engines/document-engine/CHECKLIST.md) for the full recommended README shape and documentation gap checklist. Critical gaps tracked there: installation steps, all config options with defaults, explicit mount path, migration timing, host model/auth assumptions.
+See [CHECKLIST.md](../../resources/rails/skills/document-engine/CHECKLIST.md) for the full recommended README shape and documentation gap checklist. Critical gaps tracked there: installation steps, all config options with defaults, explicit mount path, migration timing, host model/auth assumptions.
 
-- [../../resources/rails/skills/engines/document-engine/assets/configuration.md](../../resources/rails/skills/engines/document-engine/assets/configuration.md) — detailed config option catalog with type info, validation rules, and all supported defaults
-- [../../resources/rails/skills/engines/document-engine/assets/examples.md](../../resources/rails/skills/engines/document-engine/assets/examples.md) — realistic end-to-end usage examples covering common host-app integration workflows
-- [../../resources/rails/skills/engines/document-engine/assets/installation.md](../../resources/rails/skills/engines/document-engine/assets/installation.md) — step-by-step install and generator reference including post-install setup tasks
+- [../../resources/rails/skills/document-engine/assets/configuration.md](../../resources/rails/skills/document-engine/assets/configuration.md) — detailed config option catalog with type info, validation rules, and all supported defaults
+- [../../resources/rails/skills/document-engine/assets/examples.md](../../resources/rails/skills/document-engine/assets/examples.md) — realistic end-to-end usage examples covering common host-app integration workflows
+- [../../resources/rails/skills/document-engine/assets/installation.md](../../resources/rails/skills/document-engine/assets/installation.md) — step-by-step install and generator reference including post-install setup tasks
 
 ## Output Style
 

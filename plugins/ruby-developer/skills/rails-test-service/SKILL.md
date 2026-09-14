@@ -5,7 +5,7 @@ description: 'Use when writing RSpec for a service object under spec/services/. 
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:test-service
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -148,9 +148,9 @@ let(:api_response) { build(:api_animal_response, tag_number: 'TAG002') }
 
 Load these files only when their specific content is needed:
 
-- **[PATTERNS.md](../../resources/rails/skills/testing/test-service/PATTERNS.md)** — Use when you need the full pattern catalog and factory placement guidance
-- **[../../resources/rails/skills/testing/test-service/assets/spec_examples.md](../../resources/rails/skills/testing/test-service/assets/spec_examples.md)** — Use when you need additional worked examples beyond the spec template above
-- **[../../resources/rails/skills/testing/test-service/assets/testing_checklist.md](../../resources/rails/skills/testing/test-service/assets/testing_checklist.md)** — Use when reviewing a completed service spec for completeness
+- **[PATTERNS.md](../../resources/rails/skills/test-service/PATTERNS.md)** — Use when you need the full pattern catalog and factory placement guidance
+- **[../../resources/rails/skills/test-service/assets/spec_examples.md](../../resources/rails/skills/test-service/assets/spec_examples.md)** — Use when you need additional worked examples beyond the spec template above
+- **[../../resources/rails/skills/test-service/assets/testing_checklist.md](../../resources/rails/skills/test-service/assets/testing_checklist.md)** — Use when reviewing a completed service spec for completeness
 
 ## Output Style
 

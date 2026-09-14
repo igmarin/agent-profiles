@@ -5,7 +5,7 @@ description: 'Use when reviewing a Rails engine for isolation, API surface, and 
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:review-engine
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -129,6 +129,6 @@ When asked to review an engine, your output `answer.md` MUST comply with:
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/engines/review-engine/FINDINGS.md](../../resources/rails/skills/engines/review-engine/FINDINGS.md)** — Use when you need sample findings format and severity classification examples
-- **[../../resources/rails/skills/engines/review-engine/assets/examples.md](../../resources/rails/skills/engines/review-engine/assets/examples.md)** — Use when you need complete engine review examples with findings and recommendations
-- **[../../resources/rails/skills/engines/review-engine/assets/finding-schema.json](../../resources/rails/skills/engines/review-engine/assets/finding-schema.json)** — Use when you need the structured schema for engine review findings output
+- **[../../resources/rails/skills/review-engine/FINDINGS.md](../../resources/rails/skills/review-engine/FINDINGS.md)** — Use when you need sample findings format and severity classification examples
+- **[../../resources/rails/skills/review-engine/assets/examples.md](../../resources/rails/skills/review-engine/assets/examples.md)** — Use when you need complete engine review examples with findings and recommendations
+- **[../../resources/rails/skills/review-engine/assets/finding-schema.json](../../resources/rails/skills/review-engine/assets/finding-schema.json)** — Use when you need the structured schema for engine review findings output

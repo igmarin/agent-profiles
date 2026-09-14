@@ -5,7 +5,7 @@ description: 'Use when reviewing a Rails PR, diff, or merge request. Ground find
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:code-review
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -41,7 +41,7 @@ When **reviewing** Rails code, analyze it against the following areas. When **wr
 
 ### Review Order
 
-Work through the diff in this sequence. Detailed criteria are in [../../resources/rails/skills/code-quality/code-review/assets/checklist.md](../../resources/rails/skills/code-quality/code-review/assets/checklist.md).
+Work through the diff in this sequence. Detailed criteria are in [../../resources/rails/skills/code-review/assets/checklist.md](../../resources/rails/skills/code-review/assets/checklist.md).
 Ground every finding in a real changed file/line from the branch diff. If the task does not provide a diff or file contents, say that no concrete findings can be made yet and list the exact diff/files needed.
 
 Configuration → Routing → Controllers → Views → Models → Associations → Queries → Migrations → Validations → I18n → Sessions → Security → Caching → Jobs → Tests
@@ -86,12 +86,12 @@ Re-diff the branch after:
 
 ## Extended Resources
 
-- [../../resources/rails/skills/code-quality/code-review/assets/checklist.md](../../resources/rails/skills/code-quality/code-review/assets/checklist.md) — detailed per-area review criteria (referenced as the Review Order checklist above)
-- [../../resources/rails/skills/code-quality/code-review/assets/examples.md](../../resources/rails/skills/code-quality/code-review/assets/examples.md) — full JSON and PR-comment output shape examples
+- [../../resources/rails/skills/code-review/assets/checklist.md](../../resources/rails/skills/code-review/assets/checklist.md) — detailed per-area review criteria (referenced as the Review Order checklist above)
+- [../../resources/rails/skills/code-review/assets/examples.md](../../resources/rails/skills/code-review/assets/examples.md) — full JSON and PR-comment output shape examples
 
 ## Output Style
 
-Group findings by severity. The canonical output shape is shown below; [assets/examples.md](../../resources/rails/skills/code-quality/code-review/assets/examples.md) contains additional JSON and PR-comment variants if available.
+Group findings by severity. The canonical output shape is shown below; [assets/examples.md](../../resources/rails/skills/code-review/assets/examples.md) contains additional JSON and PR-comment variants if available.
 
 1. **Findings Format**:
    ```text

@@ -6,7 +6,7 @@ description: 'Use when versioning a Rails REST API (v1/v2, deprecation, Sunset h
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:version-api
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -46,7 +46,7 @@ ALWAYS version in URL path (/api/v1/) or Accept header, never in body
 
 ## Core Process
 
-1. **Choose strategy** — URL path (`/api/v1/`) for public APIs; Accept header for internal/private APIs. See [strategies.md](../../resources/rails/skills/infrastructure/version-api/references/strategies.md) for header-based versioning details and trade-offs.
+1. **Choose strategy** — URL path (`/api/v1/`) for public APIs; Accept header for internal/private APIs. See [strategies.md](../../resources/rails/skills/version-api/references/strategies.md) for header-based versioning details and trade-offs.
 2. **Add route namespace** — Wrap new version resources in a `namespace :v2` block in `config/routes.rb`:
    ```ruby
    namespace :v1 do
@@ -67,7 +67,7 @@ ALWAYS version in URL path (/api/v1/) or Accept header, never in body
      end
    end
    ```
-   See [EXAMPLES.md](../../resources/rails/skills/infrastructure/version-api/EXAMPLES.md) for additional inheritance patterns.
+   See [EXAMPLES.md](../../resources/rails/skills/version-api/EXAMPLES.md) for additional inheritance patterns.
 4. **Apply deprecation** — Include `Deprecatable` in old-version controllers to emit `Sunset` and `Deprecation` response headers automatically via a `before_action`:
    ```ruby
    module V1
@@ -79,7 +79,7 @@ ALWAYS version in URL path (/api/v1/) or Accept header, never in body
    end
    ```
 5. **Run compatibility specs** — Execute `bundle exec rspec spec/requests/api/backward_compatibility_spec.rb` to confirm no regressions before merging.
-6. **Update documentation** — Record the sunset date and migration guide for deprecated endpoints. See [workflow.md](../../resources/rails/skills/infrastructure/version-api/references/workflow.md) for the full deprecation communication workflow.
+6. **Update documentation** — Record the sunset date and migration guide for deprecated endpoints. See [workflow.md](../../resources/rails/skills/version-api/references/workflow.md) for the full deprecation communication workflow.
 
 ## Output Style
 
@@ -96,9 +96,9 @@ When asked to implement API versioning, your output MUST include:
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/infrastructure/version-api/EXAMPLES.md](../../resources/rails/skills/infrastructure/version-api/EXAMPLES.md)** — Use when you need complete API versioning examples with route definitions and controller inheritance
-- **[../../resources/rails/skills/infrastructure/version-api/references/strategies.md](../../resources/rails/skills/infrastructure/version-api/references/strategies.md)** — Use when comparing versioning strategies (URL path vs header vs query param)
-- **[../../resources/rails/skills/infrastructure/version-api/references/workflow.md](../../resources/rails/skills/infrastructure/version-api/references/workflow.md)** — Use when implementing the deprecation communication workflow and sunset scheduling
+- **[../../resources/rails/skills/version-api/EXAMPLES.md](../../resources/rails/skills/version-api/EXAMPLES.md)** — Use when you need complete API versioning examples with route definitions and controller inheritance
+- **[../../resources/rails/skills/version-api/references/strategies.md](../../resources/rails/skills/version-api/references/strategies.md)** — Use when comparing versioning strategies (URL path vs header vs query param)
+- **[../../resources/rails/skills/version-api/references/workflow.md](../../resources/rails/skills/version-api/references/workflow.md)** — Use when implementing the deprecation communication workflow and sunset scheduling
 
 ## Integration
 

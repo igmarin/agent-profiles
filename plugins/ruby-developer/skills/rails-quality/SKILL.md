@@ -5,7 +5,7 @@ description: 'Use for a pre-PR quality sweep: conventions, refactor, docs, linte
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:quality
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:apply-code-conventions", "igmarin/rails-agent-skills:apply-stack-conventions",
     "igmarin/rails-agent-skills:refactor-code", "igmarin/rails-agent-skills:code-review",
@@ -36,7 +36,7 @@ Orchestrates systematic code quality checks, safe refactoring, and documentation
 
 ### Phase 1: Conventions Review
 
-Check code against Rails standards via **skills/code-quality/apply-code-conventions** (DRY/YAGNI/PORO/CoC/KISS compliance, linter as style source of truth, structured logging) and **skills/code-quality/apply-stack-conventions** (Rails + PostgreSQL patterns, Hotwire + Tailwind conventions, security best practices).
+Check code against Rails standards via **skills/apply-code-conventions** (DRY/YAGNI/PORO/CoC/KISS compliance, linter as style source of truth, structured logging) and **skills/apply-stack-conventions** (Rails + PostgreSQL patterns, Hotwire + Tailwind conventions, security best practices).
 
 **Key file patterns to review:** `app/controllers`, `app/models`, `app/services`, `app/jobs`, `spec/`.
 
@@ -61,8 +61,8 @@ bundle exec bundle-audit check --update
 ### TDD Enforcement for Refactoring
 
 **Before any code change:**
-1. **testing/plan-tests** — Choose the best characterization test to document current behavior
-2. **testing/write-tests** — Write characterization test and verify it PASSES (documents current behavior)
+1. **plan-tests** — Choose the best characterization test to document current behavior
+2. **write-tests** — Write characterization test and verify it PASSES (documents current behavior)
 3. **Refactoring Checkpoint** — Propose specific refactoring (e.g., "Extract `calculate_discount` method to `DiscountCalculator` class")
 4. **Scope Check** — Wait for explicit confirmation
 5. **Implement Refactoring** — Make the structural change only
@@ -75,7 +75,7 @@ bundle exec bundle-audit check --update
 - Full test suite PASSES (no regressions)
 - If test fails: Fix the refactoring, not the test
 
-Follow **skills/code-quality/refactor-code** for specific extraction patterns and safety guidelines.
+Follow **skills/refactor-code** for specific extraction patterns and safety guidelines.
 
 ```bash
 bundle exec rspec   # All tests must pass before proceeding to Phase 3

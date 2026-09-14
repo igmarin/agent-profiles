@@ -5,7 +5,7 @@ description: 'Use when writing or cleaning up Rails RSpec. Run the spec and keep
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:write-tests
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -47,7 +47,7 @@ When driving new behaviour with RSpec, follow this sequence:
 4. **Refactor** — clean up duplication and naming while keeping the suite green.
 5. **Verify** — run the full relevant spec file, then the suite, before committing.
 
-For output format and RED/GREEN proof requirements, see **[../../resources/rails/skills/testing/write-tests/assets/tdd_proof_checklist.md](../../resources/rails/skills/testing/write-tests/assets/tdd_proof_checklist.md)**.
+For output format and RED/GREEN proof requirements, see **[../../resources/rails/skills/write-tests/assets/tdd_proof_checklist.md](../../resources/rails/skills/write-tests/assets/tdd_proof_checklist.md)**.
 
 ### Service Spec (anchor pattern)
 ```ruby
@@ -94,15 +94,15 @@ it 'creates the record' do; end
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/testing/write-tests/assets/complete_example.md](../../resources/rails/skills/testing/write-tests/assets/complete_example.md)** — A complete, step-by-step example of a high-scoring `answer.md` showing plan, spec, realistic Observed RED/GREEN outputs, and verification tables.
-- **[../../resources/rails/skills/testing/write-tests/assets/examples.md](../../resources/rails/skills/testing/write-tests/assets/examples.md)** — For code examples of service specs, shared examples, and factory design.
-- **[../../resources/rails/skills/testing/write-tests/assets/spec_templates.md](../../resources/rails/skills/testing/write-tests/assets/spec_templates.md)** — Standard templates for different types of specs.
-- **[../../resources/rails/skills/testing/write-tests/assets/tdd_proof_checklist.md](../../resources/rails/skills/testing/write-tests/assets/tdd_proof_checklist.md)** — Use when the task involves new behavior; defines RED/GREEN proof format, output formatting rules, and GREEN progress bar requirements.
-- **[../../resources/rails/skills/testing/write-tests/assets/output_checklist.md](../../resources/rails/skills/testing/write-tests/assets/output_checklist.md)** — Complete 18-point checklist for RSpec output structure, conventions, and self-auditing; also defines all output style rules (spec structure, file path mirroring, `frozen_string_literal`, `subject(:result)`, and TDD proof format).
+- **[../../resources/rails/skills/write-tests/assets/complete_example.md](../../resources/rails/skills/write-tests/assets/complete_example.md)** — A complete, step-by-step example of a high-scoring `answer.md` showing plan, spec, realistic Observed RED/GREEN outputs, and verification tables.
+- **[../../resources/rails/skills/write-tests/assets/examples.md](../../resources/rails/skills/write-tests/assets/examples.md)** — For code examples of service specs, shared examples, and factory design.
+- **[../../resources/rails/skills/write-tests/assets/spec_templates.md](../../resources/rails/skills/write-tests/assets/spec_templates.md)** — Standard templates for different types of specs.
+- **[../../resources/rails/skills/write-tests/assets/tdd_proof_checklist.md](../../resources/rails/skills/write-tests/assets/tdd_proof_checklist.md)** — Use when the task involves new behavior; defines RED/GREEN proof format, output formatting rules, and GREEN progress bar requirements.
+- **[../../resources/rails/skills/write-tests/assets/output_checklist.md](../../resources/rails/skills/write-tests/assets/output_checklist.md)** — Complete 18-point checklist for RSpec output structure, conventions, and self-auditing; also defines all output style rules (spec structure, file path mirroring, `frozen_string_literal`, `subject(:result)`, and TDD proof format).
 
 ## Output Style
 
-Follow **[../../resources/rails/skills/testing/write-tests/assets/tdd_proof_checklist.md](../../resources/rails/skills/testing/write-tests/assets/tdd_proof_checklist.md)** and **[../../resources/rails/skills/testing/write-tests/assets/output_checklist.md](../../resources/rails/skills/testing/write-tests/assets/output_checklist.md)**. Show real RED/GREEN command output. One behavior per example.
+Follow **[../../resources/rails/skills/write-tests/assets/tdd_proof_checklist.md](../../resources/rails/skills/write-tests/assets/tdd_proof_checklist.md)** and **[../../resources/rails/skills/write-tests/assets/output_checklist.md](../../resources/rails/skills/write-tests/assets/output_checklist.md)**. Show real RED/GREEN command output. One behavior per example.
 
 ## Integration
 

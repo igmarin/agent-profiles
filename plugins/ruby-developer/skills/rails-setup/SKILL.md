@@ -5,7 +5,7 @@ description: 'Use when bootstrapping a Rails project: context, onboarding, CI. T
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:setup
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:load-context", "igmarin/rails-agent-skills:setup-environment"]'
 ---

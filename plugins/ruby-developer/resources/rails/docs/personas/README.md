@@ -54,7 +54,7 @@ flowchart TD
 
 ## Docs vs. Callable Persona Skills
 
-This directory contains **reference guides** describing each stage. For **executable orchestration**, use the callable personas in `skills/personas/`:
+This directory contains **reference guides** describing each stage. For **executable orchestration**, use the callable personas under `skills/` (`tdd`, `review`, `setup`, `quality`, `engine`, and the rest):
 
 | Stage Doc | Callable Skill | Status |
 |-----------|----------------|--------|

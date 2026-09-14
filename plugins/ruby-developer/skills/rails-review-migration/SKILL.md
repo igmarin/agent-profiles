@@ -6,7 +6,7 @@ description: 'Use when planning or reviewing a production Rails migration. Never
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:review-migration
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---

@@ -6,7 +6,7 @@ description: 'Use when choosing the first failing spec for a Rails change. One m
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:plan-tests
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -112,11 +112,11 @@ end
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/testing/plan-tests/assets/first_slice_template.md](../../resources/rails/skills/testing/plan-tests/assets/first_slice_template.md)** — Use when documenting the test plan; provides a structured template for behavior, boundary decision, opening gate spec, and follow-up coverage
+- **[../../resources/rails/skills/plan-tests/assets/first_slice_template.md](../../resources/rails/skills/plan-tests/assets/first_slice_template.md)** — Use when documenting the test plan; provides a structured template for behavior, boundary decision, opening gate spec, and follow-up coverage
 
 ## Output Style
 
-When completing test planning, produce a brief structured summary and populate the full plan using **[../../resources/rails/skills/testing/plan-tests/assets/first_slice_template.md](../../resources/rails/skills/testing/plan-tests/assets/first_slice_template.md)**. The summary must cover:
+When completing test planning, produce a brief structured summary and populate the full plan using **[../../resources/rails/skills/plan-tests/assets/first_slice_template.md](../../resources/rails/skills/plan-tests/assets/first_slice_template.md)**. The summary must cover:
 
 - **Behavior** — user-visible outcome being proved
 - **First Slice** — spec type, file path, and boundary rationale

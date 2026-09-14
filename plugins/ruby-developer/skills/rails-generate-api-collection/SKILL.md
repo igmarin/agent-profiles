@@ -6,7 +6,7 @@ description: 'Use when creating or updating a REST API collection for Rails endp
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:generate-api-collection
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -108,7 +108,7 @@ Ensure the collection includes the `info` block, folders (nested `item` arrays),
 
 Load only when a concrete collection example is needed:
 
-- [EXAMPLES.md](../../resources/rails/skills/api/generate-api-collection/EXAMPLES.md) — Postman v2.1 multi-endpoint collection example.
+- [EXAMPLES.md](../../resources/rails/skills/generate-api-collection/EXAMPLES.md) — Postman v2.1 multi-endpoint collection example.
 
 ## Integration
 

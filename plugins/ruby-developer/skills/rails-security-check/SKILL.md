@@ -6,7 +6,7 @@ description: 'Use when auditing a Rails app for XSS, CSRF, SQLi, IDOR, secrets, 
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:security-check
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -125,7 +125,7 @@ When asked to perform a security audit, your output MUST include:
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/code-quality/security-check/PITFALLS.md](../../resources/rails/skills/code-quality/security-check/PITFALLS.md)** — Use when you need detailed examples of common security pitfalls and false positives to avoid
+- **[../../resources/rails/skills/security-check/PITFALLS.md](../../resources/rails/skills/security-check/PITFALLS.md)** — Use when you need detailed examples of common security pitfalls and false positives to avoid
 
 ## Integration
 

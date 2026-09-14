@@ -5,7 +5,7 @@ description: 'Use when building or reviewing a graphql-ruby schema, resolver, or
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:implement-graphql
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -22,7 +22,7 @@ Use this skill when **designing, implementing, or reviewing GraphQL APIs** in a 
 
 **DO NOT proceed to step 3 before step 1 is written and failing.**
 
-1. **SPEC:** Write failing spec (happy path + auth + validation error case) — see [TESTING.md](../../resources/rails/skills/api/implement-graphql/TESTING.md). Use `AppSchema.execute` in `spec/graphql/`. Never use HTTP controller dispatch for GraphQL specs.
+1. **SPEC:** Write failing spec (happy path + auth + validation error case) — see [TESTING.md](../../resources/rails/skills/implement-graphql/TESTING.md). Use `AppSchema.execute` in `spec/graphql/`. Never use HTTP controller dispatch for GraphQL specs.
 
 2. **TYPE:** Define arguments and return types. Use `connection_type` for pagination shapes. Do not leak internal model names.
 
@@ -69,8 +69,8 @@ Before shipping a resolver/mutation slice, ALL of the following must be confirme
 
 Load these files only when their specific content is needed:
 
-- **[TESTING.md](../../resources/rails/skills/api/implement-graphql/TESTING.md)** — For the spec template, paths, and checklist.
-- **[../../resources/rails/skills/api/implement-graphql/EXAMPLES.md](../../resources/rails/skills/api/implement-graphql/EXAMPLES.md)** — For detailed code examples of dataloaders, mutations, and types.
+- **[TESTING.md](../../resources/rails/skills/implement-graphql/TESTING.md)** — For the spec template, paths, and checklist.
+- **[../../resources/rails/skills/implement-graphql/EXAMPLES.md](../../resources/rails/skills/implement-graphql/EXAMPLES.md)** — For detailed code examples of dataloaders, mutations, and types.
 
 ## Integration
 

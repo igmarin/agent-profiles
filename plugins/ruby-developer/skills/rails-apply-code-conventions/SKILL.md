@@ -6,7 +6,7 @@ description: 'Use when applying daily Rails conventions by path (DRY, YAGNI, POR
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:apply-code-conventions
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -25,7 +25,7 @@ Apply the [execution contract](../../resources/rails/docs/agent-contract.md) bef
 |-------|------|
 | Principles | DRY, YAGNI, PORO where it helps, CoC, KISS |
 | Comments / tags | Explain **why**; tagged notes need actionable context |
-| Logging | First arg: static string; second arg: hash with `event:` key; no interpolation; backtrace on errors |
+| Logging | One verified message argument (usually a JSON hash); no interpolation; include a redacted backtrace on errors |
 | Deep stacks | Chain **apply-stack-conventions** → domain skills (services, jobs, RSpec) |
 
 ## HARD-GATE
@@ -44,7 +44,7 @@ When reviewing or refactoring Rails code, follow this sequence. Each step maps t
 1. **Run linter** — Detect config (e.g. `.rubocop.yml` or `.standard.yml`), run the appropriate tool, note absence if none found. *Output: linter detected (or absent); style defers to it.*
 2. **Apply area-specific rules** — Check path patterns and apply targeted guidance from the Apply by area table. *Output: concrete per-path recommendations for every relevant changed file.*
 3. **Verify tests gate** — Confirm failing tests exist before any new behavior. *Output: failing spec, run command, expected failure, minimal implementation step, passing rerun.*
-4. **Enforce structured logging** — Ensure all `Rails.logger` calls use static strings + structured hashes with an `event:` key, plus backtrace for errors. *Output: apply structured logging rules from Sub-Rules below.*
+4. **Enforce structured logging** — Ensure all `Rails.logger` calls use the installed logger's verified single-message interface; include an `event:` field and redacted backtrace for errors. *Output: apply structured logging rules from Sub-Rules below.*
 5. **Enforce comment discipline** — Ensure all tags (`TODO:`, `FIXME:`) have actionable context (owner, ticket). *Output: apply comment discipline rules from Sub-Rules below.*
 6. **Chain to specialised skills** — Use the Integration table to pull in deeper guidance (security, jobs, specs) as needed.
 
@@ -67,7 +67,7 @@ Use the project's installed logger interface. Standard Ruby/Rails loggers accept
 
 ```ruby
 rescue Timeout::Error => e
-  Rails.logger.error({ event: "order.processing_failed", error_class: e.class.name }.to_json)
+  Rails.logger.error({ event: "order.processing_failed", error_class: e.class.name, backtrace: e.backtrace&.first(5) }.to_json)
   raise
 end
 ```
@@ -88,8 +88,8 @@ Only recommend `let_it_be` if `test-prof` is already in `Gemfile.lock`. Otherwis
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/code-quality/apply-code-conventions/assets/checklist.md](../../resources/rails/skills/code-quality/apply-code-conventions/assets/checklist.md)** — Use for detailed code review checklists.
-- **[../../resources/rails/skills/code-quality/apply-code-conventions/assets/snippets.md](../../resources/rails/skills/code-quality/apply-code-conventions/assets/snippets.md)** — Use for quick code snippets of common patterns.
+- **[../../resources/rails/skills/apply-code-conventions/assets/checklist.md](../../resources/rails/skills/apply-code-conventions/assets/checklist.md)** — Use for detailed code review checklists.
+- **[../../resources/rails/skills/apply-code-conventions/assets/snippets.md](../../resources/rails/skills/apply-code-conventions/assets/snippets.md)** — Use for quick code snippets of common patterns.
 
 Document which assets were loaded and why in your output so the process is verifiable.
 

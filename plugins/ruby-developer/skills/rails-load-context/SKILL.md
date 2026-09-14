@@ -6,7 +6,7 @@ description: 'Use before writing code, specs, or a PRD in an existing Rails app.
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:load-context
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -90,9 +90,9 @@ To ensure a rapid setup and avoid retries, we follow the fifteen-second read pri
 
 **Resources:**
 Load these files only when their specific content is needed:
-  - [../../resources/rails/skills/context/load-context/EXAMPLES.md](../../resources/rails/skills/context/load-context/EXAMPLES.md) — Use when you need worked examples showing Context Summary and Confusion Block templates
-  - [../../resources/rails/skills/context/load-context/references/confusion-management.md](../../resources/rails/skills/context/load-context/references/confusion-management.md) — Use when you encounter ambiguity or conflicting signals between code layers
-  - [../../resources/rails/skills/context/load-context/references/context-sources.md](../../resources/rails/skills/context/load-context/references/context-sources.md) — Use when you need the comprehensive list of context sources by Rails layer beyond the Quick Reference table
+  - [../../resources/rails/skills/load-context/EXAMPLES.md](../../resources/rails/skills/load-context/EXAMPLES.md) — Use when you need worked examples showing Context Summary and Confusion Block templates
+  - [../../resources/rails/skills/load-context/references/confusion-management.md](../../resources/rails/skills/load-context/references/confusion-management.md) — Use when you encounter ambiguity or conflicting signals between code layers
+  - [../../resources/rails/skills/load-context/references/context-sources.md](../../resources/rails/skills/load-context/references/context-sources.md) — Use when you need the comprehensive list of context sources by Rails layer beyond the Quick Reference table
 ```
 
 ## Pitfalls
@@ -110,6 +110,6 @@ Load these files only when their specific content is needed:
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/context/load-context/EXAMPLES.md](../../resources/rails/skills/context/load-context/EXAMPLES.md)** — Use when you need worked examples showing Context Summary and Confusion Block templates
-- **[../../resources/rails/skills/context/load-context/references/confusion-management.md](../../resources/rails/skills/context/load-context/references/confusion-management.md)** — Use when you encounter ambiguity or conflicting signals between code layers
-- **[../../resources/rails/skills/context/load-context/references/context-sources.md](../../resources/rails/skills/context/load-context/references/context-sources.md)** — Use when you need the comprehensive list of context sources by Rails layer beyond the Quick Reference table
+- **[../../resources/rails/skills/load-context/EXAMPLES.md](../../resources/rails/skills/load-context/EXAMPLES.md)** — Use when you need worked examples showing Context Summary and Confusion Block templates
+- **[../../resources/rails/skills/load-context/references/confusion-management.md](../../resources/rails/skills/load-context/references/confusion-management.md)** — Use when you encounter ambiguity or conflicting signals between code layers
+- **[../../resources/rails/skills/load-context/references/context-sources.md](../../resources/rails/skills/load-context/references/context-sources.md)** — Use when you need the comprehensive list of context sources by Rails layer beyond the Quick Reference table

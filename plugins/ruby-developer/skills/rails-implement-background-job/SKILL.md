@@ -6,7 +6,7 @@ description: 'Use when adding or reviewing an Active Job / Sidekiq / Solid Queue
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:implement-background-job
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -97,11 +97,11 @@ module InvoiceReminders
 end
 ```
 
-- [BACKENDS.md](../../resources/rails/skills/infrastructure/implement-background-job/BACKENDS.md) — Solid Queue vs Sidekiq setup, configuration details, and Redis requirements.
+- [BACKENDS.md](../../resources/rails/skills/implement-background-job/BACKENDS.md) — Solid Queue vs Sidekiq setup, configuration details, and Redis requirements.
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/infrastructure/implement-background-job/assets/job_patterns.md](../../resources/rails/skills/infrastructure/implement-background-job/assets/job_patterns.md)** — Use when implementing multi-step orchestration or batch job patterns
-- **[../../resources/rails/skills/infrastructure/implement-background-job/assets/retry_examples.md](../../resources/rails/skills/infrastructure/implement-background-job/assets/retry_examples.md)** — Use when configuring `retry_on`/`discard_on` for specific error classes beyond the basic patterns above
+- **[../../resources/rails/skills/implement-background-job/assets/job_patterns.md](../../resources/rails/skills/implement-background-job/assets/job_patterns.md)** — Use when implementing multi-step orchestration or batch job patterns
+- **[../../resources/rails/skills/implement-background-job/assets/retry_examples.md](../../resources/rails/skills/implement-background-job/assets/retry_examples.md)** — Use when configuring `retry_on`/`discard_on` for specific error classes beyond the basic patterns above
 
 ## Output Checklist
 

@@ -5,7 +5,7 @@ description: 'Use when preparing a versioned Rails engine release (SemVer, chang
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:release-engine
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -65,9 +65,9 @@ Load release assets conditionally and say which one informed the output:
 - Minimum Rails version is now 7.0.
 ```
 
-- [../../resources/rails/skills/engines/release-engine/assets/release_checklist.md](../../resources/rails/skills/engines/release-engine/assets/release_checklist.md)
-- [../../resources/rails/skills/engines/release-engine/assets/release_notes_template.md](../../resources/rails/skills/engines/release-engine/assets/release_notes_template.md)
-- [../../resources/rails/skills/engines/release-engine/assets/examples.md](../../resources/rails/skills/engines/release-engine/assets/examples.md)
+- [../../resources/rails/skills/release-engine/assets/release_checklist.md](../../resources/rails/skills/release-engine/assets/release_checklist.md)
+- [../../resources/rails/skills/release-engine/assets/release_notes_template.md](../../resources/rails/skills/release-engine/assets/release_notes_template.md)
+- [../../resources/rails/skills/release-engine/assets/examples.md](../../resources/rails/skills/release-engine/assets/examples.md)
 
 ## Output Style
 

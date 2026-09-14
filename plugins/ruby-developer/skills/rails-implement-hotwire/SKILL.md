@@ -5,7 +5,7 @@ description: 'Use when adding Turbo Frames, Turbo Streams, or Stimulus controlle
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:implement-hotwire
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -87,8 +87,8 @@ When implementing Hotwire, your output MUST include:
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/infrastructure/implement-hotwire/EXAMPLES.md](../../resources/rails/skills/infrastructure/implement-hotwire/EXAMPLES.md)** — Use when you need full worked examples of Turbo Frames, Streams, and Stimulus patterns
-- **[../../resources/rails/skills/infrastructure/implement-hotwire/references/workflow.md](../../resources/rails/skills/infrastructure/implement-hotwire/references/workflow.md)** — Use when you need the step-by-step Hotwire implementation workflow and decision tree
+- **[../../resources/rails/skills/implement-hotwire/EXAMPLES.md](../../resources/rails/skills/implement-hotwire/EXAMPLES.md)** — Use when you need full worked examples of Turbo Frames, Streams, and Stimulus patterns
+- **[../../resources/rails/skills/implement-hotwire/references/workflow.md](../../resources/rails/skills/implement-hotwire/references/workflow.md)** — Use when you need the step-by-step Hotwire implementation workflow and decision tree
 
 ## Integration
 

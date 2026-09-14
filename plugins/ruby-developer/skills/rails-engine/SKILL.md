@@ -5,7 +5,7 @@ description: 'Use when running the full engine loop: author, test, review, relea
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:engine
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:create-engine", "igmarin/rails-agent-skills:test-engine",
     "igmarin/rails-agent-skills:review-engine", "igmarin/rails-agent-skills:document-engine",
@@ -17,7 +17,7 @@ Resolve skill names through `../../skill-map.json`; use the source pack to disam
 
 ## Phase 1: Engine Authoring
 
-1. **skills/engines/create-engine** *(sub-skill — invoke separately)* — Design and scaffold namespace isolation, directory structure, and gemspec configuration
+1. **skills/create-engine** *(sub-skill — invoke separately)* — Design and scaffold namespace isolation, directory structure, and gemspec configuration
 
 **Kickoff command:**
 ```bash
@@ -43,7 +43,7 @@ grep 'isolate_namespace\|engine.config.isolate_namespace' lib/my_engine/engine.r
 
 ## Phase 2: Testing Setup
 
-1. **skills/engines/test-engine** *(sub-skill — invoke separately)* — Set up dummy app, spec helpers, factory isolation, and test database
+1. **skills/test-engine** *(sub-skill — invoke separately)* — Set up dummy app, spec helpers, factory isolation, and test database
 
 2. **Write initial characterization tests:**
    - Test engine mounting
@@ -79,9 +79,9 @@ Must show no load errors and exit 0.
    - tdd agent for complex features
    - Individual skills for simple additions
 
-2. **skills/engines/review-engine** *(sub-skill — invoke separately)*
+2. **skills/review-engine** *(sub-skill — invoke separately)*
 
-3. **skills/engines/upgrade-engine** *(sub-skill — invoke separately)*
+3. **skills/upgrade-engine** *(sub-skill — invoke separately)*
 
 **Check gem dependencies:**
 ```bash
@@ -93,9 +93,9 @@ bundle exec bundler-audit check --update
 
 ## Phase 4: Documentation & Release
 
-1. **skills/engines/document-engine** *(sub-skill — invoke separately)* — Installation, configuration, usage examples, changelog
+1. **skills/document-engine** *(sub-skill — invoke separately)* — Installation, configuration, usage examples, changelog
 
-2. **skills/engines/release-engine** *(sub-skill — invoke separately)* — Version bump (SemVer), changelog, upgrade notes, git tag
+2. **skills/release-engine** *(sub-skill — invoke separately)* — Version bump (SemVer), changelog, upgrade notes, git tag
 
 **Release commands:**
 ```bash
@@ -105,7 +105,7 @@ git tag v1.0.0 && git push origin v1.0.0
 ```
 
 **Optional:**
-3. **skills/engines/create-engine-installer** — Idempotent `rails g my_engine:install` generator for host app configuration
+3. **skills/create-engine-installer** — Idempotent `rails g my_engine:install` generator for host app configuration
 
 **Output:** Published gem or releasable GitHub repository.
 

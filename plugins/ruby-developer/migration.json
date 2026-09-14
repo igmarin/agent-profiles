@@ -70,7 +70,8 @@
     "bug-fix": "igmarin/rails-agent-skills:bug-fix",
     "graphql": "igmarin/rails-agent-skills:graphql",
     "migration": "igmarin/rails-agent-skills:migration",
-    "background-job": "igmarin/rails-agent-skills:background-job"
+    "background-job": "igmarin/rails-agent-skills:background-job",
+    "rails-agent-skills": "igmarin/rails-agent-skills:rails-agent-skills"
   },
   "ambiguous": {}
 }

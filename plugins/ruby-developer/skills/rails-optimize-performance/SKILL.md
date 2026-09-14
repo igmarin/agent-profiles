@@ -6,7 +6,7 @@ description: 'Use when investigating N+1s, slow queries, caching, or query plans
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:optimize-performance
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: atomic
   dependencies: '[]'
 ---
@@ -108,7 +108,7 @@ EXPLAIN ANALYZE
 
 Load these files only when their specific content is needed:
 
-- **[../../resources/rails/skills/infrastructure/optimize-performance/references/tools.md](../../resources/rails/skills/infrastructure/optimize-performance/references/tools.md)** — Use when you need detailed Bullet, rack-mini-profiler, or EXPLAIN ANALYZE configuration and installation steps
+- **[../../resources/rails/skills/optimize-performance/references/tools.md](../../resources/rails/skills/optimize-performance/references/tools.md)** — Use when you need detailed Bullet, rack-mini-profiler, or EXPLAIN ANALYZE configuration and installation steps
 
 External references:
 - [Active Record Querying](https://guides.rubyonrails.org/active_record_querying.html)

@@ -6,7 +6,7 @@ description: 'Use when running a safe migration loop: plan, test up/down, stagin
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:migration
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:review-migration", "igmarin/rails-agent-skills:load-context"]'
 ---
@@ -30,7 +30,7 @@ Apply the [execution contract](../../resources/rails/docs/agent-contract.md) bef
 
 ## Phase 1: Migration Planning
 
-1. **Invoke `skills/infrastructure/review-migration`** — assesses lock behavior, rollback strategy, backfill requirements, and performance impact (`EXPLAIN` queries). If unavailable, perform these checks manually: identify table lock duration, confirm a rollback path exists, enumerate backfill steps, and run `EXPLAIN ANALYZE` on affected queries.
+1. **Invoke `skills/review-migration`** — assesses lock behavior, rollback strategy, backfill requirements, and performance impact (`EXPLAIN` queries). If unavailable, perform these checks manually: identify table lock duration, confirm a rollback path exists, enumerate backfill steps, and run `EXPLAIN ANALYZE` on affected queries.
 2. **Choose deployment pattern:** expand-contract for column changes (see Key Safety Rules above), phased rollout for table-level changes, zero-downtime for everything touching large tables.
 
 **HARD GATE — Migration Safety Check:**

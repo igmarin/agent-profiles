@@ -5,7 +5,7 @@ description: 'Use when running the full Rails TDD loop: failing spec, implement,
 license: MIT
 metadata:
   source-id: igmarin/rails-agent-skills:tdd
-  source-commit: 08661ee9b537444253732d9d353f05fac0ac2f27
+  source-commit: 9c639c4de86a88075d78094bbeee203be8356cc1
   kind: workflow
   dependencies: '["igmarin/rails-agent-skills:load-context", "igmarin/rails-agent-skills:plan-tests",
     "igmarin/rails-agent-skills:write-tests", "igmarin/rails-agent-skills:code-review",
@@ -21,9 +21,9 @@ Apply the [execution contract](../../resources/rails/docs/agent-contract.md) bef
 ## Agent Phases
 
 ### Phase 1: Context & Test Design
-1. **context/load-context**: Load schema, routes, and patterns.
-2. **testing/plan-tests**: Choose the best first failing spec.
-3. **testing/write-tests**: Write test and verify failure.
+1. **load-context**: Load schema, routes, and patterns.
+2. **plan-tests**: Choose the best first failing spec.
+3. **write-tests**: Write test and verify failure.
 
 **HARD GATE — tdd-process *(from ruby-core-skills)***
 - Test EXISTS and is RUN.
@@ -44,12 +44,12 @@ Return to Phase 1 for next behavior or proceed to Phase 4.
 ### Phase 4: Finish
 1. **Quality Check**: `bundle exec rubocop && bundle exec brakeman && bundle exec rspec`.
 2. **write-yard-docs *(from ruby-core-skills)***: Document public Ruby API.
-3. **code-quality/code-review**: Self-review PR diff.
+3. **code-review**: Self-review PR diff.
 4. **Open PR**: Feature complete.
 
 ## Concrete Example
 
-Abbreviated walkthrough for adding a `full_name` method to a `User` model. For the full end-to-end example, see [../../resources/rails/skills/personas/tdd/assets/example.md](../../resources/rails/skills/personas/tdd/assets/example.md).
+Abbreviated walkthrough for adding a `full_name` method to a `User` model. For the full end-to-end example, see [../../resources/rails/skills/tdd/assets/example.md](../../resources/rails/skills/tdd/assets/example.md).
 
 **Step 1 — Write the failing spec** (`spec/models/user_spec.rb`):
 ```ruby
@@ -86,7 +86,7 @@ All green → write YARD docs → self-review → open PR.
 
 ## Output Style
 
-When completing a TDD cycle, produce a report following the template in [../../resources/rails/skills/personas/tdd/assets/tdd-report-template.md](../../resources/rails/skills/personas/tdd/assets/tdd-report-template.md). At minimum the report must include:
+When completing a TDD cycle, produce a report following the template in [../../resources/rails/skills/tdd/assets/tdd-report-template.md](../../resources/rails/skills/tdd/assets/tdd-report-template.md). At minimum the report must include:
 
 - **RED**: spec file path and line, exact failure class and message, confirmation the failure is for the correct reason.
 - **Proposal**: one-line implementation summary and the authorization scope.
