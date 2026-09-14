@@ -16,7 +16,8 @@
     "product-owner": "igmarin/agnostic-planning-skills:product-owner",
     "project-manager": "igmarin/agnostic-planning-skills:project-manager",
     "tech-lead": "igmarin/agnostic-planning-skills:tech-lead",
-    "delivery-lead": "igmarin/agnostic-planning-skills:delivery-lead"
+    "delivery-lead": "igmarin/agnostic-planning-skills:delivery-lead",
+    "agnostic-planning-skills": "igmarin/agnostic-planning-skills:agnostic-planning-skills"
   },
   "ambiguous": {}
 }

@@ -6,7 +6,7 @@ description: 'Use when reviewing a PRD for completeness, testability, clarity, o
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:review-prd
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---

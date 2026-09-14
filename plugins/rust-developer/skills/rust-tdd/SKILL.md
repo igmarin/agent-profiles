@@ -1,12 +1,12 @@
 ---
 name: rust-tdd
-description: 'Cargo TDD: observed failure for missing behavior, authorized implementation,
-  green, refactor, fmt/clippy. Trigger: tdd, red-green-refactor, test first, cargo
-  test.'
+description: 'Cargo TDD with approval-aware execution: failing test for the right
+  reason, authorized implementation, green, refactor, fmt/clippy. Trigger: tdd, red-green-refactor,
+  test first, cargo test.'
 license: MIT
 metadata:
   source-id: igmarin/rust-core-skills:tdd
-  source-commit: d27b83055ce5a78253adb550b49380ab67190d9b
+  source-commit: f105faa7b2a493bd8434ce7ee99ca3a424b1007a
   kind: workflow
   dependencies: '["igmarin/rust-core-skills:load-context", "igmarin/rust-core-skills:rust-essentials"]'
 ---
@@ -20,7 +20,7 @@ Apply the [execution contract](../../resources/rust/docs/agent-contract.md) befo
 ## HARD-GATE
 
 - No implementation until a test exists, was run, and failed because behaviour is missing (not because of compile noise you have not fixed in the test).
-- Continue implementation already authorized by the user after RED is observed.
+- Implementation waits for explicit user approval unless the task already granted implementation authority; after RED, continue only within that accepted scope.
 - Quality gate before you call it done — same commands as `docs/skill-authoring.md`: `cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`.
 
 ## When to use
@@ -37,7 +37,7 @@ New or changed behaviour in a Rust crate. Prefer unit tests next to the module; 
 ## Phases
 
 1. **Context + RED** — `load-context` if the crate exists. Write the smallest failing test. Run `cargo test <test_name> -- --exact`.
-2. **Authorized GREEN** — show the actual test + failure. Implement within the accepted scope. Re-run until green.
+2. **HITL + GREEN** — show the actual test + failure. Wait for explicit approval unless implementation was already authorized. Implement only within the accepted scope. Re-run until green.
 3. **Refactor** — behaviour unchanged; re-run after each step.
 4. **Quality** — fmt, clippy `-D warnings`, `cargo test` for the crate.
 
@@ -53,7 +53,7 @@ New or changed behaviour in a Rust crate. Prefer unit tests next to the module; 
 | Problem | Action |
 |---------|--------|
 | Test does not compile | fix the test; stay in RED |
-| Still red after impl | smallest fix; ask only if scope or authority must change |
+| Still red after impl | smallest fix; re-approve if the approach or scope changes |
 | Refactor red | revert last step |
 | Clippy red | fix; do not `#[allow]` to skip the gate |
 

@@ -5,7 +5,7 @@
       "repo": "agnostic-planning-skills",
       "id": "igmarin/agnostic-planning-skills",
       "url": "https://github.com/igmarin/agnostic-planning-skills.git",
-      "sha": "ae074f9c8718013a6b2c618b3856e6914986b775"
+      "sha": "850967c1250b4acd32a59c2fc94d67a55fad04de"
     },
     "elixir": {
       "repo": "elixir-phoenix-skills",
@@ -29,7 +29,7 @@
       "repo": "rust-core-skills",
       "id": "igmarin/rust-core-skills",
       "url": "https://github.com/igmarin/rust-core-skills.git",
-      "sha": "d27b83055ce5a78253adb550b49380ab67190d9b"
+      "sha": "f105faa7b2a493bd8434ce7ee99ca3a424b1007a"
     }
   },
   "bundles": {

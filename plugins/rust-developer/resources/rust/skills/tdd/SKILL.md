@@ -4,17 +4,19 @@ type: playbook
 tags: [playbooks]
 license: MIT
 description: >
-  Cargo TDD: observed failure for missing behavior, authorized implementation, green,
+  Cargo TDD with approval-aware execution: failing test for the right reason, authorized implementation, green,
   refactor, fmt/clippy. Trigger: tdd, red-green-refactor, test first, cargo test.
 metadata:
   version: "1.0.0"
   user-invocable: "true"
   entry_point: true
-  phases: "Phase 1: Context and RED, Phase 2: Scope check and GREEN, Phase 3: Refactor, Phase 4: Quality"
-  hard_gates: "Test fails for missing behaviour, Authorized scope, Quality gate green"
+  phases: "Phase 1: Context and RED, Phase 2: HITL approve and GREEN, Phase 3: Refactor, Phase 4: Quality"
+  hard_gates: "Test fails for missing behaviour, User approval or prior task authorization, Quality gate green"
   dependencies:
-    - source: self
-      skills: [load-context, rust-essentials]
+    source: self
+    skills:
+      - load-context
+      - rust-essentials
 ---
 
 # TDD playbook
@@ -24,7 +26,7 @@ Apply the [execution contract](../../docs/agent-contract.md) before this procedu
 ## HARD-GATE
 
 - No implementation until a test exists, was run, and failed because behaviour is missing (not because of compile noise you have not fixed in the test).
-- Continue implementation already authorized by the user after RED is observed.
+- Implementation waits for explicit user approval unless the task already granted implementation authority; after RED, continue only within that accepted scope.
 - Quality gate before you call it done — same commands as `docs/skill-authoring.md`: `cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`.
 
 ## When to use
@@ -41,7 +43,7 @@ New or changed behaviour in a Rust crate. Prefer unit tests next to the module; 
 ## Phases
 
 1. **Context + RED** — `load-context` if the crate exists. Write the smallest failing test. Run `cargo test <test_name> -- --exact`.
-2. **Authorized GREEN** — show the actual test + failure. Implement within the accepted scope. Re-run until green.
+2. **HITL + GREEN** — show the actual test + failure. Wait for explicit approval unless implementation was already authorized. Implement only within the accepted scope. Re-run until green.
 3. **Refactor** — behaviour unchanged; re-run after each step.
 4. **Quality** — fmt, clippy `-D warnings`, `cargo test` for the crate.
 
@@ -57,7 +59,7 @@ New or changed behaviour in a Rust crate. Prefer unit tests next to the module; 
 | Problem | Action |
 |---------|--------|
 | Test does not compile | fix the test; stay in RED |
-| Still red after impl | smallest fix; ask only if scope or authority must change |
+| Still red after impl | smallest fix; re-approve if the approach or scope changes |
 | Refactor red | revert last step |
 | Clippy red | fix; do not `#[allow]` to skip the gate |
 

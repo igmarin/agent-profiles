@@ -7,7 +7,7 @@ description: 'Use when selecting tickets for a sprint from a prioritized backlog
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:plan-sprint
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -72,7 +72,7 @@ DO set a single, clear sprint goal that every selected ticket supports.
 5. **Deferred** — top 3 items that didn't fit, for next sprint visibility.
 6. **English only** unless user requests otherwise.
 
-Worked example: [../../resources/planning/skills/ceremony/plan-sprint/assets/example-sprint-plan.md](../../resources/planning/skills/ceremony/plan-sprint/assets/example-sprint-plan.md).
+Worked example: [../../resources/planning/skills/plan-sprint/assets/example-sprint-plan.md](../../resources/planning/skills/plan-sprint/assets/example-sprint-plan.md).
 
 ## Integration
 

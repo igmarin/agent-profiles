@@ -89,6 +89,6 @@ graph TD
 
 Existing names and `type: persona` remain compatible with installed consumers. Product owner, project manager, and tech lead own planning outcomes; delivery lead coordinates the delivery workflow. The composed developer profiles load implementation skills from their authoritative stack packs.
 
-An approved PRD or concrete authorized brief supplies scope. Reuse prior authorization; small bugs go directly to a developer's bug-fix workflow. The [delivery checkpoint contract](../../../skills/planning-delivery-lead/SKILL.md#authorization-and-checkpoints) carries acceptance criteria, skill identities, evidence, and blockers across handoffs. A missing required skill blocks the dependent step and names the installation repair; optional gaps are disclosed.
+An approved PRD or concrete authorized brief supplies scope. Reuse prior authorization; small bugs go directly to a developer's bug-fix workflow. The [delivery checkpoint contract](../skills/personas/delivery-lead/SKILL.md#authorization-and-checkpoints) carries acceptance criteria, skill identities, evidence, and blockers across handoffs. A missing required skill blocks the dependent step and names the installation repair; optional gaps are disclosed.
 
 Install or roll back using a pinned pack commit and its matching composed bundle. Existing planning skill names and paths are unchanged; avoid mixing versions of templates and their calling skills.

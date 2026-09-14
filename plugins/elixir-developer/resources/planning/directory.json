@@ -5,52 +5,55 @@
   "summary": "A curated library of 12 language-agnostic planning skills and 4 personas for technical project management, product planning, and agile execution. Skills are typed as `atomic` (single-purpose) or `persona` (role-based orchestrator).",
   "skills": {
     "create-prd": {
-      "path": "skills/prd/create-prd/SKILL.md"
+      "path": "skills/create-prd/SKILL.md"
     },
     "review-prd": {
-      "path": "skills/prd/review-prd/SKILL.md"
+      "path": "skills/review-prd/SKILL.md"
     },
     "generate-tasks": {
-      "path": "skills/task-management/generate-tasks/SKILL.md"
+      "path": "skills/generate-tasks/SKILL.md"
     },
     "plan-tickets": {
-      "path": "skills/task-management/plan-tickets/SKILL.md"
+      "path": "skills/plan-tickets/SKILL.md"
     },
     "estimate-tasks": {
-      "path": "skills/task-management/estimate-tasks/SKILL.md"
+      "path": "skills/estimate-tasks/SKILL.md"
     },
     "prioritize-backlog": {
-      "path": "skills/backlog/prioritize-backlog/SKILL.md"
+      "path": "skills/prioritize-backlog/SKILL.md"
     },
     "plan-sprint": {
-      "path": "skills/ceremony/plan-sprint/SKILL.md"
+      "path": "skills/plan-sprint/SKILL.md"
     },
     "create-retrospective": {
-      "path": "skills/ceremony/create-retrospective/SKILL.md"
+      "path": "skills/create-retrospective/SKILL.md"
     },
     "generate-status-report": {
-      "path": "skills/execution/generate-status-report/SKILL.md"
+      "path": "skills/generate-status-report/SKILL.md"
     },
     "identify-risks": {
-      "path": "skills/execution/identify-risks/SKILL.md"
+      "path": "skills/identify-risks/SKILL.md"
     },
     "requirements-clarifier": {
-      "path": "skills/analysis/requirements-clarifier/SKILL.md"
+      "path": "skills/requirements-clarifier/SKILL.md"
     },
     "github-issue": {
-      "path": "skills/github-issues/github-issue/SKILL.md"
+      "path": "skills/github-issue/SKILL.md"
     },
     "product-owner": {
-      "path": "skills/personas/product-owner/SKILL.md"
+      "path": "skills/product-owner/SKILL.md"
     },
     "project-manager": {
-      "path": "skills/personas/project-manager/SKILL.md"
+      "path": "skills/project-manager/SKILL.md"
     },
     "tech-lead": {
-      "path": "skills/personas/tech-lead/SKILL.md"
+      "path": "skills/tech-lead/SKILL.md"
     },
     "delivery-lead": {
-      "path": "skills/personas/delivery-lead/SKILL.md"
+      "path": "skills/delivery-lead/SKILL.md"
+    },
+    "agnostic-planning-skills": {
+      "path": "skills/agnostic-planning-skills/SKILL.md"
     }
   }
 }

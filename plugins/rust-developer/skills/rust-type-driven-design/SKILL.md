@@ -6,7 +6,7 @@ description: 'Make illegal states unrepresentable: newtypes, enums, typestate, T
 license: MIT
 metadata:
   source-id: igmarin/rust-core-skills:type-driven-design
-  source-commit: d27b83055ce5a78253adb550b49380ab67190d9b
+  source-commit: f105faa7b2a493bd8434ce7ee99ca3a424b1007a
   kind: atomic
   dependencies: '[]'
 ---

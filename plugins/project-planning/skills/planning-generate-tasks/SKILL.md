@@ -6,7 +6,7 @@ description: 'Use when breaking a feature or approved PRD into an implementation
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:generate-tasks
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -32,7 +32,7 @@ Generate tasks from an approved PRD or concrete user-authorized brief. Mark unre
 ## Workflow
 
 ### 1. Project Detection
-Detect conventions using config files (see [TEST_COMMANDS.md](../../resources/planning/skills/task-management/generate-tasks/TEST_COMMANDS.md)). Identify source and test directories.
+Detect conventions using config files (see [TEST_COMMANDS.md](../../resources/planning/skills/generate-tasks/TEST_COMMANDS.md)). Identify source and test directories.
 
 ### 2. Validation
 Run the detected test command when available; record baseline failures and distinguish environment failures from assertion failures. Continue planning with explicit constraints; ask only for a material decision.
@@ -44,7 +44,7 @@ Break down the feature/PRD:
 - Group behaviors into parent task groups.
 
 ### 4. Generate Task List
-Create `/tasks/tasks-[feature-name].md` using the template in [TASK_TEMPLATES.md](../../resources/planning/skills/task-management/generate-tasks/TASK_TEMPLATES.md). Each parent group follows TDD quadruplet (write failing test, confirm fail, implement, confirm pass).
+Create `/tasks/tasks-[feature-name].md` using the template in [TASK_TEMPLATES.md](../../resources/planning/skills/generate-tasks/TASK_TEMPLATES.md). Each parent group follows TDD quadruplet (write failing test, confirm fail, implement, confirm pass).
 
 ### 5. Final Validation
 Review tasks for coverage, correctness, and file paths.

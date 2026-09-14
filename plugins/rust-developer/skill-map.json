@@ -101,6 +101,11 @@
       "igmarin/agnostic-planning-skills:create-retrospective"
     ]
   },
+  "igmarin/agnostic-planning-skills:agnostic-planning-skills": {
+    "name": "planning-agnostic-planning-skills",
+    "path": "skills/planning-agnostic-planning-skills/SKILL.md",
+    "dependencies": []
+  },
   "igmarin/rust-core-skills:rust-essentials": {
     "name": "rust-rust-essentials",
     "path": "skills/rust-rust-essentials/SKILL.md",

@@ -5,7 +5,7 @@ description: 'Use when estimating effort, sizing tasks, or assigning story point
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:estimate-tasks
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -67,4 +67,4 @@ DO state confidence (high/medium/low) for every estimate.
 | **identify-risks** | After estimation, assess dependency and uncertainty risks |
 | **plan-sprint** | Select tickets based on capacity vs estimates |
 
-Worked example: [../../resources/planning/skills/task-management/estimate-tasks/assets/example-session.md](../../resources/planning/skills/task-management/estimate-tasks/assets/example-session.md).
+Worked example: [../../resources/planning/skills/estimate-tasks/assets/example-session.md](../../resources/planning/skills/estimate-tasks/assets/example-session.md).

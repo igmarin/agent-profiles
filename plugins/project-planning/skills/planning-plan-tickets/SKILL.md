@@ -6,7 +6,7 @@ description: 'Use when breaking a plan into tracker tickets or classifying work 
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:plan-tickets
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -40,8 +40,8 @@ Normalize inputs, classify each work item, draft tickets in a standard structure
 Optional: `coordination_need`, `external_dependency`, `urgency`.
 
 ## Extended Resources
-- [EXAMPLES.md](../../resources/planning/skills/task-management/plan-tickets/EXAMPLES.md) — full plan-to-ticket example
-- [../../resources/planning/skills/task-management/plan-tickets/assets/ticket-samples/sample_issue.md](../../resources/planning/skills/task-management/plan-tickets/assets/ticket-samples/sample_issue.md) — sample issue format
+- [EXAMPLES.md](../../resources/planning/skills/plan-tickets/EXAMPLES.md) — full plan-to-ticket example
+- [../../resources/planning/skills/plan-tickets/assets/ticket-samples/sample_issue.md](../../resources/planning/skills/plan-tickets/assets/ticket-samples/sample_issue.md) — sample issue format
 
 ## Integration
 | Skill | When |

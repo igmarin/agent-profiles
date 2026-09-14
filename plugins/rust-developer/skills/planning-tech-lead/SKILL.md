@@ -6,7 +6,7 @@ description: 'Use when assessing whether a PRD is technically sound, reviewing e
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:tech-lead
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: role
   dependencies: '["igmarin/agnostic-planning-skills:review-prd", "igmarin/agnostic-planning-skills:estimate-tasks"]'
 ---
@@ -133,7 +133,7 @@ Produce a structured **Technical Risk Report** using the following format:
 
 ---
 
-Worked example: [../../resources/planning/skills/personas/tech-lead/assets/example-risk-report.md](../../resources/planning/skills/personas/tech-lead/assets/example-risk-report.md).
+Worked example: [../../resources/planning/skills/tech-lead/assets/example-risk-report.md](../../resources/planning/skills/tech-lead/assets/example-risk-report.md).
 
 ## Feedback Loop
 

@@ -100,5 +100,10 @@
       "igmarin/agnostic-planning-skills:plan-sprint",
       "igmarin/agnostic-planning-skills:create-retrospective"
     ]
+  },
+  "igmarin/agnostic-planning-skills:agnostic-planning-skills": {
+    "name": "planning-agnostic-planning-skills",
+    "path": "skills/planning-agnostic-planning-skills/SKILL.md",
+    "dependencies": []
   }
 }

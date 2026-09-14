@@ -51,7 +51,7 @@ None. Read-only.
 
 ## Validation
 
-Summary cites real paths. Continue into the selected workflow once context is resolved.
+Summary cites real paths. No code in the same message unless the user already approved skipping this skill or the selected workflow is already authorized.
 
 ## Output
 

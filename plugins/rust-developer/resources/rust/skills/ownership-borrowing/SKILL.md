@@ -31,7 +31,7 @@ No allocation that a borrow would cover. Shared mutability only when the type sy
 
 ## Approval
 
-Use ownership and synchronization types required by the accepted design. Explain their lifecycle or concurrency cost; ask only if the change expands scope.
+None to drop clones. State lifecycle and concurrency cost before adding `Arc`, `Rc`, `Mutex`, `RwLock`, or `RefCell`; stop for approval if that choice changes the accepted design or scope.
 
 ## RULES — no exceptions
 

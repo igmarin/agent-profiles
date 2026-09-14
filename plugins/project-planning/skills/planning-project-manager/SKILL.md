@@ -6,7 +6,7 @@ description: 'Use when tracking a sprint or project, assessing execution health,
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:project-manager
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: role
   dependencies: '["igmarin/agnostic-planning-skills:estimate-tasks", "igmarin/agnostic-planning-skills:identify-risks",
     "igmarin/agnostic-planning-skills:generate-status-report"]'

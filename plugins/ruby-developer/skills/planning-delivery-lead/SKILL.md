@@ -6,7 +6,7 @@ description: 'Use when a feature needs the full delivery cycle from PRD through 
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:delivery-lead
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: role
   dependencies: '["igmarin/agnostic-planning-skills:create-prd", "igmarin/agnostic-planning-skills:review-prd",
     "igmarin/agnostic-planning-skills:generate-tasks", "igmarin/agnostic-planning-skills:plan-tickets",
@@ -35,12 +35,12 @@ On timeout, resume from the last completed phase. Do not re-run completed phases
 
 | Phase | Skill Path |
 |-------|------------|
-| Scope | `prd/create-prd`, `prd/review-prd` |
-| Plan | `task-management/generate-tasks`, `task-management/estimate-tasks`, `execution/identify-risks` |
-| Prioritize | `backlog/prioritize-backlog`, `task-management/plan-tickets` |
-| Sprint | `ceremony/plan-sprint` |
-| Execute | `execution/generate-status-report`, `execution/identify-risks` |
-| Retrospect | `ceremony/create-retrospective` |
+| Scope | `create-prd`, `review-prd` |
+| Plan | `generate-tasks`, `estimate-tasks`, `identify-risks` |
+| Prioritize | `prioritize-backlog`, `plan-tickets` |
+| Sprint | `plan-sprint` |
+| Execute | `generate-status-report`, `identify-risks` |
+| Retrospect | `create-retrospective` |
 
 ## Authorization and checkpoints
 
@@ -61,9 +61,9 @@ At implementation handoff, the developer role verifies the checkpoint against cu
 
 ### Phase 1: Scope
 
-1. Reuse an approved PRD or concrete authorized brief; activate **prd/create-prd** when a PRD is needed.
-2. Activate **prd/review-prd** — review for completeness and feasibility.
-3. Resolve material scope questions; preserve prior approval when scope has not changed.
+1. Activate **create-prd** — draft the PRD.
+2. Activate **review-prd** — review for completeness and feasibility.
+3. Iterate until approved.
 
 **HARD GATE — PRD Approval:**
 ```text
@@ -76,9 +76,9 @@ When new scope needs a decision, present the concrete PRD and the unresolved dec
 
 ### Phase 2: Plan
 
-1. Activate **task-management/generate-tasks** — break PRD into TDD task groups. Output: `tasks-[name].md`.
-2. Activate **task-management/estimate-tasks** — assign effort estimates. Output: points + confidence per task.
-3. Activate **execution/identify-risks** — scan for dependencies and blockers. Output: risk register with owners.
+1. Activate **generate-tasks** — break PRD into TDD task groups. Output: `tasks-[name].md`.
+2. Activate **estimate-tasks** — assign effort estimates. Output: points + confidence per task.
+3. Activate **identify-risks** — scan for dependencies and blockers. Output: risk register with owners.
 4. Review the full plan before proceeding.
 
 **Quality Check:**
@@ -90,15 +90,15 @@ When new scope needs a decision, present the concrete PRD and the unresolved dec
 
 ### Phase 3: Prioritize
 
-1. Activate **backlog/prioritize-backlog** — rank tasks/features. Output: prioritized backlog (RICE / MoSCoW / etc.).
-2. Activate **task-management/plan-tickets** — convert to tracker-ready tickets. Output: ticket stubs ready for import.
+1. Activate **prioritize-backlog** — rank tasks/features. Output: prioritized backlog (RICE / MoSCoW / etc.).
+2. Activate **plan-tickets** — convert to tracker-ready tickets. Output: ticket stubs ready for import.
 3. Present the prioritized backlog for review (informational — no hard gate here).
 
 ---
 
 ### Phase 4: Sprint
 
-1. Activate **ceremony/plan-sprint** — select tickets for the sprint. Output: committed ticket list, sprint goal, deferred items.
+1. Activate **plan-sprint** — select tickets for the sprint. Output: committed ticket list, sprint goal, deferred items.
 2. Define sprint goal, allocate capacity, flag deferred items.
 
 **HARD GATE — Sprint Commitment:**
@@ -114,8 +114,8 @@ Record the real team commitment, capacity, and goal. If unavailable, mark sprint
 ### Phase 5: Execute
 
 1. Hand off the checkpoint to the selected stack developer role for authorized implementation; keep acceptance criteria and checks attached.
-2. Activate **execution/generate-status-report** — report only observed progress. Output: status report per cycle.
-3. Monitor risks via **execution/identify-risks** (re-scan as conditions change).
+2. Activate **generate-status-report** — report only observed progress. Output: status report per cycle.
+3. Monitor risks via **identify-risks** (re-scan as conditions change).
 4. Track completion against the sprint plan.
 5. Flag blockers with a concrete next action. External notifications require authorization.
 
@@ -123,7 +123,7 @@ Record the real team commitment, capacity, and goal. If unavailable, mark sprint
 
 ### Phase 6: Retrospect
 
-1. Activate **ceremony/create-retrospective** — generate the retrospective. Output: action items with owners and timelines.
+1. Activate **create-retrospective** — generate the retrospective. Output: action items with owners and timelines.
 2. Gather sprint data, team feedback, and metrics before invoking.
 
 **HARD GATE — Retrospective Complete:**

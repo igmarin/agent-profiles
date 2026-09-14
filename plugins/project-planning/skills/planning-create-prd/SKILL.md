@@ -6,7 +6,7 @@ description: 'Use when the user wants a PRD, product requirements, a feature spe
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:create-prd
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -23,8 +23,8 @@ Resolve skill names through `../../skill-map.json`; use the source pack to disam
 
 ## Core Process
 1. Receive feature description.
-2. Clarify only if ambiguous — use up to 5 questions from [assets/prd_questions.md](../../resources/planning/skills/prd/create-prd/assets/prd_questions.md).
-3. Draft using [PRD_TEMPLATE.md](../../resources/planning/skills/prd/create-prd/PRD_TEMPLATE.md) section by section.
+2. Clarify only if ambiguous — use up to 5 questions from [assets/prd_questions.md](../../resources/planning/skills/create-prd/assets/prd_questions.md).
+3. Draft using [PRD_TEMPLATE.md](../../resources/planning/skills/create-prd/PRD_TEMPLATE.md) section by section.
 4. Validate — present the PRD; request a decision on unresolved product scope before implementation.
 
 ## Output

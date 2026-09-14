@@ -5,7 +5,7 @@ description: 'Borrow before clone. Accept &[T]/&str. Arc vs Rc. Interior mutabil
 license: MIT
 metadata:
   source-id: igmarin/rust-core-skills:ownership-borrowing
-  source-commit: d27b83055ce5a78253adb550b49380ab67190d9b
+  source-commit: f105faa7b2a493bd8434ce7ee99ca3a424b1007a
   kind: atomic
   dependencies: '[]'
 ---
@@ -32,7 +32,7 @@ No allocation that a borrow would cover. Shared mutability only when the type sy
 
 ## Approval
 
-Use ownership and synchronization types required by the accepted design. Explain their lifecycle or concurrency cost; ask only if the change expands scope.
+None to drop clones. State lifecycle and concurrency cost before adding `Arc`, `Rc`, `Mutex`, `RwLock`, or `RefCell`; stop for approval if that choice changes the accepted design or scope.
 
 ## RULES — no exceptions
 

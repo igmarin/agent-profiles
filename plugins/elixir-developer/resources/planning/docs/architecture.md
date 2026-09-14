@@ -18,15 +18,7 @@ agnostic-planning-skills/
 │       ├── skill-catalog.md
 │       ├── integration-matrix.md
 │       └── gaps.md
-├── skills/
-│   ├── prd/                 # create-prd, review-prd
-│   ├── task-management/     # generate-tasks, plan-tickets, estimate-tasks
-│   ├── backlog/             # prioritize-backlog
-│   ├── ceremony/            # plan-sprint, create-retrospective
-│   ├── execution/           # generate-status-report, identify-risks
-│   ├── analysis/            # requirements-clarifier
-│   ├── github-issues/       # github-issue
-│   └── personas/            # product-owner, project-manager, tech-lead, delivery-lead
+├── skills/<name>/SKILL.md   # Flat layout (catalog, atomics, personas)
 ├── scripts/                 # validate-skills.sh, rs-guard helpers
 ├── bin/                     # Pre-built rs-guard binaries
 ├── hooks/
@@ -34,9 +26,10 @@ agnostic-planning-skills/
 ├── skills.sh.json
 ├── AGENTS.md                # Host-context source
 ├── CLAUDE.md                # Thin stub → AGENTS.md
-├── SKILL.md                 # Root catalog
 └── README.md
 ```
+
+The catalog entry is `skills/agnostic-planning-skills/SKILL.md` (no root `SKILL.md`). Display groups: `skills.sh.json`.
 
 ## SKILL.md Structure
 
@@ -191,11 +184,11 @@ Skills are referenced by three conventions depending on context:
 
 | Context | Format | Example |
 |---------|--------|---------|
-| `directory.json` | Full path: `skills/<category>/<name>/SKILL.md` | `skills/prd/create-prd/SKILL.md` |
-| Persona body (activate calls) | Category-path: `<category>/<name>` | `prd/create-prd` |
+| `directory.json` | Full path: `skills/<name>/SKILL.md` | `skills/create-prd/SKILL.md` |
+| Persona body (activate calls) | Skill name | `create-prd` |
 | Integration tables | Short name only | `create-prd` |
 
-The category-path format (`<category>/<name>`) drops the `skills/` prefix and the `/SKILL.md` suffix from the full directory.json path. Integration tables use bare names since the surrounding context (which skill file you're in) plus the category taxonomy in the root `SKILL.md` makes disambiguation straightforward.
+Layout is flat. Integration tables use bare names; `directory.json` is the path source of truth.
 
 ## Approval Gates
 

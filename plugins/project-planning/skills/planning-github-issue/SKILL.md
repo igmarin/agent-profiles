@@ -6,7 +6,7 @@ description: 'Use when creating, updating, or closing GitHub issues, or moving t
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:github-issue
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -56,7 +56,7 @@ Any stage can revert to `todo` if blocked.
 4. Move on project board (V2/Classic) using GraphQL mutations.
 5. Confirm update.
 
-For exact GraphQL queries and project board integration details, see [../../resources/planning/skills/github-issues/github-issue/references/gh-commands.md](../../resources/planning/skills/github-issues/github-issue/references/gh-commands.md) (loaded on demand).
+For exact GraphQL queries and project board integration details, see [../../resources/planning/skills/github-issue/references/gh-commands.md](../../resources/planning/skills/github-issue/references/gh-commands.md) (loaded on demand).
 
 ## Integration
 

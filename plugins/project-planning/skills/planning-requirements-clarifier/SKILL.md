@@ -6,7 +6,7 @@ description: "Use when a request is vague and needs scope, user stories, or acce
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:requirements-clarifier
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---

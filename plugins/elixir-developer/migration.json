@@ -17,6 +17,7 @@
     "project-manager": "igmarin/agnostic-planning-skills:project-manager",
     "tech-lead": "igmarin/agnostic-planning-skills:tech-lead",
     "delivery-lead": "igmarin/agnostic-planning-skills:delivery-lead",
+    "agnostic-planning-skills": "igmarin/agnostic-planning-skills:agnostic-planning-skills",
     "elixir-essentials": "igmarin/elixir-phoenix-skills:elixir-essentials",
     "otp-essentials": "igmarin/elixir-phoenix-skills:otp-essentials",
     "typespec-dialyzer": "igmarin/elixir-phoenix-skills:typespec-dialyzer",

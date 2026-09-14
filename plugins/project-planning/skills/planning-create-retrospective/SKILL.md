@@ -6,7 +6,7 @@ description: 'Use when writing a sprint retrospective from team feedback and met
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:create-retrospective
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: atomic
   dependencies: '[]'
 ---
@@ -40,12 +40,12 @@ DO assign an owner and timeline to every action item.
    - **What Didn't** — blockers, bottlenecks, process issues, surprises.
    - **Kudos** — shout-outs and recognition.
 3. **Identify themes** — group related feedback into themes rather than listing raw comments.
-4. **Draft action items** — specific, owned, time-bound. Use the template in [RETROSPECTIVE_TEMPLATE.md](../../resources/planning/skills/ceremony/create-retrospective/RETROSPECTIVE_TEMPLATE.md) if available; otherwise use the minimal template below.
+4. **Draft action items** — specific, owned, time-bound. Use the template in [RETROSPECTIVE_TEMPLATE.md](../../resources/planning/skills/create-retrospective/RETROSPECTIVE_TEMPLATE.md) if available; otherwise use the minimal template below.
 5. **Review** — verify every "what didn't" maps to an action item.
 
 ## Output Style
 
-Use **[RETROSPECTIVE_TEMPLATE.md](../../resources/planning/skills/ceremony/create-retrospective/RETROSPECTIVE_TEMPLATE.md)** when bundled.
+Use **[RETROSPECTIVE_TEMPLATE.md](../../resources/planning/skills/create-retrospective/RETROSPECTIVE_TEMPLATE.md)** when bundled.
 
 Section order: header → What Went Well → What Didn't → Action Items → Metrics → Kudos. Use English unless the user requests otherwise. Every "what didn't" maps to an action item with Owner, Timeline, and Linked Issue.
 

@@ -6,7 +6,7 @@ description: 'MANDATORY on an existing crate before code, tests, or review. Read
 license: MIT
 metadata:
   source-id: igmarin/rust-core-skills:load-context
-  source-commit: d27b83055ce5a78253adb550b49380ab67190d9b
+  source-commit: f105faa7b2a493bd8434ce7ee99ca3a424b1007a
   kind: atomic
   dependencies: '[]'
 ---
@@ -52,7 +52,7 @@ None. Read-only.
 
 ## Validation
 
-Summary cites real paths. Continue into the selected workflow once context is resolved.
+Summary cites real paths. No code in the same message unless the user already approved skipping this skill or the selected workflow is already authorized.
 
 ## Output
 

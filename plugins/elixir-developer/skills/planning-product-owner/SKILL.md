@@ -6,7 +6,7 @@ description: 'Use when planning a feature, running product discovery, defining r
 license: MIT
 metadata:
   source-id: igmarin/agnostic-planning-skills:product-owner
-  source-commit: ae074f9c8718013a6b2c618b3856e6914986b775
+  source-commit: 850967c1250b4acd32a59c2fc94d67a55fad04de
   kind: role
   dependencies: '["igmarin/agnostic-planning-skills:create-prd", "igmarin/agnostic-planning-skills:generate-tasks",
     "igmarin/agnostic-planning-skills:plan-tickets"]'
@@ -35,11 +35,11 @@ Each scope gate is satisfied by the current request or a prior decision covering
 
 | Sub-Skill | Purpose | Output |
 |-----------|---------|--------|
-| `prd/create-prd` | Generates a structured PRD from a confirmed feature scope | `/tasks/prd-<slug>.md` |
-| `task-management/generate-tasks` | Breaks an approved PRD into TDD-ordered implementation tasks | `/tasks/tasks-<name>.md` |
-| `task-management/plan-tickets` | Converts a task list into classified, tracker-ready ticket drafts | Markdown ticket drafts with sprint placement heuristics |
+| `create-prd` | Generates a structured PRD from a confirmed feature scope | `/tasks/prd-<slug>.md` |
+| `generate-tasks` | Breaks an approved PRD into TDD-ordered implementation tasks | `/tasks/tasks-<name>.md` |
+| `plan-tickets` | Converts a task list into classified, tracker-ready ticket drafts | Markdown ticket drafts with sprint placement heuristics |
 
-> **Bundle files:** Each sub-skill file is expected at its listed path within this bundle. `PRD_TEMPLATE.md` (used in Phase 2) and sprint placement heuristics (used in Phase 6) are defined in `prd/create-prd` and `task-management/plan-tickets` respectively.
+> **Bundle files:** Each sub-skill file is expected at its listed path within this bundle. `PRD_TEMPLATE.md` (used in Phase 2) and sprint placement heuristics (used in Phase 6) are defined in `create-prd` and `plan-tickets` respectively.
 
 ---
 
@@ -67,7 +67,7 @@ Each scope gate is satisfied by the current request or a prior decision covering
 ### Phase 2 — PRD Draft
 
 **Steps:**
-1. Invoke **`prd/create-prd`** with the confirmed scope summary as input.
+1. Invoke **`create-prd`** with the confirmed scope summary as input.
 2. The sub-skill writes the PRD to `/tasks/prd-<slug>.md` using `PRD_TEMPLATE.md`.
 3. Present a brief summary of what was generated.
 4. Present the PRD; reuse existing scope approval and ask only for newly introduced product decisions.
@@ -82,7 +82,7 @@ Each scope gate is satisfied by the current request or a prior decision covering
 
 **Steps:**
 1. Accept free-form feedback (section edits, additions, removals).
-2. Re-invoke **`prd/create-prd`** in revision mode with the delta instructions, overwriting the existing file.
+2. Re-invoke **`create-prd`** in revision mode with the delta instructions, overwriting the existing file.
 3. Summarise what changed.
 4. Resolve material feedback. Existing scope authorization stays valid when the requested outcome has not changed.
 
@@ -99,7 +99,7 @@ Proceeding to task breakdown...
 ### Phase 4 — Task Estimation
 
 **Steps:**
-1. Invoke **`task-management/generate-tasks`** with the approved PRD file path.
+1. Invoke **`generate-tasks`** with the approved PRD file path.
 2. The sub-skill produces `/tasks/tasks-<name>.md` with TDD-ordered tasks, each containing: task ID, title, description, acceptance criteria, and effort estimate.
 3. Present a summary table of tasks (ID, title, estimate).
 4. Present the task breakdown and continue authorized draft work; flag material scope changes.
@@ -123,7 +123,7 @@ Proceeding to task breakdown...
 ### Phase 5 — Ticket Generation
 
 **Steps:**
-1. Invoke **`task-management/plan-tickets`** with the approved task file path.
+1. Invoke **`plan-tickets`** with the approved task file path.
 2. The sub-skill generates one Markdown ticket draft per task, including: type label (feature / chore / test), title, description, acceptance criteria, dependencies, and estimated points.
 3. Present all ticket drafts inline.
 4. Allow minor wording adjustments; re-generate individual tickets if requested.

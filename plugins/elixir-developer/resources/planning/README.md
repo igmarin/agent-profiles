@@ -52,12 +52,17 @@ Name a persona when you want the whole chain: `product-owner` (scope → tickets
 
 ## Install
 
-```bash
-# Install ALL skills and personas (non-interactive)
-npx skills add igmarin/agnostic-planning-skills --full-depth --all
+There is **no** root `SKILL.md`. The catalog lives at `skills/agnostic-planning-skills/`. Each folder under `skills/` is its own skill, so the CLI can prompt for **all** or **one**.
 
-# Interactive: pick which skills to install (multi-select picker)
+```bash
+# picker: all skills, or a subset
 npx skills add igmarin/agnostic-planning-skills
+
+# all skills, skip prompts
+npx skills add igmarin/agnostic-planning-skills --skill '*'
+
+# one skill
+npx skills add igmarin/agnostic-planning-skills --skill create-prd
 ```
 
 Or with GitHub CLI v2.90.0+ (`gh skill`):
@@ -66,10 +71,6 @@ Or with GitHub CLI v2.90.0+ (`gh skill`):
 gh skill install igmarin/agnostic-planning-skills
 gh skill install igmarin/agnostic-planning-skills create-prd --scope project
 ```
-
-> **`--full-depth` is required.** The root `SKILL.md` is a catalog (`type: catalog`), not a standalone skill. Without `--full-depth`, the `skills` CLI treats that root file as the only skill for the repo and stops — you get 1 skill (the catalog) instead of all 16. `--full-depth` makes the CLI recurse into `skills/<category>/<name>/`.
->
-> Without `--all`, the CLI opens an interactive multi-select picker listing all 16 skills. Omit `--all` when you want to choose a subset.
 
 ## Docs
 

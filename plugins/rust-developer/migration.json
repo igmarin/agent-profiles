@@ -17,6 +17,7 @@
     "project-manager": "igmarin/agnostic-planning-skills:project-manager",
     "tech-lead": "igmarin/agnostic-planning-skills:tech-lead",
     "delivery-lead": "igmarin/agnostic-planning-skills:delivery-lead",
+    "agnostic-planning-skills": "igmarin/agnostic-planning-skills:agnostic-planning-skills",
     "rust-essentials": "igmarin/rust-core-skills:rust-essentials",
     "ownership-borrowing": "igmarin/rust-core-skills:ownership-borrowing",
     "type-driven-design": "igmarin/rust-core-skills:type-driven-design",
