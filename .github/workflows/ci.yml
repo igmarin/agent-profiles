@@ -1,19 +1,76 @@
-name: validate
+name: CI
 
 on:
   pull_request:
   push:
     branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  validate:
+  unit:
+    name: unit
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+          enable-cache: true
       - run: uv sync --frozen
-      - run: uv run python scripts/profiles.py validate
-      - run: uv run python scripts/profiles.py build
-      - run: uv run python scripts/profiles.py check-exports
-      - run: uv run python scripts/profiles.py routing
       - run: uv run python -m unittest discover -s tests -v
+
+  build:
+    name: pinned build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: agent-profiles
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+          enable-cache: true
+      - name: Clone pinned source packs
+        working-directory: agent-profiles
+        run: |
+          python - <<'PY'
+          import json, pathlib, subprocess
+          config = json.loads(pathlib.Path("profiles.json").read_text())
+          parent = pathlib.Path("..").resolve()
+          for short, pack in config["packs"].items():
+              dest = parent / pack["repo"]
+              if dest.exists():
+                  subprocess.run(["git", "-C", str(dest), "fetch", "--quiet", "origin", pack["sha"]], check=True)
+              else:
+                  subprocess.run(["git", "clone", "--quiet", pack["url"], str(dest)], check=True)
+              subprocess.run(["git", "-C", str(dest), "checkout", "--quiet", pack["sha"]], check=True)
+              head = subprocess.run(["git", "-C", str(dest), "rev-parse", "HEAD"], capture_output=True, text=True, check=True).stdout.strip()
+              assert head == pack["sha"], f"{pack['repo']}: {head} != {pack['sha']}"
+              print(f"{pack['repo']} at {head}")
+          PY
+      - name: Validate sources
+        working-directory: agent-profiles
+        run: |
+          uv sync --frozen
+          uv run python scripts/profiles.py validate
+      - name: Build from pinned sources
+        working-directory: agent-profiles
+        run: uv run python scripts/profiles.py build
+      - name: Check exports and routing
+        working-directory: agent-profiles
+        run: |
+          uv run python scripts/profiles.py check-exports
+          uv run python scripts/profiles.py routing
+      - name: Committed bundles must match the build
+        working-directory: agent-profiles
+        run: git status --short -- plugins profiles.json && git diff --exit-code -- plugins profiles.json
+

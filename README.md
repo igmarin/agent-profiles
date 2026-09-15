@@ -1,49 +1,76 @@
 # Agent Profiles
 
-Portable developer roles assembled from the authoritative planning, Elixir,
-Ruby, Rails, and Rust skill packs. A role chooses the smallest relevant
-workflow, preserves project conventions, and finishes authorized work with
-real verification evidence.
+Ready-made developer roles built from five skill packs I maintain separately:
+planning, Elixir/Phoenix, Ruby core, Rails, and Rust core. Each role picks the
+smallest workflow that fits the task, follows the target project's conventions,
+and backs up its work with test output you can check.
 
-## Bundles
+## Install a bundle
 
-| Bundle | Roles | Source packs |
+Pick the bundle that matches your stack. Each folder under `plugins/` works on
+its own with Devin or Codex.
+
+| Bundle | You get | Built from |
 | --- | --- | --- |
-| `project-planning` | product-owner, project-manager, tech-lead, delivery-lead | agnostic planning |
+| `project-planning` | product-owner, project-manager, tech-lead, delivery-lead | planning |
 | `elixir-developer` | elixir-developer | planning, Elixir/Phoenix |
 | `ruby-developer` | ruby-developer, rails-developer | planning, Ruby core, Rails |
 | `rust-developer` | rust-developer | planning, Rust core |
 
-`plugins/` contains self-contained Devin and Codex-compatible bundles.
-`skill-map.json` resolves every qualified source identity to its exported skill;
-`provenance.json` records source commits and file hashes. `migration.json`
-keeps unambiguous legacy names for one major release and records collisions.
+Copy the bundle folder into your host's plugin directory, then point the agent
+at it. To use a skill inside a bundle, look up its path in that bundle's
+`skill-map.json` and read the `SKILL.md` it points to. `provenance.json` shows
+which source commits the bundle was built from. `migration.json` maps old
+unqualified skill names to their current qualified names.
 
-## Build and validate
+## Compose a new role
+
+This repo owns role composition. The five source repos own skill content, so
+start there if you want to change what a skill teaches. To change which skills
+a role uses:
+
+1. Edit the role file in `roles/` or the pack list in `profiles.json`.
+2. Rebuild the bundles: `uv run python scripts/profiles.py build`
+3. Run the checks: `uv run python scripts/profiles.py validate`,
+   `check-exports`, `routing`, then `uv run python -m unittest discover -s tests -v`
+4. Commit `profiles.json`, `roles/`, and the rebuilt `plugins/` together.
+
+`build --working-tree` skips the pinned-commit check so you can iterate
+locally. Release builds use the exact commits in `profiles.json` and fail if a
+source checkout is dirty. Never hand-edit files under `plugins/`; they get
+overwritten on the next build.
+
+## Checks
+
+`uv sync` installs the one dependency (PyYAML). Then:
 
 ```bash
-uv sync
 uv run python scripts/profiles.py validate
 uv run python scripts/profiles.py build
 uv run python scripts/profiles.py check-exports
+uv run python scripts/profiles.py routing
 uv run python -m unittest discover -s tests -v
 ```
 
-Release builds require clean source content at the exact commits in
-`profiles.json`. `build --working-tree` is only for local authoring.
+CI splits this into two jobs. `unit` runs the Python tests without any source
+packs. `pinned build` clones each source pack at its pinned commit, validates,
+rebuilds, and fails if the committed `plugins/` differ from a clean build. A
+weekly watcher opens a PR when a source pack moves past its pin.
 
 ## Evaluation policy
 
 Structural, routing, resource-closure, and installation checks run without a
-model. Behavioral evaluation batches are manual until each batch has an
-explicit token or cost cap. Store a completed batch's fixtures, repeated runs,
-host/model versions, source commits, usage, raw results, and limitations under
-`reports/`. A missing or inconclusive batch is reported as such, never as an
-improvement claim.
+model. Anything that needs a model waits until the batch has a written token
+or cost cap. Keep each finished batch under `reports/`: fixtures, repeated
+runs, host and model versions, source commits, usage, raw results, and what
+the batch did not cover. If a batch is missing or inconclusive, say so. Do not
+present it as an improvement.
 
 ## Migration and rollback
 
-Keep using source-pack names and paths while their alias is unambiguous. Use
-the qualified identity when two packs expose the same name. Roll back by
-installing the earlier bundle revision and its recorded source commits; do not
-mix generated resources from different bundle versions.
+Keep using a short skill name while it maps to exactly one skill. Switch to
+the qualified form (`pack:skill`) once two packs use the same name. To roll
+back, install the earlier bundle and check out the source commits listed in
+that bundle's `provenance.json`. Do not mix skills from different bundle
+versions.
+
